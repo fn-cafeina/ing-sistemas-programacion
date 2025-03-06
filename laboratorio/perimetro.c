@@ -7,8 +7,8 @@ int main()
         float perim, radio;
         int dos = 2;
 
-        printf("Calcula el parametro de una circunsferencia. \n");
-        printf("Indique el tamaño de radio de la circunsferencia: ");
+        printf("Calcula el parametro de una circunferencia. \n");
+        printf("Indique el tamaño de radio de la circunferencia: ");
 
         scanf("%f", & radio);
 

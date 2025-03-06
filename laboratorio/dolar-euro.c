@@ -10,7 +10,7 @@ int main()
 
         resultado = dolar * euro;
 
-        printf("La conversion es: %f \n", resultado);
+        printf("La conversión es: %f \n", resultado);
 
         return 0;
 }
