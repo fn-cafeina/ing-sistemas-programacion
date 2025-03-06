@@ -10,7 +10,7 @@ int main()
         printf("Calcula el parametro de una circunferencia. \n");
         printf("Indique el tamaño de radio de la circunferencia: ");
 
-        scanf("%f", & radio);
+        scanf("%f", &radio);
 
         perim = dos * PI * radio;
 

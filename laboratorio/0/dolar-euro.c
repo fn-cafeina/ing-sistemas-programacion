@@ -6,7 +6,7 @@ int main()
 
         printf("Ingrese los dolares a convertir: ");
 
-        scanf("%f", & dolar);
+        scanf("%f", &dolar);
 
         resultado = dolar * euro;
 
