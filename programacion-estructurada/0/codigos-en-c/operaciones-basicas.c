@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
         int n1, n2, suma, resta, multiplicacion;
         float division;
 

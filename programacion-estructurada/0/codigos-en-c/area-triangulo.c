@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
         float base, altura, area;
 
         printf("Ingrese la base: ");

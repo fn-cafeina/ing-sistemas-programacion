@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
         int anyio, anyioActual, edad;
 
         printf("Ingrese el año de nacimiento: ");
