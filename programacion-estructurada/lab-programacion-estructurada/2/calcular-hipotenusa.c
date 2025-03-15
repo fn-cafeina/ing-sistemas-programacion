@@ -1,3 +1,5 @@
+// Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.
+
 #include <stdio.h>
 #include <math.h>
 
