@@ -6,10 +6,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int respuestaActual, puntuacion, respuestasCorrectas;
+
 int main()
 {
-        int respuestaActual, puntuacion, respuestasCorrectas;
-
         system("clear");
 
         printf("¿Cual es la capital de Francia?\n0 - Paris\n1 - Roma \nR = ");
