@@ -8,54 +8,34 @@
 
 int main()
 {
-        int respuestaActual, puntuacion = 0, respuestasCorrectas = 0;
+        int respuestaActual = 0, puntuacion = 0, respuestasCorrectas = 0;
+        char *preguntas[3] = {"¿Cual es la capital de Francia?\n1 - Paris\n2 - Roma \n3 - No se \nR = ",
+                              "¿Cuantos dias tiene un año normal?\n1 - 365\n2 - 366 \n3 - No se \nR = ",
+                              "¿Que planeta esta mas cerca del sol?\n1 - Mercurio\n2 - Venus \n3 - No se \nR = "};
 
         system("clear");
 
-        printf("¿Cual es la capital de Francia?\n0 - Paris\n1 - Roma \nR = ");
-        scanf("%d", &respuestaActual);
-
-        if (respuestaActual == 0)
+        for (int i = 0; i < 3; i++)
         {
-                puntuacion += 4;
-                respuestasCorrectas++;
+                printf("%s", preguntas[i]);
+                scanf("%d", &respuestaActual);
+
+                if (respuestaActual == 1)
+                {
+                        puntuacion += 4;
+                        respuestasCorrectas++;
+                }
+                else if (respuestaActual == 2)
+                {
+                        puntuacion -= 1;
+                }
+                else if (respuestaActual == 3)
+                {
+                        puntuacion += 0;
+                }
+
+                system("clear");
         }
-        else
-        {
-                puntuacion -= 1;
-        }
-
-        system("clear");
-
-        printf("¿Cuantos dias tiene un año normal?\n0 - 365\n1 - 366 \nR = ");
-        scanf("%d", &respuestaActual);
-
-        if (respuestaActual == 0)
-        {
-                puntuacion += 4;
-                respuestasCorrectas++;
-        }
-        else
-        {
-                puntuacion -= 1;
-        }
-
-        system("clear");
-
-        printf("¿Que planeta esta mas cerca del sol?\n0 - Mercurio\n1 - Venus \nR = ");
-        scanf("%d", &respuestaActual);
-
-        if (respuestaActual == 0)
-        {
-                puntuacion += 4;
-                respuestasCorrectas++;
-        }
-        else
-        {
-                puntuacion -= 1;
-        }
-
-        system("clear");
 
         printf("Su puntuacion es: %d \n", puntuacion);
         printf("La cantidad de respuestas correctas es: %d \n", respuestasCorrectas);
