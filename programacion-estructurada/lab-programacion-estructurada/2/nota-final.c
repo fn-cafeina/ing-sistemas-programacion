@@ -9,21 +9,23 @@
 
 int main()
 {
-        int nota1, nota2, nota3;
-        float notaFinal;
+        int nota1, nota2, nota3, examenF, trabajoF;
+        float promedioC, notaF;
 
-        printf("Ingrese la primera nota: (0 - 10) ");
-        scanf("%d", &nota1);
+        printf("Ingrese las 3 primeras notas parciales (0 - 10): \n");
+        scanf("%d %d %d", &nota1, &nota2, &nota3);
 
-        printf("Ingrese la segunda nota: (0 - 10) ");
-        scanf("%d", &nota2);
+        printf("Ingrese la calificacion del examen final (0 - 10): ");
+        scanf("%d", &examenF);
 
-        printf("Ingrese la tercera nota: (0 - 10) ");
-        scanf("%d", &nota3);
+        printf("Ingrese la calificacion del trabajo final (0 - 10): ");
+        scanf("%d", &trabajoF);
 
-        notaFinal = (nota1 * 0.55) + (nota2 * 0.3) + (nota3 * 0.15);
+        promedioC = ((nota1 + nota2 + nota3) / 3);
 
-        printf("La nota final es: %.2f \n", notaFinal);
+        notaF = (promedioC * 0.55) + (examenF * 0.3) + (trabajoF * 0.15);
+
+        printf("La nota final es: %.2f \n", notaF);
 
         return 0;
 }
