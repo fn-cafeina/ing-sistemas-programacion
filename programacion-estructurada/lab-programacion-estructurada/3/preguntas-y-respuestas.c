@@ -2,8 +2,6 @@
 // incorrectas y en blanco, correspondientes a postulantes, y muestre su puntaje
 // final considerando, que por cada respuesta correcta tendrá 4 puntos, respuestas
 // incorrectas tendrá -1 y respuestas en blanco tendrá 0.
-//
-// La funcion system("clear") depende del sistema, para windows seria system("cls").
 
 #include <stdio.h>
 #include <stdlib.h>
