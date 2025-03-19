@@ -12,14 +12,14 @@ int main()
         x = 3;
         y = 7;
 
-        z = (x < y) ? x + 5 : y - 3;
+        z = x < y ? x + 5 : y - 3;
 
         printf("Cuando el valor de X es: %d y Y es de: %d, z sera: %d \n", x, y, z);
 
         x = 10;
         y = 2;
 
-        z = (x < y) ? x + 5 : y - 3;
+        z = x < y ? x + 5 : y - 3;
 
         printf("Cuando el valor de X es: %d y Y es de: %d, z sera: %d \n", x, y, z);
 

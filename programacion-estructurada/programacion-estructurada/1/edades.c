@@ -16,7 +16,7 @@ int main()
         printf("Ingrese la edad de José: ");
         scanf("%d", &edad2);
 
-        resultado = (edad1 > edad2) ? "Juan es mayor \n" : "José es el mayor \n";
+        resultado = edad1 > edad2 ? "Juan es mayor \n" : "José es el mayor \n";
 
         printf(resultado);
 
