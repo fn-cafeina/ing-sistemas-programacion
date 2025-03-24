@@ -1,5 +1,5 @@
 // Realizar un programa que compare 2 edades, la edad de Juan(edad 1) y la edad de
-// José(edad 2). Si edad1>edad2, que imprima en pantalla “Juan es mayor”, si no, que
+// José(edad 2). Si edad1 > edad2, que imprima en pantalla “Juan es mayor”, si no, que
 // presente el mensaje “Jose es el mayor”. Correrlo para valores diferentes de edad1 y
 // edad2. Haga uso del operador ternario.
 
