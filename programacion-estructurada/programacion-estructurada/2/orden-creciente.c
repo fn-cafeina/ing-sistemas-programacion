@@ -10,7 +10,7 @@ int main()
         printf("Ingrese 3 valores enteros: \n");
         scanf("%d %d %d", &val1, &val2, &val3);
 
-        if (val2 > val1 & val3 > val2)
+        if (val2 > val1 && val3 > val2)
                 printf("Los valores estan en orden creciente.\n");
         else if (val1 == val2 || val1 == val3 || val2 == val3)
                 printf("Hay valores iguales.\n");
