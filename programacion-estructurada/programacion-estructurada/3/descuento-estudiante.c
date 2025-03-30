@@ -60,7 +60,6 @@ int main()
         default:
                 printf("\nCiudad incorrecta.\n");
                 exit(0);
-                break;
         }
 
         printf("\nEl dinero que deja de percibir el administrador: %.2fC$\n", descuento);
