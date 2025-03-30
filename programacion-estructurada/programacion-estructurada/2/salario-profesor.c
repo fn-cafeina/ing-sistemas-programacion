@@ -16,13 +16,13 @@ int main()
         scanf("%f", &salario);
 
         if (salario < 18000)
-                salario = salario + (salario * 0.12);
+                salario *= 1.12;
         else if (salario > 18000 && salario < 30000)
-                salario = salario + (salario * 0.08);
+                salario *= 1.08;
         else if (salario > 30000 && salario < 50000)
-                salario = salario + (salario * 0.07);
+                salario *= 1.07;
         else
-                salario = salario + (salario * 0.06);
+                salario *= 1.06;
 
         printf("El salario final es de: %.2f\n", salario);
 
