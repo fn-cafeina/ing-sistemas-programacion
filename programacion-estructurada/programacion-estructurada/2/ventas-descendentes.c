@@ -7,14 +7,8 @@ int main()
 {
         int venta1, venta2, venta3;
 
-        printf("Ingrese la venta del vendedor 1: ");
-        scanf("%d", &venta1);
-
-        printf("Ingrese la venta del vendedor 2: ");
-        scanf("%d", &venta2);
-
-        printf("Ingrese la venta del vendedor 3: ");
-        scanf("%d", &venta3);
+        printf("Ingrese las ventas de los 3 vendedores:\n");
+        scanf("%d %d %d", &venta1, &venta2, &venta3);
 
         if (venta1 > venta2 && venta1 > venta3)
         {
