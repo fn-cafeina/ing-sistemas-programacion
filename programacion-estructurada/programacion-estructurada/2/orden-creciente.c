@@ -12,6 +12,8 @@ int main()
 
         if (val2 > val1 & val3 > val2)
                 printf("Los valores estan en orden creciente.\n");
+        else if (val1 == val2 || val1 == val3 || val2 == val3)
+                printf("Hay valores iguales.\n");
         else
                 printf("Los valores no estan en orden creciente.\n");
 
