@@ -9,7 +9,6 @@
 // • Las restantes no tienen premio.
 
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
