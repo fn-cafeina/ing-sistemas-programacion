@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main()
 {
@@ -17,9 +18,12 @@ int main()
         printf("Ingrese su edad: ");
         scanf("%d", &edad);
 
-        if (strcmp(sexo, "Masculino") == 0 || strcmp(sexo, "masculino") == 0)
+        for (int i = 0; sexo[i]; i++)
+                sexo[i] = tolower(sexo[i]);
+
+        if (strcmp(sexo, "masculino") == 0)
                 printf("Su sexo es: %s y su numero de pulsaciones es de: %.2f\n", sexo, (float)(210 - edad) / 10);
-        else if (strcmp(sexo, "Femenino") == 0 || strcmp(sexo, "femenino") == 0)
+        else if (strcmp(sexo, "femenino") == 0)
                 printf("Su sexo es: %s y su numero de pulsaciones es de: %.2f\n", sexo, (float)(220 - edad) / 10);
         else
                 printf("Sexo desconocido.\n");
