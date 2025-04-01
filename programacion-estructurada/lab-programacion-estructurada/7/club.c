@@ -23,6 +23,8 @@ int main()
 
                 if (strcmp(opcion, "Si") == 0 || strcmp(opcion, "si") == 0)
                         printf("\nUsted puede entrar al club.\n");
+                else
+                        printf("\nUsted no puede entrar al club.\n");
         }
 
         return 0;
