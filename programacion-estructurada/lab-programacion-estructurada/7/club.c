@@ -3,7 +3,6 @@
 // mayores de 18 años o a personas menores de 16 años acompañadas por un adulto.
 
 #include <stdio.h>
-#include <ctype.h>
 #include <string.h>
 
 int main()
