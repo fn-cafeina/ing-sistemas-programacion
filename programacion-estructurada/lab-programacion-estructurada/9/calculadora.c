@@ -39,7 +39,13 @@ int main()
                 resultado = n1 * n2;
                 break;
         case '/':
-                resultado = n1 / n2;
+                if (n1 == 0 || n2 == 0)
+                {
+                        printf("\nNo se puede dividir por cero.\n");
+                        exit(0);
+                }
+                else
+                        resultado = n1 / n2;
                 break;
         default:
                 printf("Operación no valida.\n");
