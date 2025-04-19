@@ -9,7 +9,7 @@ int main()
         if (system("cls"))
                 system("clear");
 
-        int n, i = 1;
+        int n, i = 0;
 
         printf("Ingrese un número: ");
         scanf("%d", &n);
@@ -24,12 +24,9 @@ int main()
 
         do
         {
-                if (i % 2 == 0)
-                {
-                        printf(" %d ", i);
-                }
+                printf(" %d ", i);
 
-                i++;
+                i += 2;
         } while (i <= n);
 
         i = 1;
@@ -38,12 +35,9 @@ int main()
 
         do
         {
-                if (i % 2 != 0)
-                {
-                        printf(" %d ", i);
-                }
+                printf(" %d ", i);
 
-                i++;
+                i += 2;
         } while (i <= n);
 
         printf("\n");
