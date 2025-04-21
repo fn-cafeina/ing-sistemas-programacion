@@ -6,9 +6,7 @@
 int main()
 {
         if (system("cls"))
-        {
                 system("clear");
-        }
 
         int opcion;
 

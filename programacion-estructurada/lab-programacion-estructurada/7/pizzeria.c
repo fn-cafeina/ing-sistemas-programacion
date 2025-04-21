@@ -13,23 +13,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void limpiarPantalla()
+{
+        if (system("cls"))
+                system("clear");
+}
+
 int main()
 {
-        system("clear");
+        limpiarPantalla();
 
         int opcion, opcion1, opcion2;
 
         printf("Ingrese que tipo de pizza quiere:\n1 - Normal\n2 - Vegetariana\nR = ");
         scanf("%d", &opcion);
 
-        system("clear");
+        limpiarPantalla();
 
         if (opcion == 1)
         {
                 printf("Que ingredientes quiere en su pizza?\n1 - Peperoni\n2 - Jamón\n3 - Salmón\nR = ");
                 scanf("%d", &opcion1);
 
-                system("clear");
+                limpiarPantalla();
 
                 switch (opcion1)
                 {
@@ -53,7 +59,7 @@ int main()
                 printf("Que ingredientes quiere en su pizza?\n1 - Pimiento\n2 - Tofu\nR = ");
                 scanf("%d", &opcion2);
 
-                system("clear");
+                limpiarPantalla();
 
                 switch (opcion2)
                 {
@@ -70,7 +76,7 @@ int main()
         }
         else
         {
-                system("clear");
+                limpiarPantalla();
                 printf("\nTipo de pizza no disponible.\n");
         }
 

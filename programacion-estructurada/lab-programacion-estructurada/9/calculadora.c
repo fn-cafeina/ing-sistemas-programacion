@@ -12,9 +12,7 @@ void limpiarBuffer()
 int main()
 {
         if (system("cls"))
-        {
                 system("clear");
-        }
 
         int n1, n2, operacion;
         float resultado;
