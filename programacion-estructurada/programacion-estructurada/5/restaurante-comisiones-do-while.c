@@ -36,41 +36,28 @@ int main()
 
         int meseros;
 
-        do
+        printf("\nIngrese la cantidad de meseros: ");
+
+        if (!scanf("%d", &meseros) || meseros <= 0)
         {
-                printf("\nIngrese la cantidad de meseros: ");
-                if (scanf("%d", &meseros) == 1 && meseros > 0)
-                {
-                        break;
-                }
-                else
-                {
-                        printf("\nIngrese un dato valido.\n");
-                        limpiarBuffer();
-                }
-        } while (1);
+                printf("\nIngrese un dato valido.\n");
+                return 1;
+        }
 
         limpiarBuffer();
 
         int i = 1;
-
         do
         {
                 printf("\nEvaluación del mesero #%d\n", i);
                 int ventas;
-                do
+                printf("Ingrese la cantidad de ventas para este mesero: ");
+
+                if (!scanf("%d", &ventas) || ventas < 0)
                 {
-                        printf("Ingrese la cantidad de ventas para este mesero: ");
-                        if (scanf("%d", &ventas) == 1 && ventas >= 0)
-                        {
-                                break;
-                        }
-                        else
-                        {
-                                printf("\nIngrese un dato valido.\n");
-                                limpiarBuffer();
-                        }
-                } while (1);
+                        printf("\nIngrese un dato valido.\n");
+                        return 1;
+                }
 
                 limpiarBuffer();
 
@@ -80,21 +67,15 @@ int main()
                 {
                         float ventaActual;
                         enum tipoVenta tipo;
-                        int lecturaCorrecta = 0;
 
-                        do
+                        printf("Ingrese la venta #%d y el tipo de venta (1: contado; 2: cheque; 3: tarjeta): ", j);
+
+                        if (scanf("%f%d", &ventaActual, &tipo) != 2 || ventaActual < 0 || tipo > tarjeta || tipo < contado)
                         {
-                                printf("Ingrese la venta #%d y el tipo de venta (1: contado; 2: cheque; 3: tarjeta): ", j);
-                                if (scanf("%f%d", &ventaActual, &tipo) == 2 && ventaActual >= 0 && tipo >= contado && tipo <= tarjeta)
-                                {
-                                        lecturaCorrecta = 1;
-                                }
-                                else
-                                {
-                                        printf("\nIngrese un dato valido, volviendo a intentar...\n");
-                                        limpiarBuffer();
-                                }
-                        } while (!lecturaCorrecta);
+                                printf("\nIngrese un dato valido, volviendo a iterar...\n");
+                                limpiarBuffer();
+                                continue;
+                        }
 
                         limpiarBuffer();
 
