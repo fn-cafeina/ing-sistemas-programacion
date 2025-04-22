@@ -18,7 +18,7 @@ int main()
         if (system("cls"))
                 system("clear");
 
-        int num, i;
+        int num;
         float valor;
         int esValido;
 
@@ -39,7 +39,7 @@ int main()
                 return 1;
         }
 
-        for (i = 1; i <= num; i++)
+        for (int i = 1; i <= num; i++)
         {
                 printf("\nIngrese el valor numero %d: ", i);
                 esValido = scanf("%f", &valor);

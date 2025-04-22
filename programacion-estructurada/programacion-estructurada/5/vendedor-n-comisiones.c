@@ -38,9 +38,7 @@ int main()
                 return 1;
         }
 
-        int i;
-
-        for (i = 1; i <= nVentas; i++)
+        for (int i = 1; i <= nVentas; i++)
         {
                 printf("\nIngrese el precio del articulo vendido #%d: $", i);
                 esValido = scanf("%f", &valorArticulo);

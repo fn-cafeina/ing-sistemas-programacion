@@ -12,7 +12,6 @@ int main()
                 system("clear");
 
         int num;
-        int i = 0;
         int act = 0, sig = 1;
         int op, sum = 0;
 
@@ -21,6 +20,8 @@ int main()
 
         if (num >= 2)
                 sum += 1;
+
+        int i = 0;
 
         while (i < num - 2)
         {
