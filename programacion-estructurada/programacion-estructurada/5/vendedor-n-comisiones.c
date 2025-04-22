@@ -24,7 +24,7 @@ int main()
         printf("Ingrese la cantidad de ventas: ");
         esValido = scanf("%d", &nVentas);
 
-        if (esValido == 1)
+        if (esValido)
         {
                 if (nVentas <= 0)
                 {
@@ -45,7 +45,7 @@ int main()
                 printf("\nIngrese el precio del articulo vendido #%d: $", i);
                 esValido = scanf("%f", &valorArticulo);
 
-                if (esValido == 1)
+                if (esValido)
                 {
                         if (valorArticulo <= 0)
                         {

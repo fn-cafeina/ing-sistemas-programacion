@@ -25,7 +25,7 @@ int main()
         printf("Ingrese la cantidad de valores a procesar: ");
         esValido = scanf("%d", &num);
 
-        if (esValido == 1)
+        if (esValido)
         {
                 if (num <= 0)
                 {
@@ -44,7 +44,7 @@ int main()
                 printf("\nIngrese el valor numero %d: ", i);
                 esValido = scanf("%f", &valor);
 
-                if (esValido == 1)
+                if (esValido)
                 {
                         if (valor < 0)
                                 printf("\n%.2f al cubo es: %.2f\n", valor, powf(valor, 3));
