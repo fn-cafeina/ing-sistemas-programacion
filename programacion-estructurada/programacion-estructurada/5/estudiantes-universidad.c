@@ -11,15 +11,16 @@
 
 int main()
 {
-        int n, edad, sexo, carrera, i;
+        int n, edad, sexo, carrera;
         int totalHombres = 0, totalMujeres = 0, totalIngenieria = 0;
         int totalHombresIngenieria = 0, totalMujeresIngenieria = 0;
         int totalEdadIngenieria = 0;
+        int i = 1;
 
         printf("Ingrese la cantidad de estudiantes: ");
         scanf("%d", &n);
 
-        for (i = 1; i <= n; i++)
+        while (i <= n)
         {
                 printf("\nEstudiante #%d\n", i);
 
@@ -41,23 +42,30 @@ int main()
                 {
                         totalIngenieria++;
                         totalEdadIngenieria += edad;
+
                         if (sexo == 1)
                                 totalHombresIngenieria++;
                         else if (sexo == 2)
                                 totalMujeresIngenieria++;
                 }
+
+                i++;
         }
 
         if (totalHombres + totalMujeres > 0)
         {
-                printf("\nPorcentaje de hombres en la universidad: %.2f%%\n", (totalHombres * 100.0) / (totalHombres + totalMujeres));
+                printf("\nPorcentaje de hombres en la universidad: %.2f%%\n",
+                       (totalHombres * 100.0) / (totalHombres + totalMujeres));
         }
 
         if (totalIngenieria > 0)
         {
-                printf("Promedio de edad de los estudiantes de Ingeniería: %.2f\n", (float)totalEdadIngenieria / totalIngenieria);
+                printf("Promedio de edad de los estudiantes de Ingeniería: %.2f\n",
+                       (float)totalEdadIngenieria / totalIngenieria);
+
                 if (totalMujeres > 0)
-                        printf("Porcentaje de mujeres que estudian Ingeniería: %.2f%%\n", (totalMujeresIngenieria * 100.0) / totalMujeres);
+                        printf("Porcentaje de mujeres que estudian Ingeniería: %.2f%%\n",
+                               (totalMujeresIngenieria * 100.0) / totalMujeres);
         }
 
         return 0;

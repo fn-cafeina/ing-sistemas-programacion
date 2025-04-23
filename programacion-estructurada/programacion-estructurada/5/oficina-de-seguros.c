@@ -13,11 +13,11 @@
 
 int main()
 {
-        int n, i;
+        int n, i = 0;
         int nacimiento, sexo, registro;
         int menores25 = 0, mujeres = 0, hombres12a30 = 0, fueraMedellin = 0;
         int edad;
-        int anyoActual = 2024;
+        int anyoActual = 2025;
 
         printf("Ingrese la cantidad de conductores: ");
         scanf("%d", &n);
@@ -28,7 +28,7 @@ int main()
                 exit(0);
         }
 
-        for (i = 0; i < n; i++)
+        while (i < n)
         {
                 printf("\n>>> Conductor #%d\n", i + 1);
                 printf("  - Año de nacimiento: ");
@@ -53,6 +53,8 @@ int main()
 
                 if (registro == 2)
                         fueraMedellin++;
+
+                i++;
         }
 
         printf("\n===== Resultados =====\n");
