@@ -26,7 +26,7 @@ int main()
                 ingresoTotal += sueldo;
         }
 
-        float promedioMensual = ingresoTotal / 12;
+        float promedioMensual = ingresoTotal / 6;
 
         printf("\nClave del empleado: %d\n", claveEmpleado);
         printf("Ingreso total del empleado: %.2f\n", ingresoTotal);
