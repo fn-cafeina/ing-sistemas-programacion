@@ -1,6 +1,7 @@
-// Construya un programa que, al recibir como datos la clave del empleado y los seis
-// primeros sueldos del año, calcule el ingreso total semestral y el promedio mensual, e
-// imprima la clave del empleado, el ingreso total y el promedio mensual.
+// Construya un programa que, al recibir como datos la clave del empleado y los
+// seis primeros sueldos del año, calcule el ingreso total semestral y el
+// promedio mensual, e imprima la clave del empleado, el ingreso total y el
+// promedio mensual.
 
 #include <stdio.h>
 
@@ -14,9 +15,7 @@ int main()
 
         float ingresoTotal;
 
-        int i;
-
-        for (i = 1; i <= 6; i++)
+        for (int i = 1; i <= 6; i++)
         {
                 float sueldo;
 
@@ -26,11 +25,9 @@ int main()
                 ingresoTotal += sueldo;
         }
 
-        float promedioMensual = ingresoTotal / 6;
-
         printf("\nClave del empleado: %d\n", claveEmpleado);
         printf("Ingreso total del empleado: %.2f\n", ingresoTotal);
-        printf("Promedio mensual: %.2f\n", promedioMensual);
+        printf("Promedio mensual: %.2f\n", ingresoTotal / 6);
 
         return 0;
 }

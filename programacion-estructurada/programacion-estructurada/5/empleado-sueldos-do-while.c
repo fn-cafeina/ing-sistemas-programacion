@@ -28,11 +28,9 @@ int main()
                 i++;
         } while (i <= 6);
 
-        float promedioMensual = ingresoTotal / 6;
-
         printf("\nClave del empleado: %d\n", claveEmpleado);
         printf("Ingreso total del empleado: %.2f\n", ingresoTotal);
-        printf("Promedio mensual: %.2f\n", promedioMensual);
+        printf("Promedio mensual: %.2f\n", ingresoTotal / 6);
 
         return 0;
 }
