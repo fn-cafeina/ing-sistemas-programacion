@@ -1,4 +1,6 @@
 {
+  "git.openRepositoryInParentFolders": "never",
+
   "[c]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 8
