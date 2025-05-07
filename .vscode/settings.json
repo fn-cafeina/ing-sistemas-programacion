@@ -2,9 +2,5 @@
   "[c]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 8
-  },
-  "files.associations": {
-    "stdlib.h": "c",
-    "stdio.h": "c"
   }
 }
