@@ -7,5 +7,3 @@ ar rcs libcafeina.a cafeina.o
 gcc main.c -o main -L. -lcafeina
 
 ./main
-
-rm main
