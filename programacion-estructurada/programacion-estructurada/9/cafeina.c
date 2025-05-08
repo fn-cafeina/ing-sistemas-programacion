@@ -25,6 +25,7 @@ int esFibonacci(int n)
                         return 1;
                 if (act > n)
                         return 0;
+
                 op = act + sig;
                 act = sig;
                 sig = op;
