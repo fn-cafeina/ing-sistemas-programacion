@@ -2,14 +2,14 @@
 
 int main()
 {
-        int i, j, n, cent = 0;
+        int i, n, cent = 0;
 
         for (; cent == 0;)
         {
                 printf("\nIngrese un número: ");
                 scanf("%d", &n);
 
-                printf("%d). ");
+                printf("%d). ", n);
 
                 for (i = 1; i <= n; i++)
                 {
