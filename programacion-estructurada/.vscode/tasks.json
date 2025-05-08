@@ -5,18 +5,21 @@
       "label": "C/C++: gcc build active file",
       "command": "/usr/bin/gcc",
       "args": [
-        "-fdiagnostics-color=always",
         "-std=c11",
+        "-pedantic",
         "-Wall",
         "-Wextra",
-        "-pedantic",
         "-Wshadow",
         "-Wconversion",
         "-Wunused",
         "-g",
+        "-fdiagnostics-color=always",
+        "-I${workspaceFolder}/utilidades",
         "${file}",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}",
+        "-L${workspaceFolder}/utilidades",
+        "-lcafeina",
         "-lm"
       ],
       "options": {

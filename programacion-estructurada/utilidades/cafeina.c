@@ -1,5 +1,8 @@
 #include "cafeina.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+
 int sumar(int a, int b)
 {
         return a + b;
@@ -30,4 +33,15 @@ int esFibonacci(int n)
                 act = sig;
                 sig = op;
         }
+}
+
+void limpiarBuffer(void)
+{
+        while (getchar() != '\n')
+                ;
+}
+
+void limpiarConsola(void)
+{
+        system("clear");
 }
