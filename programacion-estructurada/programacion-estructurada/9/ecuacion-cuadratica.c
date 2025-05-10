@@ -4,65 +4,60 @@
 #include <stdlib.h>
 #include <math.h>
 
-int esFactorizable(int, int, int);
-int esCuadradoPerfecto(int);
-void factorizar(int, int, int);
+void ecuacionCuadratica(double, double, double);
 
 int main()
 {
         system("clear");
 
-        int a, b, c;
+        double a, b, c;
 
-        printf("Calcular trinomio de la forma (ax² + bx + c)\n");
-        printf("Ingresar unicamente valores positivos.\n\n");
+        printf("--- Solucionador de ecuaciones cuadráticas ---\n\n");
 
-        printf("a = ");
-        scanf("%d", &a);
+        printf("Ingrese el coeficiente a: ");
+        scanf("%lf", &a);
 
-        printf("b = ");
-        scanf("%d", &b);
+        printf("Ingrese el coeficiente b: ");
+        scanf("%lf", &b);
 
-        printf("c = ");
-        scanf("%d", &c);
+        printf("Ingrese el coeficiente c: ");
+        scanf("%lf", &c);
 
-        if (esFactorizable(a, b, c))
-                factorizar(a, b, c);
-}
-
-int esFactorizable(int a, int b, int c)
-{
-        int discriminante;
-
-        discriminante = (int)pow(b, 2) - 4 * a * c;
-
-        if (esCuadradoPerfecto(discriminante))
-                return 1;
-        else
-                return 0;
-}
-
-int esCuadradoPerfecto(int n)
-{
-        if (n < 1)
-                return 0;
-
-        int i;
-
-        for (i = 0; i <= n; i++)
-        {
-                if (i * i == n)
-                        return 1;
-
-                if (i * i > n)
-                        break;
-        }
+        ecuacionCuadratica(a, b, c);
 
         return 0;
 }
 
-void factorizar(int a, int b, int c)
+void ecuacionCuadratica(double a, double b, double c)
 {
-        system("clear");
-        printf("\nResolveremos %dx² + %dx + %d por factorización.\n", a, b, c);
+        double discriminante = pow(b, 2) - 4 * a * c;
+
+        printf("\nEcuación cuadratica: %.2fx² + %.2fx + %.2f = 0\n", a, b, c);
+        printf("Discriminante: %.2f\n", discriminante);
+
+        if (discriminante > 0)
+        {
+                double x1 = (-b + sqrt(discriminante)) / (2 * a);
+                double x2 = (-b - sqrt(discriminante)) / (2 * a);
+
+                printf("\nTipo de solución: Dos raíces reales distintas.\n");
+                printf("x1: %.2f\n", x1);
+                printf("x2: %.2f\n", x2);
+        }
+        else if (discriminante == 0)
+        {
+                double x = -b / (2 * a);
+
+                printf("\nTipo de solución: Una raíz real.\n");
+                printf("x: %.2f\n", x);
+        }
+        else
+        {
+                double parteReal = -b / (2 * a);
+                double parteImaginaria = sqrt(-discriminante) / (2 * a);
+
+                printf("\nTipo de solución: Raíces complejas conjugadas.\n");
+                printf("x1: %.2f + %.2fi\n", parteReal, parteImaginaria);
+                printf("x2: %.2f - %.2fi\n", parteReal, parteImaginaria);
+        }
 }
