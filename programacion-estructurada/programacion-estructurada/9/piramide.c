@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void imprimirPiramide(int);
+void Piramide(int altura);
 
 int main()
 {
@@ -11,19 +11,19 @@ int main()
         printf("Introduzca la altura de la piramide: ");
         scanf("%d", &n);
 
-        imprimirPiramide(n);
+        Piramide(n);
 
         return 0;
 }
 
-void imprimirPiramide(int n)
+void Piramide(int altura)
 {
         int i, j, espacio;
 
         i = 1;
-        while (i <= n)
+        while (i <= altura)
         {
-                espacio = n - i;
+                espacio = altura - i;
                 while (espacio > 0)
                 {
                         printf("  ");
