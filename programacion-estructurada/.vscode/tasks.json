@@ -16,7 +16,6 @@
         "-Wuninitialized",
         "-Wmissing-field-initializers",
         "-Wformat=2",
-        "-Werror",
         "-O2",
         "${file}",
         "-o",
