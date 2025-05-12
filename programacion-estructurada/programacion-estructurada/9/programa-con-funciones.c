@@ -1,29 +1,57 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <ctype.h>
+#include <math.h>
 
 #define MAX_LEN 100
 
 int main()
 {
-        printf("Bienvenido al programa en C!\n");
-
         int numero;
-        printf("Introduce un número: ");
+        printf("Introduce un número (entero): ");
         scanf("%d", &numero);
         getchar();
+
         printf("El número introducido es: %d\n", numero);
 
+        char ch;
         printf("Introduce un carácter: ");
-        int c = getchar();
-        printf("El carácter introducido es: %c\n", c);
-
+        ch = (char)getchar();
         getchar();
 
-        char cadena[MAX_LEN];
+        if (isalpha(ch))
+        {
+                printf("'%c' es una letra. En mayúscula: %c\n", ch, toupper(ch));
+        }
+        else if (isdigit(ch))
+        {
+                printf("'%c' es un dígito.\n", ch);
+        }
+        else if (isspace(ch))
+        {
+                printf("Es un espacio en blanco.\n");
+        }
+        else
+        {
+                printf("'%c' es otro tipo de carácter. En minúscula (si aplica): %c\n", ch, tolower(ch));
+        }
+
+        char texto[MAX_LEN];
         printf("Introduce una cadena: ");
-        fgets(cadena, MAX_LEN, stdin);
-        printf("La cadena introducida es: %s\n", cadena);
+        fgets(texto, MAX_LEN, stdin);
+
+        int letras = 0, digitos = 0, espacios = 0;
+        for (int i = 0; texto[i] != '\0'; i++)
+        {
+                if (isalpha(texto[i]))
+                        letras++;
+                else if (isdigit(texto[i]))
+                        digitos++;
+                else if (isspace(texto[i]))
+                        espacios++;
+        }
+
+        printf("Análisis de cadena:\nLetras: %d\nDígitos: %d\nEspacios: %d\n", letras, digitos, espacios);
 
         int *ptr = (int *)malloc(sizeof(int));
         if (ptr == NULL)
@@ -31,55 +59,28 @@ int main()
                 printf("Error al reservar memoria\n");
                 return 1;
         }
-        *ptr = 42;
-        printf("Valor en la memoria reservada: %d\n", *ptr);
-
-        free(ptr);
 
         srand(42);
-        int numAleatorio = rand() % 100;
-        printf("Número aleatorio generado: %d\n", numAleatorio);
+        *ptr = rand() % 100;
+        printf("Número aleatorio guardado en memoria: %d\n", *ptr);
+        free(ptr);
 
         char strNum[] = "123";
         int numConvertido = atoi(strNum);
+        printf("Número convertido desde cadena '%s': %d\n", strNum, numConvertido);
 
-        if (numConvertido == 0 && strcmp(strNum, "0") != 0)
-        {
-                printf("Error en la conversión de la cadena '%s' a un número.\n", strNum);
-                return 1;
-        }
+        double raiz = sqrt((double)numero);
+        double potencia = pow((double)numero, 2);
+        double valor = -25.78;
+        double absoluto = fabs(valor);
+        double redondeoArriba = ceil(valor);
+        double redondeoAbajo = floor(valor);
 
-        printf("El número convertido de la cadena '%s' es: %d\n", strNum, numConvertido);
-
-        if (numConvertido == 123)
-        {
-                printf("El número es 123, pero no cerramos el programa.\n");
-        }
-
-        char destino[MAX_LEN];
-        strcpy(destino, "Texto copiado");
-        printf("Texto copiado: %s\n", destino);
-
-        char saludo[MAX_LEN] = "Hola, ";
-        strcat(saludo, "mundo!");
-        printf("Cadena concatenada: %s\n", saludo);
-
-        char cadena1[] = "Hola";
-        char cadena2[] = "Mundo";
-        int resultadoComparacion = strcmp(cadena1, cadena2);
-        printf("Resultado de la comparación entre '%s' y '%s': %d\n", cadena1, cadena2, resultadoComparacion);
-
-        size_t longitud = strlen(saludo);
-        printf("Longitud de la cadena '%s' es: %zu\n", saludo, longitud);
-
-        char texto[] = "uno,dos,tres";
-        char *token = strtok(texto, ",");
-        printf("Tokens de la cadena: \n");
-        while (token != NULL)
-        {
-                printf("%s\n", token);
-                token = strtok(NULL, ",");
-        }
+        printf("Raíz cuadrada de %d: %.2f\n", numero, raiz);
+        printf("%d al cuadrado: %.2f\n", numero, potencia);
+        printf("Valor absoluto de %.2f: %.2f\n", valor, absoluto);
+        printf("Redondeo hacia arriba de %.2f: %.2f\n", valor, redondeoArriba);
+        printf("Redondeo hacia abajo de %.2f: %.2f\n", valor, redondeoAbajo);
 
         return 0;
 }
