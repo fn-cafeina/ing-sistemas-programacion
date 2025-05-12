@@ -14,14 +14,12 @@ int main()
                 scanf("%d", &calificacion);
 
                 if (calificacion < 70)
-                {
                         reprobados++;
-                }
 
                 i++;
         } while (i < 50);
 
-        porcentaje = (reprobados * 100.0) / 50.0;
+        porcentaje = (float)((reprobados * 100.0) / 50.0);
 
         printf("Porcentaje de reprobados: %.2f%%\n", porcentaje);
 
