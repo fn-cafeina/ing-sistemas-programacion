@@ -32,6 +32,7 @@ int main()
                 if (scanf("%d", &arr[i]) != 1)
                 {
                         printf("Tipo de dato invalido.\n");
+                        free(arr);
                         return 1;
                 }
         }
@@ -48,6 +49,8 @@ int main()
 
         printf("\nLa suma de los números pares es: %d\n", sumaPares);
         printf("El producto de los números impares es: %d\n", productoImpares != 1 ? productoImpares : 0);
+
+        free(arr);
 
         return 0;
 }
