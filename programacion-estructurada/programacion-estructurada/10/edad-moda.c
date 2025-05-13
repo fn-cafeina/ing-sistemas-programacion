@@ -31,6 +31,11 @@ int main()
         }
 
         int *edadesFrecuencia = (int *)malloc((size_t)tamanyioArreglo * sizeof(int));
+        if (edadesFrecuencia == NULL)
+        {
+                printf("Error al reservar la memoria.\n");
+                return 1;
+        }
 
         for (int i = 0; i < tamanyioArreglo; i++)
         {
