@@ -10,11 +10,7 @@ int main()
         int tamanyioArreglo;
 
         printf("Ingrese el tamaño del arreglo: ");
-        if (scanf("%d", &tamanyioArreglo) != 1)
-        {
-                printf("Tipo de dato invalido.\n");
-                return 1;
-        }
+        scanf("%d", &tamanyioArreglo);
 
         int *arr = (int *)malloc((size_t)tamanyioArreglo * sizeof(int));
 
@@ -29,12 +25,7 @@ int main()
         for (int i = 0; i < tamanyioArreglo; i++)
         {
                 printf("Ingrese un número en la posición %d: ", i);
-                if (scanf("%d", &arr[i]) != 1)
-                {
-                        printf("Tipo de dato invalido.\n");
-                        free(arr);
-                        return 1;
-                }
+                scanf("%d", &arr[i]);
         }
 
         int sumaPares = 0, productoImpares = 1;
