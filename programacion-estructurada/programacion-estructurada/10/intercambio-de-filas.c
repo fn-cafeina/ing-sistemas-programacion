@@ -35,6 +35,7 @@ int main()
                 }
         }
 
+        printf("\nMatriz original\n");
         imprimirMatriz(arreglo, tamanyioFilas, tamanyioColumnas);
 
         return 0;
@@ -45,6 +46,8 @@ void imprimirMatriz(int **arreglo, int tamanyioFilas, int tamanyioColumnas)
         for (int i = 0; i < tamanyioFilas; i++)
         {
                 for (int j = 0; j < tamanyioColumnas; j++)
-                        printf("[%d]\n", arreglo[i][j]);
+                        printf("%d  ", arreglo[i][j]);
+
+                printf("\n");
         }
 }
