@@ -10,7 +10,7 @@
 
 int main()
 {
-        int a[TAMANYIO_ARRAY], b[TAMANYIO_ARRAY], c [[maybe_unused]][TAMANYIO_ARRAY];
+        int a[TAMANYIO_ARRAY], b[TAMANYIO_ARRAY], c[TAMANYIO_ARRAY];
 
         for (int i = 0; i < TAMANYIO_ARRAY; i++)
         {
