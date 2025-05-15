@@ -5,7 +5,7 @@
 // almacena en un vector C.
 
 #include <stdio.h>
-#define N 5
+#define N 20
 
 int main()
 {
