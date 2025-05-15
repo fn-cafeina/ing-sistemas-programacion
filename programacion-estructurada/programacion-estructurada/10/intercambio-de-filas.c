@@ -38,6 +38,17 @@ int main()
         printf("\nMatriz original\n");
         imprimirMatriz(arreglo, tamanyioFilas, tamanyioColumnas);
 
+        int *filaTemporal;
+        for (int i = 0; i < tamanyioFilas / 2; i++)
+        {
+                filaTemporal = arreglo[tamanyioFilas - 1 - i];
+                arreglo[tamanyioFilas - 1 - i] = arreglo[i];
+                arreglo[i] = filaTemporal;
+        }
+
+        printf("\nMatriz intercambiada\n");
+        imprimirMatriz(arreglo, tamanyioFilas, tamanyioColumnas);
+
         return 0;
 }
 
