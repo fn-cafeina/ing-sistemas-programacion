@@ -27,7 +27,7 @@ int main()
         printf("Ingrese la cantidad de clientes: ");
         scanf("%d", &cantidadClientes);
 
-        struct Cliente Clientes[cantidadClientes];
+        struct Cliente clientes[cantidadClientes];
 
         float cantidadEspecifica;
         printf("Ingrese una cantidad especifica para clientes atrasados con factura mayor a: ");
@@ -38,31 +38,31 @@ int main()
                 printf("\n--- Registro del cliente #%d ---\n", i + 1);
 
                 printf("Nombre: ");
-                scanf("%s", Clientes[i].nombre);
+                scanf("%s", clientes[i].nombre);
 
                 printf("Cantidad de unidades solicitadas: ");
-                scanf("%d", &Clientes[i].nUnidadesSolicitadas);
+                scanf("%d", &clientes[i].nUnidadesSolicitadas);
 
                 printf("Precio de las unidades: ");
-                scanf("%f", &Clientes[i].precioUnidad);
+                scanf("%f", &clientes[i].precioUnidad);
 
                 printf("Estado en el que se encuentra:\n0 - Moroso\n1 - Atrasado\n2 - Solvente\nR = ");
-                scanf("%d", &Clientes[i].estado);
+                scanf("%d", &clientes[i].estado);
 
-                Clientes[i].factura = Clientes[i].precioUnidad * Clientes[i].nUnidadesSolicitadas;
+                clientes[i].factura = clientes[i].precioUnidad * clientes[i].nUnidadesSolicitadas;
         }
 
         printf("\n\n--- Listado de clientes morosos ---\n");
-        listarClientesPorEstado(Clientes, cantidadClientes, 0);
+        listarClientesPorEstado(clientes, cantidadClientes, 0);
 
         printf("\n\n--- Listado de clientes atrasados ---\n");
-        listarClientesPorEstado(Clientes, cantidadClientes, 1);
+        listarClientesPorEstado(clientes, cantidadClientes, 1);
 
         printf("\n\n--- Listado de clientes solventes ---\n");
-        listarClientesPorEstado(Clientes, cantidadClientes, 2);
+        listarClientesPorEstado(clientes, cantidadClientes, 2);
 
         printf("\n\n--- Listado de clientes atrasados con facturas mayores a %.2f ---\n", cantidadEspecifica);
-        listarAtrasadosConFacturaMayor(Clientes, cantidadClientes, cantidadEspecifica);
+        listarAtrasadosConFacturaMayor(clientes, cantidadClientes, cantidadEspecifica);
 
         return 0;
 }
