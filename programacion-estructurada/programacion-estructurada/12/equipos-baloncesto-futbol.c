@@ -47,6 +47,9 @@ struct EquipoFutbol
 
 void registrarEB(struct EquipoBaloncesto *eb, int);
 void registrarEF(struct EquipoFutbol *ef, int);
+void mostrarGoleadoresFutbol(struct EquipoFutbol *ef, int);
+void mostrarEquipoBaloncestoMenosVictorias(struct EquipoBaloncesto *eb, int);
+void mostrarEquipoFutbolMasDerrotas(struct EquipoFutbol *ef, int);
 void limpiarBuffer(void);
 
 int main()
@@ -64,6 +67,10 @@ int main()
 
         registrarEB(equiposBaloncesto, nEquiposDeBaloncesto);
         registrarEF(equiposFutbol, nEquiposDeFutbol);
+
+        mostrarGoleadoresFutbol(equiposFutbol, nEquiposDeFutbol);
+        mostrarEquipoBaloncestoMenosVictorias(equiposBaloncesto, nEquiposDeBaloncesto);
+        mostrarEquipoFutbolMasDerrotas(equiposFutbol, nEquiposDeFutbol);
 
         return 0;
 }
@@ -125,6 +132,68 @@ void registrarEF(struct EquipoFutbol *ef, int nEquiposDeFutbol)
                 printf("Nombre del goleador del equipo: ");
                 scanf("%s", ef[i].goleador);
         }
+}
+
+void mostrarGoleadoresFutbol(struct EquipoFutbol *ef, int nEquiposDeFutbol)
+{
+        printf("\n\n--- Goleadores de cada equipo de fútbol ---\n");
+
+        for (int i = 0; i < nEquiposDeFutbol; i++)
+        {
+                printf("Equipo: %s, Goleador: %s\n", ef[i].equipo.nombre, ef[i].goleador);
+        }
+}
+
+void mostrarEquipoBaloncestoMenosVictorias(struct EquipoBaloncesto *eb, int nEquiposDeBaloncesto)
+{
+        if (nEquiposDeBaloncesto == 0)
+        {
+                printf("\n\nNo hay equipos de baloncesto para mostrar.\n");
+                return;
+        }
+
+        int minVictorias = eb[0].equipo.nVictorias;
+        char nombreEquipoMenosVictorias[50];
+
+        strcpy(nombreEquipoMenosVictorias, eb[0].equipo.nombre);
+
+        for (int i = 1; i < nEquiposDeBaloncesto; i++)
+        {
+                if (eb[i].equipo.nVictorias < minVictorias)
+                {
+                        minVictorias = eb[i].equipo.nVictorias;
+                        strcpy(nombreEquipoMenosVictorias, eb[i].equipo.nombre);
+                }
+        }
+
+        printf("\n\n--- Equipo de baloncesto con menor número de victorias ---\n");
+        printf("Nombre del equipo: %s (Victorias: %d)\n", nombreEquipoMenosVictorias, minVictorias);
+}
+
+void mostrarEquipoFutbolMasDerrotas(struct EquipoFutbol *ef, int nEquiposDeFutbol)
+{
+        if (nEquiposDeFutbol == 0)
+        {
+                printf("\n\nNo hay equipos de fútbol para mostrar.\n");
+                return;
+        }
+
+        int maxDerrotas = ef[0].equipo.nDerrotas;
+        char nombreEquipoMasDerrotas[50];
+
+        strcpy(nombreEquipoMasDerrotas, ef[0].equipo.nombre);
+
+        for (int i = 1; i < nEquiposDeFutbol; i++)
+        {
+                if (ef[i].equipo.nDerrotas > maxDerrotas)
+                {
+                        maxDerrotas = ef[i].equipo.nDerrotas;
+                        strcpy(nombreEquipoMasDerrotas, ef[i].equipo.nombre);
+                }
+        }
+
+        printf("\n\n--- Equipo de fútbol con mayor número de derrotas ---\n");
+        printf("Nombre del equipo: %s (Derrotas: %d)\n", nombreEquipoMasDerrotas, maxDerrotas);
 }
 
 void limpiarBuffer(void)
