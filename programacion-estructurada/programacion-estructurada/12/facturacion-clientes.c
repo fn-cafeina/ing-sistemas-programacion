@@ -1,9 +1,9 @@
 // Realizar un programa de Facturación de Clientes en C.
 // Los clientes tienen un nombre, número de unidades solicitadas,
-// precio de cada unidad y el estado en que se encuentra: moroso, atrasado, solvente.
-// Dicho programa deberá mostrar los siguientes listados:
-// Clientes en estado moroso, solvente, atrasado.
-// Clientes en estado atrasado con facturas mayores de una determinada cantidad.
+// precio de cada unidad y el estado en que se encuentra:
+// moroso, atrasado, solvente. Dicho programa deberá mostrar los siguientes listados:
+//      • Clientes en estado moroso, solvente, atrasado.
+//      • Clientes en estado atrasado con facturas mayores de una determinada cantidad.
 
 #include <stdio.h>
 
