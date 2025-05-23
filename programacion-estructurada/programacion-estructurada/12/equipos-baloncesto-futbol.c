@@ -46,6 +46,7 @@ struct EquipoFutbol
 };
 
 void registrarEB(struct EquipoBaloncesto *eb, int);
+void registrarEF(struct EquipoFutbol *ef, int);
 void limpiarBuffer(void);
 
 int main()
@@ -62,6 +63,7 @@ int main()
         struct EquipoFutbol equiposFutbol[nEquiposDeFutbol];
 
         registrarEB(equiposBaloncesto, nEquiposDeBaloncesto);
+        registrarEF(equiposFutbol, nEquiposDeFutbol);
 
         return 0;
 }
@@ -91,6 +93,37 @@ void registrarEB(struct EquipoBaloncesto *eb, int nEquiposDeBaloncesto)
 
                 printf("Nombre del mejor anotador de triples: ");
                 scanf("%s", eb[i].mejorAnotadorTriples);
+        }
+}
+
+void registrarEF(struct EquipoFutbol *ef, int nEquiposDeFutbol)
+{
+        for (int i = 0; i < nEquiposDeFutbol; i++)
+        {
+                limpiarBuffer();
+
+                printf("\n\n--- Información equipo de futbol #%d ---\n\n", i + 1);
+
+                printf("Nombre del equipo: ");
+                scanf("%s", ef[i].equipo.nombre);
+
+                printf("Cantidad de victorias: ");
+                scanf("%d", &ef[i].equipo.nVictorias);
+
+                printf("Cantidad de derrotas: ");
+                scanf("%d", &ef[i].equipo.nDerrotas);
+
+                printf("Empates: ");
+                scanf("%d", &ef[i].nEmpates);
+
+                printf("Goles a favor: ");
+                scanf("%d", &ef[i].nGolesFavor);
+
+                printf("Goles en contra : ");
+                scanf("%d", &ef[i].nGolesContra);
+
+                printf("Nombre del goleador del equipo: ");
+                scanf("%s", ef[i].goleador);
         }
 }
 
