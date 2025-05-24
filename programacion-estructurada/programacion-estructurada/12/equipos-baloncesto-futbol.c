@@ -18,6 +18,7 @@
 //      • Nombre del equipo de fútbol con mayor número de derrotas.
 
 #include <stdio.h>
+#include <string.h>
 
 struct Equipo
 {
