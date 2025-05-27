@@ -3,21 +3,18 @@
 
 int main()
 {
-        float numeros[100];
-        int i;
+        int tamanyioArray = 5;
+        float arr[tamanyioArray];
 
-        srand(1);
-
-        for (i = 0; i < 100; i++)
+        for (int i = 0; i < tamanyioArray; i++)
         {
-                numeros[i] = ((float)rand() / (float)RAND_MAX) * 100.0;
+                printf("Ingrese un número en la posición [%d]: ", i);
+                scanf("%f", &arr[i]);
         }
 
-        printf("\nImprimiendo los valores almacenados en orden:\n");
-
-        for (i = 0; i < 100; i++)
+        for (int i = 0; i < tamanyioArray; i++)
         {
-                printf("Numero [%d]: %.2f\n", i, numeros[i]);
+                printf("El número en la posición [%d] es %.2f\n", i, arr[i]);
         }
 
         return 0;
