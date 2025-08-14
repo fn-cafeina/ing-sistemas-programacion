@@ -1,0 +1,9 @@
+body {
+  background-color: #141414;
+  color: rgb(255, 196, 206);
+}
+
+img {
+  border: 1px solid rgb(255, 196, 206);
+  border-radius: 10px;
+}
