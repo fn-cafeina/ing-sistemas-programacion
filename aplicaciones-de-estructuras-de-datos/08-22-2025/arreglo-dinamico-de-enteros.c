@@ -5,6 +5,8 @@ int main()
 {
         int n = 0;
 
+        printf("\n=== Números ingresados con malloc ===\n");
+
         printf("\n¿Cuando números quiere almacenar?\nR = ");
         scanf("%d", &n);
 
@@ -28,6 +30,8 @@ int main()
                 printf("numeros[%d] = %d\n", i, numerosMalloc[i]);
 
         free(numerosMalloc);
+
+        printf("\n=== Números ingresados con calloc ===\n");
 
         printf("\n¿Cuando números quiere almacenar?\nR = ");
         scanf("%d", &n);
