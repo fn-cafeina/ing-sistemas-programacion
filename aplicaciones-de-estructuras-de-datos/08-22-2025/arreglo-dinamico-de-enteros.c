@@ -41,9 +41,6 @@ int main()
         }
 
         for (size_t i = 0; i < n; i++)
-                printf(" %d ", numerosCalloc[i]);
-
-        for (size_t i = 0; i < n; i++)
         {
                 printf("Ingrese un número en la posición #%d del arreglo: ", i);
                 scanf("%d", &numerosCalloc[i]);
