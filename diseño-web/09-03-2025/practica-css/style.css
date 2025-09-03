@@ -1,0 +1,10 @@
+.titulo,
+.parrafo {
+  font-family: system-ui;
+  color: purple;
+  text-align: center;
+}
+
+.parrafo {
+  color: black;
+}
