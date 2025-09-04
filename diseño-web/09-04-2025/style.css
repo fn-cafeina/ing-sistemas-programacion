@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif, system-ui;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  background: #cce0cc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #a8d5a2;
+}
+
+/* MAIN LAYOUT */
+
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* TARJETAS DE CONTENIDO */
+
+.contenido {
+  flex: 3;
+}
+
+.tarjeta {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  border: 1px solid blue;
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+}
+
+.tarjeta img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+
+.tarjeta div {
+  display: flex;
+  background-color: #4caf4f93;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 20px;
+  align-items: center;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid orange;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 5px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: green;
+}
+
+.comentarios {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #4caf50;
+  border: none;
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #cce0cc;
+  margin-top: 20px;
+}
+
+.ir-arriba {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+}
