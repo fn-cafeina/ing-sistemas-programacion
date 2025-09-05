@@ -1,3 +1,12 @@
+// Crea un programa en C que:
+// 1. Pida al usuario cuántos números (N) desea ingresar.
+// 2. Reserve memoria dinámica para almacenar esos N números enteros.
+// 3. Permita al usuario ingresar cada número.
+// 4. Ordene los números en orden ascendente utilizando el algoritmo de burbuja (bubble
+// sort).
+// 5. Muestre en pantalla la lista de números antes y después de ordenarlos.
+// 6. Libere la memoria utilizada al finalizar.
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,7 +17,7 @@ int main()
 {
         int n = 0;
 
-        printf("Ingrese la cantidad de estudiantes: ");
+        printf("¿Cuantos números desea ingresas?\nR = ");
         scanf("%d", &n);
 
         int *array = (int *)malloc(n * sizeof(int));
@@ -21,7 +30,7 @@ int main()
 
         for (int i = 0; i < n; i++)
         {
-                printf("Ingrese la calificación del estudiante #%d: ", i);
+                printf("Ingrese un entero en la posición [%d]: ", i);
                 scanf("%d", &array[i]);
         }
 
@@ -36,6 +45,8 @@ int main()
         imprimirArray(array, n);
 
         printf("\n");
+
+        free(array);
 
         return 0;
 }
@@ -60,7 +71,7 @@ void bubbleSort(int *array, int n)
         {
                 for (int j = 0; j < n - 1; j++)
                 {
-                        if (array[j] > array[j + 1])
+                        if (array[j] < array[j + 1])
                         {
                                 temp = array[j];
                                 array[j] = array[j + 1];
