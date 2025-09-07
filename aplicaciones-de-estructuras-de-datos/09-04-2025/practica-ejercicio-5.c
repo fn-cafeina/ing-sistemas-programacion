@@ -41,6 +41,7 @@ void imprimirArray(int *array, int tamano)
         {
                 printf("%d ", array[i]);
         }
+
         printf("\n");
 }
 
@@ -62,6 +63,7 @@ void bubbleSortMejorado(int *array, int tamano)
                                 intercambios = 1;
                         }
                 }
+
                 if (intercambios == 0)
                 {
                         break;

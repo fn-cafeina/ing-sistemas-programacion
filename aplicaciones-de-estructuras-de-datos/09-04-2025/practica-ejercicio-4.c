@@ -87,6 +87,7 @@ void ordenarSeleccion(char **nombres, int cantidad)
                                 min_idx = j;
                         }
                 }
+
                 if (min_idx != i)
                 {
                         temp = nombres[i];
