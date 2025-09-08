@@ -1,6 +1,12 @@
 {
   "[c]": {
-    "editor.tabSize": 8,
-    "editor.formatOnSave": true
-  }
+    "editor.tabSize": 8
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
 }
