@@ -1,0 +1,413 @@
+/* ----------------------
+   Variables de diseño
+   ---------------------- */
+:root {
+  /* Colores principales */
+  --purple: #2e003e; /* fondo base profundo */
+  --magenta: #8b008b; /* encabezados y acentos */
+  --yellow: #ffd700; /* banda y botones */
+  --blue: #00bfff; /* enlaces y foco */
+  --white: #f8f8f8; /* texto principal */
+
+  /* Neutros y extras */
+  --black: #0f0f0f;
+  --border-alpha: rgba(248, 248, 248, 0.12);
+
+  /* Tipografía y layout */
+  --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  --font-display: "Bebas Neue", system-ui, -apple-system, sans-serif;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.25);
+  --container: 1100px;
+}
+
+/* ----------------------
+   Reseteo mínimo
+   ---------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: radial-gradient(
+    1200px 800px at 15% 0%,
+    #48005f 0%,
+    var(--purple) 60%
+  );
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* Clase utilitaria para accesibilidad (labels ocultos visualmente) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Foco visible accesible */
+:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* ----------------------
+   Estructura de secciones
+   ---------------------- */
+.section {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.section.alt {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--border-alpha);
+  border-bottom: 1px solid var(--border-alpha);
+}
+
+.section h2 {
+  margin: 0 0 1.1rem;
+  font-size: 2rem;
+  letter-spacing: 0.4px;
+  font-weight: 800;
+  color: var(--yellow);
+}
+
+/* ----------------------
+   Navegación
+   ---------------------- */
+.site-header {
+  background: linear-gradient(
+    180deg,
+    var(--magenta) 0%,
+    rgba(139, 0, 139, 0.82) 100%
+  );
+  border-bottom: 1px solid var(--border-alpha);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.75rem;
+  padding: 1rem 1.25rem;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  transition: color 140ms ease, background-color 140ms ease,
+    border-color 140ms ease;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--yellow);
+  background: rgba(255, 215, 0, 0.08);
+  border-color: rgba(255, 215, 0, 0.25);
+}
+
+/* ----------------------
+   Hero (título, tagline, newsletter, redes)
+   ---------------------- */
+.hero {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 3.25rem 1.25rem 2rem;
+  text-align: center;
+}
+
+.brand {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 9vw, 6.2rem);
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.28);
+}
+
+.brand__accent {
+  color: var(--yellow);
+}
+.brand__mark {
+  color: var(--white);
+}
+
+.tagline {
+  margin: 0 0 1.25rem;
+  font-style: italic;
+  opacity: 0.95;
+  letter-spacing: 0.2px;
+}
+
+/* Newsletter */
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.7rem;
+  max-width: 560px;
+  margin: 0 auto 1rem;
+}
+
+.newsletter input {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  backdrop-filter: blur(6px);
+}
+
+.newsletter input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.newsletter input:focus-visible {
+  border-color: var(--yellow);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.btn {
+  padding: 0.9rem 1.2rem;
+  border-radius: var(--radius);
+  border: 0;
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--purple);
+  background: var(--yellow);
+  box-shadow: var(--shadow-sm);
+  transition: filter 140ms ease, transform 140ms ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+/* Redes sociales */
+.social {
+  list-style: none;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0.9rem 0 0;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--purple);
+  background: var(--yellow);
+  box-shadow: var(--shadow-sm);
+  transition: transform 140ms ease, filter 140ms ease;
+}
+
+.social a:hover,
+.social a:focus-visible {
+  transform: translateY(-1px);
+  filter: brightness(0.96);
+}
+
+/* ----------------------
+   Banda de cita (amarilla)
+   ---------------------- */
+.quote {
+  background: var(--yellow);
+  color: var(--purple);
+  text-align: center;
+  padding: 1.8rem 1rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* ----------------------
+   Grid de portfolio (6 items)
+   ---------------------- */
+.grid {
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease, box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 215, 0, 0.45);
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+  background: #2a2a2a;
+}
+
+.card h3 {
+  margin: 1rem 1rem 0.35rem;
+  font-size: 1.06rem;
+  color: var(--yellow);
+  letter-spacing: 0.2px;
+}
+
+.card p {
+  margin: 0 1rem 1.1rem;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+/* ----------------------
+   Listas (servicios, noticias)
+   ---------------------- */
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.35rem 0 0;
+}
+
+.section ul li {
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+.section ul li:last-child {
+  border-bottom: 0;
+}
+
+/* ----------------------
+   Enlaces generales
+   ---------------------- */
+a {
+  color: var(--blue);
+}
+a:hover {
+  color: #27c2ff;
+}
+
+/* ----------------------
+   Footer
+   ---------------------- */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  background: #1b0026;
+  border-top: 1px solid var(--border-alpha);
+}
+
+/* ----------------------
+   Responsividad
+   ---------------------- */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav ul {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .newsletter {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    height: 210px;
+  }
+  .brand {
+    font-size: clamp(2.6rem, 10vw, 4rem);
+  }
+}
+
+/* ----------------------
+   Preferencias de movimiento
+   ---------------------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ----------------------
+   Estilos de impresión
+   ---------------------- */
+@media print {
+  .nav,
+  .newsletter,
+  .social,
+  .quote,
+  .site-footer {
+    display: none !important;
+  }
+  .section {
+    padding: 0;
+    max-width: 100%;
+  }
+  .card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+}
