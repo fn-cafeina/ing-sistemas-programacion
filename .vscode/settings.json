@@ -1,7 +1,15 @@
 {
   "editor.formatOnSave": true,
   "[c]": {
-    "editor.tabSize": 8,
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.tabSize": 8
+  },
+  "[html]": {
+    "editor.tabSize": 2,
+  },
+  "[css]": {
+    "editor.tabSize": 2,
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
   }
 }
