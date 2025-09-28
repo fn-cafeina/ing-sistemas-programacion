@@ -59,7 +59,8 @@ void imprimir_array(int *array, int n)
         printf("[");
 
         for (size_t i = 0; i < n; i++)
+        {
                 printf(" %d ", array[i]);
-
+        }
         printf("]\n");
 }
