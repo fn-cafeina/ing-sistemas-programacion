@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoJo's Bizarre Adventure - Técnicas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    .custom-header {
+      background: linear-gradient(135deg, #d4af37, #b8860b);
+    }
+
+    .sidebar-bg {
+      background-color: #f8f9fa;
+    }
+
+    .footer-bg {
+      background-color: #343a40;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: rgba(212, 175, 55, 0.1);
+      color: #b8860b;
+    }
+
+    .technique-icon {
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="custom-header text-white py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-0"><i class="bi bi-star-fill"></i> JoJo's Bizarre Adventure</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="personajes.html"><i class="bi bi-people"></i> Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="tecnicas.html"><i class="bi bi-magic"></i> Técnicas</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Partes de la Saga</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Parte 1: Phantom Blood</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 2: Battle Tendency</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 3: Stardust Crusaders</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 4: Diamond Is Unbreakable</a>
+            <a href="#" class="list-group-item list-group-item-action active">Parte 5: Golden Wind</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 6: Stone Ocean</a>
+          </div>
+
+          <h5 class="mt-4 mb-3">Elementos Clave</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Stands</a>
+            <a href="#" class="list-group-item list-group-item-action">Hamon</a>
+            <a href="#" class="list-group-item list-group-item-action">Máscaras de Piedra</a>
+            <a href="#" class="list-group-item list-group-item-action">Spin</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="p-3">
+          <h2 class="mb-4">Técnicas de Combate en JoJo's</h2>
+          <p class="lead">Descubre los diversos sistemas de poder que han aparecido a lo largo de la serie</p>
+
+          <div class="accordion" id="accordionTecnicas">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  <i class="bi bi-sun technique-icon"></i> Hamon (Onda)
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionTecnicas">
+                <div class="accordion-body">
+                  <h5>¿Qué es el Hamon?</h5>
+                  <p>El Hamon, también conocido como "Onda", es una técnica de artes marciales que utiliza la
+                    respiración controlada para generar energía similar a la luz solar.</p>
+
+                  <h5>Características principales:</h5>
+                  <ul>
+                    <li>Se basa en el control de la respiración para generar energía</li>
+                    <li>Es especialmente efectiva contra vampiros y usuarios de la Máscara de Piedra</li>
+                    <li>Permite caminar sobre el agua, curar heridas y fortalecer objetos</li>
+                    <li>Fue el sistema de poder principal en las Partes 1 y 2</li>
+                  </ul>
+
+                  <h5>Usuarios notables:</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-primary">Jonathan Joestar</span>
+                    <span class="badge bg-primary">Joseph Joestar</span>
+                    <span class="badge bg-primary">William A. Zeppeli</span>
+                    <span class="badge bg-primary">Lisa Lisa</span>
+                    <span class="badge bg-primary">Caesar Anthonio Zeppeli</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  <i class="bi bi-person-standing technique-icon"></i> Stands
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionTecnicas">
+                <div class="accordion-body">
+                  <h5>¿Qué son los Stands?</h5>
+                  <p>Los Stands son manifestaciones físicas de energía espiritual que poseen habilidades únicas y
+                    sobrenaturales. Aparecieron por primera vez en la Parte 3 y se convirtieron en el sistema de poder
+                    principal de la serie.</p>
+
+                  <h5>Características principales:</h5>
+                  <ul>
+                    <li>Cada Stand es único y refleja la personalidad de su usuario</li>
+                    <li>Solo pueden ser vistos por otros usuarios de Stand</li>
+                    <li>Tienen estadísticas como poder, velocidad, alcance, etc.</li>
+                    <li>Pueden ser de corto o largo alcance</li>
+                    <li>Algunos Stands tienen habilidades extremadamente específicas</li>
+                  </ul>
+
+                  <h5>Tipos de Stands:</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h6>Por rango:</h6>
+                      <ul>
+                        <li>Stands de corto alcance</li>
+                        <li>Stands de largo alcance</li>
+                        <li>Stands de rango automático</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h6>Por habilidad:</h6>
+                      <ul>
+                        <li>Stands de poder</li>
+                        <li>Stands de velocidad</li>
+                        <li>Stands de utilidad</li>
+                        <li>Stands de apoyo</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <h5>Ejemplos de Stands icónicos:</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-success">Star Platinum</span>
+                    <span class="badge bg-success">The World</span>
+                    <span class="badge bg-success">Crazy Diamond</span>
+                    <span class="badge bg-success">Gold Experience</span>
+                    <span class="badge bg-success">Stone Free</span>
+                    <span class="badge bg-success">Killer Queen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  <i class="bi bi-mask technique-icon"></i> Máscaras de Piedra
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionTecnicas">
+                <div class="accordion-body">
+                  <h5>¿Qué son las Máscaras de Piedra?</h5>
+                  <p>Las Máscaras de Piedra son artefactos antiguos creados por una civilización mesoamericana que, al
+                    entrar en contacto con sangre, transforman a los humanos en vampiros con habilidades sobrenaturales.
+                  </p>
+
+                  <h5>Características principales:</h5>
+                  <ul>
+                    <li>Convierten a humanos en vampiros inmortales</li>
+                    <li>Otorgan habilidades como regeneración, fuerza sobrehumana y control mental</li>
+                    <li>Son vulnerables a la luz solar y al Hamon</li>
+                    <li>La Máscara de Piedra Suprema puede crear seres aún más poderosos</li>
+                    <li>Fueron el elemento central de la Parte 1</li>
+                  </ul>
+
+                  <h5>Habilidades de los vampiros:</h5>
+                  <ul>
+                    <li>Regeneración acelerada</li>
+                    <li>Fuerza y velocidad sobrehumanas</li>
+                    <li>Capacidad de congelar lo que tocan</li>
+                    <li>Disparo de fluidos corporales como proyectiles</li>
+                    <li>Creación de zombis a partir de cadáveres</li>
+                  </ul>
+
+                  <h5>Usuarios notables:</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-danger">Dio Brando</span>
+                    <span class="badge bg-danger">Los Hombres del Pilar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour">
+                  <i class="bi bi-arrow-clockwise technique-icon"></i> Spin
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionTecnicas">
+                <div class="accordion-body">
+                  <h5>¿Qué es el Spin?</h5>
+                  <p>El Spin es una técnica avanzada que aparece en Steel Ball Run (Parte 7). Se basa en la aplicación
+                    de rotación perfecta a objetos para generar energía y efectos sobrenaturales.</p>
+
+                  <h5>Características principales:</h5>
+                  <ul>
+                    <li>Utiliza la rotación para generar energía infinita</li>
+                    <li>Puede curar heridas y enfermedades</li>
+                    <li>Es capaz de abrir portales entre dimensiones</li>
+                    <li>El Spin Perfecto es la forma más avanzada de esta técnica</li>
+                    <li>Se considera una evolución o contraparte del Hamon</li>
+                  </ul>
+
+                  <h5>Aplicaciones del Spin:</h5>
+                  <ul>
+                    <li>Curación de heridas y enfermedades</li>
+                    <li>Aumento de la precisión y poder de ataque</li>
+                    <li>Manipulación de objetos a distancia</li>
+                    <li>Creación de efectos dimensionales</li>
+                    <li>Contrarrestar habilidades de Stand</li>
+                  </ul>
+
+                  <h5>Usuarios notables:</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-info">Johnny Joestar</span>
+                    <span class="badge bg-info">Gyro Zeppeli</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive">
+                  <i class="bi bi-stars technique-icon"></i> Habilidades Especiales
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionTecnicas">
+                <div class="accordion-body">
+                  <h5>Habilidades únicas en JoJo's</h5>
+                  <p>Además de los sistemas de poder principales, existen habilidades especiales que no se clasifican
+                    fácilmente en las categorías anteriores.</p>
+
+                  <h5>Ejemplos notables:</h5>
+                  <ul>
+                    <li><strong>Modo de Stand:</strong> Algunos usuarios pueden transformar sus cuerpos en sus Stands,
+                      como Jolyne Cujoh con Stone Free</li>
+                    <li><strong>Hamon de Joseph:</strong> Aunque principalmente usa Hamon, Joseph Joestar es conocido
+                      por su ingenio y trampas elaboradas</li>
+                    <li><strong>Habilidad de Rohan Kishibe:</strong> Heaven's Door puede convertir a las personas en
+                      libros y leer/reescribir sus memorias</li>
+                    <li><strong>Bites the Dust:</strong> Una habilidad secundaria de Killer Queen que crea un bucle
+                      temporal</li>
+                    <li><strong>Made in Heaven:</strong> El Stand de Enrico Pucci que puede acelerar el tiempo hasta
+                      crear un nuevo universo</li>
+                  </ul>
+
+                  <h5>Características de estas habilidades:</h5>
+                  <ul>
+                    <li>Suelen ser extremadamente específicas en su funcionamiento</li>
+                    <li>A menudo tienen condiciones de activación muy particulares</li>
+                    <li>Pueden ser contrarrestadas descubriendo sus debilidades únicas</li>
+                    <li>Reflejan profundamente la personalidad o trauma de su usuario</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-warning mt-4">
+            <i class="bi bi-lightbulb"></i> <strong>Dato curioso:</strong> Hirohiko Araki ha mencionado que se inspiró
+            en el tarot, la mitología y la música para crear los nombres y habilidades de los Stands.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Únete al Club JoJo</h5>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="parteFavorita" class="form-label">Parte Favorita</label>
+              <select class="form-select" id="parteFavorita">
+                <option selected>Selecciona...</option>
+                <option>Phantom Blood</option>
+                <option>Battle Tendency</option>
+                <option>Stardust Crusaders</option>
+                <option>Diamond Is Unbreakable</option>
+                <option>Golden Wind</option>
+                <option>Stone Ocean</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="standPropio" class="form-label">Nombre de tu Stand imaginario</label>
+              <input type="text" class="form-control" id="standPropio">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">¡Yare Yare Daze!</button>
+          </form>
+
+          <div class="mt-4">
+            <h6>Zona de Fans</h6>
+            <form>
+              <div class="mb-2">
+                <input type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="mb-2">
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <button type="submit" class="btn btn-outline-warning w-100">Ingresar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bg text-white py-4 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>JoJo's Bizarre Adventure</h5>
+          <p>Una serie de manga escrita e ilustrada por Hirohiko Araki. Sigue las aventuras de la familia Joestar a
+            través de generaciones.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="personajes.html" class="text-white">Personajes</a></li>
+            <li><a href="tecnicas.html" class="text-white">Técnicas de Combate</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Datos de la Serie</h5>
+          <address>
+            <i class="bi bi-journal"></i> Manga desde: 1987 <br>
+            <i class="bi bi-tv"></i> Anime por: David Production <br>
+            <i class="bi bi-person"></i> Creador: Hirohiko Araki
+          </address>
+        </div>
+      </div>
+      <hr class="my-3">
+      <div class="text-center">
+        <p>&copy; 2025 Sitio Fan de JoJo's Bizarre Adventure. Todos los derechos del contenido pertenecen a Hirohiko
+          Araki/Shueisha.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

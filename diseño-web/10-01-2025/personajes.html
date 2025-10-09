@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoJo's Bizarre Adventure - Personajes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    .custom-header {
+      background: linear-gradient(135deg, #d4af37, #b8860b);
+    }
+
+    .sidebar-bg {
+      background-color: #f8f9fa;
+    }
+
+    .footer-bg {
+      background-color: #343a40;
+    }
+
+    .jojo-card {
+      border-left: 5px solid #d4af37;
+      transition: transform 0.3s;
+    }
+
+    .jojo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .character-img {
+      height: 250px;
+      object-fit: cover;
+      object-position: top;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="custom-header text-white py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-0"><i class="bi bi-star-fill"></i> JoJo's Bizarre Adventure</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="personajes.html"><i class="bi bi-people"></i> Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tecnicas.html"><i class="bi bi-magic"></i> Técnicas</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Partes de la Saga</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Parte 1: Phantom Blood</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 2: Battle Tendency</a>
+            <a href="#" class="list-group-item list-group-item-action active">Parte 3: Stardust Crusaders</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 4: Diamond Is Unbreakable</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 5: Golden Wind</a>
+            <a href="#" class="list-group-item list-group-item-action">Parte 6: Stone Ocean</a>
+          </div>
+
+          <h5 class="mt-4 mb-3">Elementos Clave</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Stands</a>
+            <a href="#" class="list-group-item list-group-item-action">Hamon</a>
+            <a href="#" class="list-group-item list-group-item-action">Máscaras de Piedra</a>
+            <a href="#" class="list-group-item list-group-item-action">Spin</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="p-3">
+          <h2 class="mb-4">Personajes Principales</h2>
+          <p class="lead">Conoce a los JoJos y sus compañeros a lo largo de las generaciones</p>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm jojo-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStkYW9OpnzI3zh4_4dU7I3JJmj_jRN_PbbKQ&s"
+                  class="card-img-top character-img" alt="Jonathan Joestar">
+                <div class="card-body">
+                  <h5 class="card-title">Jonathan Joestar</h5>
+                  <p class="card-text"><strong>Parte:</strong> Phantom Blood</p>
+                  <p class="card-text">El primer JoJo, un caballero noble que combate contra Dio Brando usando la
+                    técnica Hamon.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-primary">Hamon</span>
+                    <a href="#" class="btn btn-sm btn-outline-warning">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm jojo-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejCZAkQPNs3ORNsVT4kIO7NGruxDpojXR5Q&s"
+                  class="card-img-top character-img" alt="Joseph Joestar">
+                <div class="card-body">
+                  <h5 class="card-title">Joseph Joestar</h5>
+                  <p class="card-text"><strong>Parte:</strong> Battle Tendency</p>
+                  <p class="card-text">Nieto de Jonathan, conocido por su ingenio y uso creativo del Hamon. Su frase:
+                    "Oh my God!".</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-primary">Hamon</span>
+                    <a href="#" class="btn btn-sm btn-outline-warning">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm jojo-card">
+                <img src="https://static.wikitide.net/deathbattlewiki/0/0d/Portrait.jotarokujo.png"
+                  class="card-img-top character-img" alt="Jotaro Kujo">
+                <div class="card-body">
+                  <h5 class="card-title">Jotaro Kujo</h5>
+                  <p class="card-text"><strong>Parte:</strong> Stardust Crusaders</p>
+                  <p class="card-text">El JoJo más icónico, poseedor de Star Platinum. Conocido por su frase "Yare Yare
+                    Daze".</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-success">Stand</span>
+                    <a href="#" class="btn btn-sm btn-outline-warning">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm jojo-card">
+                <img
+                  src="https://static.jojowiki.com/images/thumb/a/a1/latest/20221007024100/Josuke_DU_Infobox_Manga.png/400px-Josuke_DU_Infobox_Manga.png"
+                  class="card-img-top character-img" alt="Josuke Higashikata">
+                <div class="card-body">
+                  <h5 class="card-title">Josuke Higashikata</h5>
+                  <p class="card-text"><strong>Parte:</strong> Diamond Is Unbreakable</p>
+                  <p class="card-text">Hijo ilegítimo de Joseph Joestar. Su Stand, Crazy Diamond, puede reparar
+                    cualquier cosa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-success">Stand</span>
+                    <a href="#" class="btn btn-sm btn-outline-warning">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm jojo-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAq3Jzpa9JJxMD8fkD0tBhj1Byob20tmLrw&s"
+                  class="card-img-top character-img" alt="Giorno Giovanna">
+                <div class="card-body">
+                  <h5 class="card-title">Giorno Giovanna</h5>
+                  <p class="card-text"><strong>Parte:</strong> Golden Wind</p>
+                  <p class="card-text">Hijo de Dio Brando, con el sueño de convertirse en un "Gang-Star". Su Stand es
+                    Gold Experience.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-success">Stand</span>
+                    <a href="#" class="btn btn-sm btn-outline-warning">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm jojo-card">
+                <img src="https://static.jojowiki.com/images/2/20/latest/20200923041552/Jolyne_Infobox_Manga.png"
+                  class="card-img-top character-img" alt="Jolyne Cujoh">
+                <div class="card-body">
+                  <h5 class="card-title">Jolyne Cujoh</h5>
+                  <p class="card-text"><strong>Parte:</strong> Stone Ocean</p>
+                  <p class="card-text">Hija de Jotaro Kujo, primera JoJo femenina. Su Stand, Stone Free, puede convertir
+                    su cuerpo en cuerdas.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-success">Stand</span>
+                    <a href="#" class="btn btn-sm btn-outline-warning">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-info mt-4">
+            <i class="bi bi-lightbulb"></i> <strong>Dato curioso:</strong> Cada JoJo tiene un diseño de moda único que
+            refleja la época en que fue creado, desde la Inglaterra victoriana hasta la Florida moderna.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Únete al Club JoJo</h5>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="parteFavorita" class="form-label">Parte Favorita</label>
+              <select class="form-select" id="parteFavorita">
+                <option selected>Selecciona...</option>
+                <option>Phantom Blood</option>
+                <option>Battle Tendency</option>
+                <option>Stardust Crusaders</option>
+                <option>Diamond Is Unbreakable</option>
+                <option>Golden Wind</option>
+                <option>Stone Ocean</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="standPropio" class="form-label">Nombre de tu Stand imaginario</label>
+              <input type="text" class="form-control" id="standPropio">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">¡Yare Yare Daze!</button>
+          </form>
+
+          <div class="mt-4">
+            <h6>Zona de Fans</h6>
+            <form>
+              <div class="mb-2">
+                <input type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="mb-2">
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <button type="submit" class="btn btn-outline-warning w-100">Ingresar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bg text-white py-4 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>JoJo's Bizarre Adventure</h5>
+          <p>Una serie de manga escrita e ilustrada por Hirohiko Araki. Sigue las aventuras de la familia Joestar a
+            través de generaciones.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="personajes.html" class="text-white">Personajes</a></li>
+            <li><a href="tecnicas.html" class="text-white">Técnicas de Combate</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Datos de la Serie</h5>
+          <address>
+            <i class="bi bi-journal"></i> Manga desde: 1987 <br>
+            <i class="bi bi-tv"></i> Anime por: David Production <br>
+            <i class="bi bi-person"></i> Creador: Hirohiko Araki
+          </address>
+        </div>
+      </div>
+      <hr class="my-3">
+      <div class="text-center">
+        <p>&copy; 2025 Sitio Fan de JoJo's Bizarre Adventure. Todos los derechos del contenido pertenecen a Hirohiko
+          Araki/Shueisha.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
