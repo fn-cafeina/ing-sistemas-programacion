@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latinoamérica Turística - Destinos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    .custom-header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+
+    .sidebar-bg {
+      background-color: #f8f9fa;
+    }
+
+    .footer-bg {
+      background-color: #343a40;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="custom-header text-white py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-0">Latinoamérica Turística</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="destinos.html"><i class="bi bi-map"></i> Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informacion.html"><i class="bi bi-info-circle"></i> Información</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Explora por país</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Argentina</a>
+            <a href="#" class="list-group-item list-group-item-action active">Brasil</a>
+            <a href="#" class="list-group-item list-group-item-action">Chile</a>
+            <a href="#" class="list-group-item list-group-item-action">Colombia</a>
+            <a href="#" class="list-group-item list-group-item-action">México</a>
+            <a href="#" class="list-group-item list-group-item-action">Perú</a>
+          </div>
+
+          <h5 class="mt-4 mb-3">Tipos de turismo</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Aventura</a>
+            <a href="#" class="list-group-item list-group-item-action">Cultural</a>
+            <a href="#" class="list-group-item list-group-item-action">Playas</a>
+            <a href="#" class="list-group-item list-group-item-action">Gastronómico</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="p-3">
+          <h2 class="mb-4">Destinos destacados</h2>
+          <p class="lead">Explora estos increíbles lugares de Latinoamérica</p>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                  class="card-img-top" alt="Machu Picchu">
+                <div class="card-body">
+                  <h5 class="card-title">Machu Picchu, Perú</h5>
+                  <p class="card-text">La ciudadela inca más famosa del mundo, ubicada en lo alto de los Andes peruanos.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-success">Cultural</span>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                  class="card-img-top" alt="Cristo Redentor">
+                <div class="card-body">
+                  <h5 class="card-title">Río de Janeiro, Brasil</h5>
+                  <p class="card-text">Famosa por el Cristo Redentor, el Pan de Azúcar y sus impresionantes playas.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-info">Ciudad</span>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQnA1o_CO3uxMmupNeCeKN5-HdqOH4PrgdA&s"
+                  class="card-img-top" alt="Chichén Itzá">
+                <div class="card-body">
+                  <h5 class="card-title">Chichén Itzá, México</h5>
+                  <p class="card-text">Una de las siete maravillas del mundo moderno, ciudad maya en la península de
+                    Yucatán.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-success">Cultural</span>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                  class="card-img-top" alt="Glaciar Perito Moreno">
+                <div class="card-body">
+                  <h5 class="card-title">Glaciar Perito Moreno, Argentina</h5>
+                  <p class="card-text">Uno de los pocos glaciares del mundo que sigue avanzando, en la Patagonia
+                    argentina.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-warning">Naturaleza</span>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoVaR1QRXeAS4zWiPP6NnwgPL-vmw4BXS4Q&s"
+                  class="card-img-top" alt="Isla de Pascua">
+                <div class="card-body">
+                  <h5 class="card-title">Isla de Pascua, Chile</h5>
+                  <p class="card-text">Famosa por sus misteriosas estatuas moai, ubicada en medio del Océano Pacífico.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-success">Cultural</span>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnICggPLLAvOMHTh15OPyVaW-dfjCp3bMw6Q&s"
+                  class="card-img-top" alt="Cartagena">
+                <div class="card-body">
+                  <h5 class="card-title">Cartagena, Colombia</h5>
+                  <p class="card-text">Ciudad colonial junto al mar Caribe, con una impresionante arquitectura y playas.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-info">Ciudad</span>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Contáctanos</h5>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="destino" class="form-label">Destino de interés</label>
+              <select class="form-select" id="destino">
+                <option selected>Selecciona...</option>
+                <option>Argentina</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Colombia</option>
+                <option>México</option>
+                <option>Perú</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
+
+          <div class="mt-4">
+            <h6>Iniciar sesión</h6>
+            <form>
+              <div class="mb-2">
+                <input type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="mb-2">
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <button type="submit" class="btn btn-outline-primary w-100">Entrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bg text-white py-4 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Latinoamérica Turística</h5>
+          <p>Descubre los destinos más increíbles de América Latina. Desde playas paradisíacas hasta ruinas ancestrales.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="destinos.html" class="text-white">Destinos</a></li>
+            <li><a href="informacion.html" class="text-white">Información</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <address>
+            <i class="bi bi-geo-alt"></i> Av. Principal 123, Ciudad<br>
+            <i class="bi bi-envelope"></i> info@latinoamericaturistica.com<br>
+            <i class="bi bi-telephone"></i> +1 234 567 890
+          </address>
+        </div>
+      </div>
+      <hr class="my-3">
+      <div class="text-center">
+        <p>&copy; 2023 Latinoamérica Turística. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

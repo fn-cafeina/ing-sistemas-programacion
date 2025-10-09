@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latinoamérica Turística - Información</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    .custom-header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+
+    .sidebar-bg {
+      background-color: #f8f9fa;
+    }
+
+    .footer-bg {
+      background-color: #343a40;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="custom-header text-white py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-0">Latinoamérica Turística</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinos.html"><i class="bi bi-map"></i> Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="informacion.html"><i class="bi bi-info-circle"></i> Información</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Explora por país</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Argentina</a>
+            <a href="#" class="list-group-item list-group-item-action">Brasil</a>
+            <a href="#" class="list-group-item list-group-item-action">Chile</a>
+            <a href="#" class="list-group-item list-group-item-action">Colombia</a>
+            <a href="#" class="list-group-item list-group-item-action active">México</a>
+            <a href="#" class="list-group-item list-group-item-action">Perú</a>
+          </div>
+
+          <h5 class="mt-4 mb-3">Tipos de turismo</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Aventura</a>
+            <a href="#" class="list-group-item list-group-item-action">Cultural</a>
+            <a href="#" class="list-group-item list-group-item-action">Playas</a>
+            <a href="#" class="list-group-item list-group-item-action">Gastronómico</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="p-3">
+          <h2 class="mb-4">Información útil para viajeros</h2>
+          <p class="lead">Todo lo que necesitas saber antes de visitar Latinoamérica</p>
+
+          <div class="accordion" id="accordionInformacion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  Documentación necesaria
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionInformacion">
+                <div class="accordion-body">
+                  <p>Para viajar a la mayoría de países de Latinoamérica necesitarás:</p>
+                  <ul>
+                    <li>Pasaporte válido (al menos 6 meses de vigencia)</li>
+                    <li>En algunos casos, visa de turista</li>
+                    <li>Tarjeta de turista (se entrega al ingresar al país)</li>
+                    <li>Comprobante de vuelo de salida</li>
+                    <li>En algunos países, vacuna contra la fiebre amarilla</li>
+                  </ul>
+                  <p class="mb-0">Verifica los requisitos específicos para cada país antes de viajar.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  Mejor época para viajar
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionInformacion">
+                <div class="accordion-body">
+                  <p>La mejor época para visitar Latinoamérica depende de la región:</p>
+                  <ul>
+                    <li><strong>México y Centroamérica:</strong> Noviembre a abril (temporada seca)</li>
+                    <li><strong>Caribe:</strong> Diciembre a abril (evitar temporada de huracanes)</li>
+                    <li><strong>Andes (Perú, Bolivia, Ecuador):</strong> Mayo a octubre (temporada seca)</li>
+                    <li><strong>Cono Sur (Argentina, Chile):</strong> Octubre a marzo (verano austral)</li>
+                    <li><strong>Brasil:</strong> Abril a octubre (evitar lluvias intensas)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  Salud y vacunas
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionInformacion">
+                <div class="accordion-body">
+                  <p>Recomendaciones de salud para viajar a Latinoamérica:</p>
+                  <ul>
+                    <li>Vacuna contra la fiebre amarilla (obligatoria para algunos países)</li>
+                    <li>Hepatitis A y B</li>
+                    <li>Tétanos</li>
+                    <li>Fiebre tifoidea (para zonas rurales)</li>
+                    <li>Malaria (en algunas regiones amazónicas)</li>
+                  </ul>
+                  <p>Consulta con tu médico al menos 4-6 semanas antes del viaje.</p>
+                  <p class="mb-0">También es recomendable llevar un botiquín básico y seguro de viaje que cubra atención
+                    médica.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour">
+                  Moneda y pagos
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionInformacion">
+                <div class="accordion-body">
+                  <p>Información sobre divisas y métodos de pago en Latinoamérica:</p>
+                  <ul>
+                    <li><strong>México:</strong> Peso mexicano (MXN)</li>
+                    <li><strong>Argentina:</strong> Peso argentino (ARS)</li>
+                    <li><strong>Brasil:</strong> Real brasileño (BRL)</li>
+                    <li><strong>Chile:</strong> Peso chileno (CLP)</li>
+                    <li><strong>Colombia:</strong> Peso colombiano (COP)</li>
+                    <li><strong>Perú:</strong> Sol peruano (PEN)</li>
+                  </ul>
+                  <p>En la mayoría de países es recomendable:</p>
+                  <ul>
+                    <li>Llevar efectivo en moneda local para compras pequeñas</li>
+                    <li>Tarjetas de crédito son aceptadas en establecimientos turísticos</li>
+                    <li>Evitar cambiar dinero en el aeropuerto (tasas menos favorables)</li>
+                    <li>Notificar a tu banco sobre tu viaje para evitar bloqueos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive">
+                  Transporte interno
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionInformacion">
+                <div class="accordion-body">
+                  <p>Opciones de transporte dentro de los países latinoamericanos:</p>
+                  <ul>
+                    <li><strong>Aviones:</strong> Conexiones entre ciudades principales</li>
+                    <li><strong>Autobuses:</strong> Red extensa y económica</li>
+                    <li><strong>Taxis y aplicaciones:</strong> Uber, Cabify disponibles en ciudades grandes</li>
+                    <li><strong>Trenes:</strong> Limitados, pero existen rutas turísticas (Perú Rail, Tren a las Nubes)
+                    </li>
+                    <li><strong>Alquiler de coches:</strong> Opción viable, pero considerar estado de carreteras</li>
+                  </ul>
+                  <p class="mb-0">Para distancias largas, los buses suelen ser la opción más económica y ofrecen
+                    diferentes niveles de comodidad.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-warning mt-4">
+            <i class="bi bi-exclamation-triangle"></i> <strong>Importante:</strong> La información puede variar según el
+            país y época del año.
+            Siempre verifica con las autoridades oficiales antes de viajar.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 sidebar-bg">
+        <div class="p-3">
+          <h5 class="mb-3">Contáctanos</h5>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="destino" class="form-label">Destino de interés</label>
+              <select class="form-select" id="destino">
+                <option selected>Selecciona...</option>
+                <option>Argentina</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Colombia</option>
+                <option>México</option>
+                <option>Perú</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
+
+          <div class="mt-4">
+            <h6>Iniciar sesión</h6>
+            <form>
+              <div class="mb-2">
+                <input type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="mb-2">
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <button type="submit" class="btn btn-outline-primary w-100">Entrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bg text-white py-4 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Latinoamérica Turística</h5>
+          <p>Descubre los destinos más increíbles de América Latina. Desde playas paradisíacas hasta ruinas ancestrales.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="destinos.html" class="text-white">Destinos</a></li>
+            <li><a href="informacion.html" class="text-white">Información</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <address>
+            <i class="bi bi-geo-alt"></i> Av. Principal 123, Ciudad<br>
+            <i class="bi bi-envelope"></i> info@latinoamericaturistica.com<br>
+            <i class="bi bi-telephone"></i> +1 234 567 890
+          </address>
+        </div>
+      </div>
+      <hr class="my-3">
+      <div class="text-center">
+        <p>&copy; 2025 Latinoamérica Turística. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
