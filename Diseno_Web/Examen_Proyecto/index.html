@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palette Pro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="header-content">
+          <h1><i class="fas fa-palette"></i> Palette Pro</h1>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <nav class="app-nav">
+          <button class="nav-button active" data-section="generator">
+            <i class="fas fa-magic"></i>
+            <span>Generador</span>
+          </button>
+          <button class="nav-button" data-section="extractor">
+            <i class="fas fa-image"></i>
+            <span>Extractor</span>
+          </button>
+        </nav>
+
+        <div class="app-content">
+          <section id="generator" class="content-section active">
+            <div class="controls-panel">
+              <div class="control-group">
+                <label for="base-color" class="control-label">Color Base</label>
+                <div class="color-input-wrapper">
+                  <input type="color" id="base-color" value="#3b82f6" />
+                  <input
+                    type="text"
+                    id="base-color-text"
+                    value="#3b82f6"
+                    class="monospace input-field"
+                  />
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label for="palette-type" class="control-label"
+                  >Tipo de Paleta</label
+                >
+                <select id="palette-type" class="monospace input-field">
+                  <option value="monochromatic">Monocromática</option>
+                  <option value="analogous">Análoga</option>
+                  <option value="complementary">Complementaria</option>
+                  <option value="triadic">Triádica</option>
+                  <option value="tetradic">Tetrádica</option>
+                </select>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label">
+                  Número de Colores:
+                  <span id="color-count-value" class="monospace">5</span>
+                </label>
+                <input
+                  type="range"
+                  id="color-count"
+                  min="3"
+                  max="8"
+                  value="5"
+                  class="slider"
+                />
+              </div>
+
+              <button id="generate-btn" class="btn-primary">
+                <i class="fas fa-sync-alt"></i> Generar Paleta
+              </button>
+            </div>
+
+            <div class="palette-display" id="generated-palette"></div>
+          </section>
+
+          <section id="extractor" class="content-section">
+            <div class="upload-container">
+              <div class="upload-area" id="upload-area">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Arrastra una imagen aquí</h3>
+                <p>o haz clic para seleccionar</p>
+                <input type="file" id="image-upload" accept="image/*" />
+              </div>
+
+              <div
+                class="image-preview-container hidden"
+                id="image-preview-container"
+              >
+                <div class="image-preview-header">
+                  <h3>Vista previa</h3>
+                  <button
+                    id="remove-image"
+                    class="btn-icon"
+                    aria-label="Remover imagen"
+                  >
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+
+                <div class="image-preview">
+                  <img id="image-preview" src="" alt="Vista previa" />
+                </div>
+
+                <div class="controls-panel">
+                  <div class="control-group">
+                    <label class="control-label">
+                      Número de Colores:
+                      <span id="color-count-extract-value" class="monospace"
+                        >5</span
+                      >
+                    </label>
+                    <input
+                      type="range"
+                      id="color-count-extract"
+                      min="3"
+                      max="8"
+                      value="5"
+                      class="slider"
+                    />
+                  </div>
+
+                  <button id="extract-btn" class="btn-primary">
+                    <i class="fas fa-eye-dropper"></i> Extraer Colores
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="palette-display" id="extracted-palette"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <div class="notification-toast" id="notification"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
