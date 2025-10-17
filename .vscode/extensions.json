@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "ms-vscode.cpptools-extension-pack",
+    "tomoki1207.pdf",
+    "ms-vscode.live-server",
+    "ritwickdey.LiveServer"
+  ]
+}
