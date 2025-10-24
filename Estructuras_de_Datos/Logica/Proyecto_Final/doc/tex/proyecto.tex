@@ -1,0 +1,265 @@
+\documentclass[12pt, letterpaper]{article}
+
+% --- PAQUETES ESENCIALES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{csquotes}
+
+% --- PAQUETES PARA CÓDIGO ---
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{cstyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=C
+}
+\lstset{style=cstyle}
+
+% --- PAQUETES PARA DIAGRAMAS (TikZ) ---
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, fit}
+
+% --- PAQUETES PARA BIBLIOGRAFÍA (APA 7) ---
+\usepackage[
+    backend=biber,
+    style=apa,
+    sorting=nyt
+]{biblatex}
+\addbibresource{bibliografia.bib}
+
+% --- CONFIGURACIÓN DE PÁGINA ---
+\geometry{
+    letterpaper,
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdftitle={Proyecto 2: Sistema de Gestión de Solicitudes de Mantenimiento},
+    pdfauthor={Autores del Proyecto}
+}
+
+\title{Proyecto 2: Sistema de Gestión de Solicitudes de Mantenimiento}
+\author{Jasmir Moisés Medina Pérez}
+\date{7 de noviembre de 2025}
+
+% --- INICIO DEL DOCUMENTO ---
+\begin{document}
+
+% --- RESUMEN ---
+\section*{Resumen del Proyecto}
+Este documento detalla el diseño, desarrollo e implementación del "Sistema de Gestión de Solicitudes de Mantenimiento". El sistema, desarrollado en C, permite registrar, asignar y dar seguimiento a solicitudes de mantenimiento, utilizando archivos binarios para la persistencia de datos.
+
+\tableofcontents
+\newpage
+
+% --- OBJETIVOS ---
+\section{Objetivos}
+\subsection{Objetivos de Aprendizaje}
+[cite_start]Los objetivos de aprendizaje definidos para este proyecto son [cite: 52-55]:
+\begin{itemize}
+    \item Modelar procesos administrativos mediante estructuras en C.
+    \item Implementar lógica condicional y ciclos para la gestión de estados.
+    \item Utilizar archivos para guardar y recuperar información de manera persistente.
+    \item Diseñar una interfaz de usuario funcional en consola.
+\end{itemize}
+
+\subsection{Objetivos del Proyecto}
+[cite_start]Los objetivos específicos del sistema son [cite: 56-59]:
+\begin{itemize}
+    \item Registrar solicitudes de mantenimiento (prioridad y ubicación).
+    \item Registrar técnicos disponibles.
+    \item Asignar solicitudes pendientes a técnicos.
+    \item Actualizar el estado de las solicitudes (Pendiente, En Proceso, Finalizada).
+    \item Generar reportes por técnico, área o estado.
+\end{itemize}
+
+
+% --- DIAGRAMAS ---
+\section{Diagramas del Sistema}
+
+\subsection{Diagrama de Flujo (Menú Principal)}
+Diagrama de flujo del bucle principal del programa.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    node distance=2cm, auto,
+    block/.style={rectangle, draw, fill=blue!10, text width=10em, text centered, rounded corners, minimum height=3em},
+    loop/.style={rectangle, draw, fill=orange!10, text width=9em, text centered, rounded corners, minimum height=3em},
+    decision/.style={diamond, draw, fill=green!10, text width=6em, text centered, minimum height=3em},
+    io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, fill=gray!10, text width=8em, text centered, minimum height=3em},
+    line/.style={draw, -latex'}
+]
+    % Nodos
+    \node [block] (init) {Inicio: Cargar Datos()};
+    \node [loop, below=of init] (menu) {Mostrar Menú Principal};
+    \node [io, below=of menu] (input) {Leer Opción (0-5)};
+    \node [decision, below=of input] (decide) {Opción == 0?};
+    \node [block, right=of decide, xshift=4cm] (op1) {Registrar Solicitud};
+    \node [block, right=of op1, xshift=1cm] (op2) {Registrar Técnico};
+    \node [block, below=of op1] (op3) {Asignar Tarea};
+    \node [block, below=of op2] (op4) {Actualizar Estado};
+    \node [block, below=of op3] (op5) {Mostrar Reportes};
+    \node [fit=(op1) (op2) (op3) (op4) (op5), label=above:Gestión de Opciones] (switch) {};
+    \node [block, below=of decide] (exit) {Guardar Datos() y Salir};
+
+    % Conexiones
+    \path [line] (init) -- (menu);
+    \path [line] (menu) -- (input);
+    \path [line] (input) -- (decide);
+    \path [line] (decide) -- node [right, xshift=0.2cm] {No} (op1);
+    \path [line] (decide) -- node [left, xshift=-0.2cm] {Sí} (exit);
+    \path [line] (op1) |- (menu); \path [line] (op2) |- (menu);
+    \path [line] (op3) |- (menu); \path [line] (op4) |- (menu);
+    \path [line] (op5) |- (menu);
+\end{tikzpicture}
+\caption{Diagrama de flujo del bucle principal.}
+\label{fig:flowchart}
+\end{figure}
+
+\subsection{Diagrama de Estructuras}
+Definición de las estructuras base del sistema.
+\lstinputlisting[language=C, caption={Definición de estructuras en include/tipos.h}, firstline=14, lastline=34]{../../include/tipos.h}
+
+\subsection{Diagrama de Estructura del Sistema}
+Organización de los archivos del proyecto.
+\begin{verbatim}
+. (Raiz del Proyecto)
+|-- doc/
+|   |-- requisitos/
+|   |   `-- Proyecto Final - AED - GP5.pdf
+|   |-- tex/
+|   |   |-- proyecto.tex       (Este documento)
+|   |   `-- bibliografia.bib
+|   `-- proyecto.pdf       (Salida compilada)
+|
+|-- include/           (Archivos de cabecera .h)
+|-- src/               (Archivos fuente .c)
+|-- data/              (Datos binarios .dat)
+`-- Makefile           (Compilador C)
+\end{verbatim}
+
+
+\newpage
+% --- MANUALES ---
+\section{Manuales}
+
+\subsection{Manual Técnico}
+Descripción de los componentes internos del sistema.
+
+\subsubsection{Módulos y Funciones Clave}
+\begin{description}
+    \item[\texttt{include/tipos.h}] Define \texttt{tecnico\_t} y \texttt{solicitud\_t}.
+    \item[\texttt{include/utils.h}] Provee \texttt{limpiar\_pantalla()}, \texttt{pausar()}, \texttt{leer\_opcion()}.
+    \item[\texttt{include/persistencia.h}] Provee \texttt{cargar\_datos()} y \texttt{guardar\_datos()}.
+    \item[\texttt{include/logica.h}] Provee \texttt{registrar\_solicitud()}, \texttt{asignar\_tarea()}, etc.
+    \item[\texttt{src/main.c}] Contiene el \texttt{main} y el bucle principal del menú.
+\end{description}
+
+\subsubsection{Archivos de Datos}
+El sistema usa dos archivos binarios (en la carpeta \texttt{data/}):
+\begin{itemize}
+    \item \texttt{data/tecnicos.dat}: Almacena los técnicos.
+    \item \texttt{data/solicitudes.dat}: Almacena las solicitudes.
+\end{itemize}
+Ambos archivos guardan primero un \texttt{int} (el contador) y un \texttt{int} (siguiente ID), seguido por el bloque de $N$ estructuras.
+
+\subsection{Manual de Usuario}
+El sistema se inicia ejecutando \texttt{./bin/gestor\_mantenimiento} desde la terminal raíz.
+\begin{description}
+    \item[1. Registrar Nueva Solicitud] Pide ubicación, descripción y prioridad.
+    \item[2. Registrar Nuevo Técnico] Pide nombre y especialidad.
+    \item[3. Asignar Tarea a Técnico] Muestra listas para asignar una solicitud pendiente a un técnico.
+    \item[4. Actualizar Estado de Solicitud] Permite cambiar el estado (Pendiente, En Proceso, Finalizada).
+    \item[5. Ver Reportes] Submenú para filtrar por Técnico, Área o Estado.
+    \item[0. Guardar y Salir] Guarda todos los cambios en los archivos \texttt{.dat}.
+\end{description}
+
+\newpage
+% --- DESARROLLO Y PRUEBAS ---
+\section{Desarrollo y Pruebas}
+
+\subsection{Fragmentos Clave del Código}
+
+\subsubsection{Gestión de Memoria Dinámica}
+Uso de \texttt{realloc} para expandir el array global al registrar un técnico.
+\lstinputlisting[language=C, caption={Función registrar\_tecnico en src/logica.c}, firstline=99, lastline=121]{../../src/logica.c}
+
+\subsubsection{Validación y Creación de Directorio}
+Verificación del directorio \texttt{data/} antes de leer o escribir.
+\lstinputlisting[language=C, caption={Función de persistencia en src/persistencia.c}, firstline=15, lastline=29]{../../src/persistencia.c}
+
+\subsection{Pruebas Realizadas}
+Resumen de pruebas de caja negra funcionales.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Caso de Prueba} & \textbf{Acción Realizada} & \textbf{Resultado Esperado} \\
+\hline
+Registro (Solicitud/Técnico) & Opción 1 y 2. Ingresar datos. & Ítems creados con ID 1. \\
+\hline
+Asignación de Tarea & Opción 3. Asignar Sol. 1 a Tec. 1. & Sol. 1 -> "En Proceso", asignada a Tec. 1. \\
+\hline
+Actualización de Estado & Opción 4. Cambiar Sol. 1 a "Finalizada". & Sol. 1 -> "Finalizada", técnico desasociado. \\
+\hline
+Persistencia de Datos & Opción 0 (Salir). Volver a ejecutar. & Carga Sol. 1 y Tec. 1. Siguiente ID es 2. \\
+\hline
+Validación de Entrada & Opción de menú. Ingresar "9" o "abc". & Mensaje de error, vuelve a pedir la opción. \\
+\hline
+\end{tabular}
+\caption{Resumen de casos de prueba funcionales.}
+\label{tab:pruebas}
+\end{table}
+
+
+% --- CONCLUSIONES Y MEJORAS ---
+\section{Conclusiones y Mejoras Futuras}
+
+\subsection{Conclusiones}
+El proyecto se completó, cumpliendo todos los requisitos funcionales. La arquitectura modular facilitó el desarrollo. La gestión de estado y la persistencia en archivos binarios demostraron ser soluciones eficaces en C estándar.
+
+\subsection{Mejoras Futuras}
+\begin{itemize}
+    \item \textbf{Interfaz Gráfica (GUI):} Reemplazar la consola por una interfaz gráfica.
+    \item \textbf{Gestión de Errores:} Mejorar la robustez del sistema ante fallos de I/O.
+    \item \textbf{Autenticación de Usuarios:} Añadir un sistema simple de login para diferenciar roles.
+\end{itemize}
+
+
+% --- BIBLIOGRAFÍA ---
+\newpage
+\printbibliography[title={Bibliografía}]
+
+\end{document}
