@@ -4,10 +4,18 @@
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.tabSize": 8
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 8
+  },
+  "[makefile]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 8
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.linkedEditing": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.linkedEditing": true
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
