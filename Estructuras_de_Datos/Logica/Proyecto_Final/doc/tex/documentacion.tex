@@ -1,0 +1,301 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+
+\geometry{margin=2.5cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    breaklines=true,
+    captionpos=b,
+    inputencoding=utf8,
+    extendedchars=false,
+    keepspaces=true
+}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\large RESUMEN}
+\end{center}
+\vspace{0.5em}
+\noindent Este documento presenta el desarrollo del Sistema de Gestión de Solicitudes de Mantenimiento, una aplicación en lenguaje C que permite registrar, asignar y dar seguimiento a solicitudes de mantenimiento en una institución. El sistema implementa estructuras de datos dinámicas, gestión de archivos binarios para persistencia y una interfaz de consola interactiva. Desarrollado como proyecto final para la materia de Algoritmos y Estructuras de Datos.
+\vspace{1em}
+
+\section{OBJETIVOS}
+\begin{itemize}[left=0pt]
+\item Modelar procesos administrativos mediante estructuras en C
+\item Implementar lógica condicional y ciclos para gestión de estados
+\item Utilizar archivos para persistencia de datos
+\item Diseñar interfaz de usuario funcional en consola
+\item Gestionar memoria dinámica de forma eficiente
+\end{itemize}
+
+\section{DIAGRAMA DE ESTRUCTURA DEL SISTEMA}
+
+\subsection{Arquitectura de Archivos}
+\begin{verbatim}
+.
++-- include/
+|   +-- logica.h      - Logica de negocio y estado global
+|   +-- persistencia.h - Gestion de archivos binarios
+|   +-- tipos.h       - Estructuras y constantes
+|   +-- utils.h       - Utilidades de interfaz
++-- src/
+|   +-- logica.c      - Implementacion de funciones principales
+|   +-- main.c        - Programa principal y menus
+|   +-- persistencia.c- Guardado/carga de datos
+|   +-- utils.c       - Funciones auxiliares
++-- data/             - Datos persistentes (generado)
+|   +-- tecnicos.dat
+|   +-- solicitudes.dat
++-- Makefile          - Sistema de compilacion
+\end{verbatim}
+
+\subsection{Diagrama de Flujo del Sistema}
+\begin{verbatim}
+    +-------------+
+    |   INICIO    |
+    +------+------+
+           |
+    +------+------+
+    |  MENU PRINCIPAL |
+    +------+------+
+           |
+    +------+-------------------------------+
+    | 1. Registrar Solicitud              |
+    | 2. Registrar Tecnico                |
+    | 3. Asignar Tarea                    |
+    | 4. Cambiar Estado                   |
+    | 5. Reportes                         |
+    | 0. Guardar y Salir                  |
+    +-------------------------------------+
+\end{verbatim}
+
+\section{ESTRUCTURAS DE DATOS}
+
+\subsection{Definicion de Tipos}
+\begin{lstlisting}
+// En tipos.h
+typedef struct tecnico {
+    int id_tecnico;
+    char nombre[MAX_NOMBRE];
+    char especialidad[MAX_NOMBRE];
+    int activo;  // 1=activo, 0=inactivo
+} tecnico_t;
+
+typedef struct solicitud {
+    int id_solicitud;
+    char ubicacion[MAX_UBICACION];
+    char descripcion[MAX_DESC];
+    int prioridad;           // 1=Baja, 2=Media, 3=Alta
+    int estado;              // 1=Pendiente, 2=En Proceso, 3=Finalizada
+    int id_tecnico_asignado; // ID del tecnico (0 si no asignado)
+} solicitud_t;
+\end{lstlisting}
+
+\subsection{Variables Globales}
+\begin{lstlisting}
+// En logica.c
+tecnico_t *g_tecnicos = NULL;
+int g_num_tecnicos = 0;
+int g_sig_id_tecnico = 1;
+
+solicitud_t *g_solicitudes = NULL;
+int g_num_solicitudes = 0;
+int g_sig_id_solicitud = 1;
+\end{lstlisting}
+
+\section{DESCRIPCION DE FUNCIONES}
+
+\subsection{Modulo: logica.c}
+\begin{itemize}[left=0pt]
+\item \textbf{inicializar\_datos():} Inicializa punteros globales a NULL/0
+\item \textbf{liberar\_memoria():} Libera memoria dinámica de arrays globales
+\item \textbf{registrar\_solicitud():} Interfaz para registrar nueva solicitud
+\item \textbf{registrar\_tecnico():} Interfaz para registrar nuevo tecnico
+\item \textbf{asignar\_tarea():} Asigna solicitud pendiente a tecnico disponible
+\item \textbf{cambiar\_estado\_solicitud():} Cambia estado de solicitud existente
+\item \textbf{mostrar\_reportes():} Submenu para generar reportes diversos
+\end{itemize}
+
+\subsection{Modulo: persistencia.c}
+\begin{itemize}[left=0pt]
+\item \textbf{cargar\_datos():} Carga datos desde archivos binarios
+\item \textbf{guardar\_datos():} Guarda estado actual en archivos binarios
+\item \textbf{asegurar\_directorio\_de\_datos():} Crea directorio data/ si no existe
+\end{itemize}
+
+\subsection{Modulo: utils.c}
+\begin{itemize}[left=0pt]
+\item \textbf{limpiar\_pantalla():} Limpia consola (multiplataforma)
+\item \textbf{pausar():} Pausa ejecucion hasta Enter
+\item \textbf{leer\_opcion():} Lee y valida opcion numerica
+\item \textbf{get\_string():} Lee cadena de forma segura
+\end{itemize}
+
+\section{FRAGMENTOS CLAVE DEL CODIGO}
+
+\subsection{Gestion de Memoria Dinamica}
+\begin{lstlisting}
+void registrar_solicitud(void) {
+    g_num_solicitudes++;
+    solicitud_t *temp = (solicitud_t *)realloc(
+        g_solicitudes,
+        g_num_solicitudes * sizeof(solicitud_t)
+    );
+    if (temp == NULL) {
+        perror("Error al reasignar memoria para solicitud");
+        g_num_solicitudes--;
+        return;
+    }
+    g_solicitudes = temp;
+    // ... resto del codigo
+}
+\end{lstlisting}
+
+\subsection{Persistencia en Archivos Binarios}
+\begin{lstlisting}
+void guardar_datos(void) {
+    FILE *f;
+    asegurar_directorio_de_datos();
+
+    if ((f = fopen(FILE_TECNICOS, "wb")) == NULL) {
+        perror("Error al abrir archivo para guardar tecnicos");
+        return;
+    }
+    fwrite(&g_num_tecnicos, sizeof(int), 1, f);
+    fwrite(&g_sig_id_tecnico, sizeof(int), 1, f);
+    fwrite(g_tecnicos, sizeof(tecnico_t), g_num_tecnicos, f);
+    fclose(f);
+    // ... similar para solicitudes
+}
+\end{lstlisting}
+
+\subsection{Logica de Asignacion}
+\begin{lstlisting}
+void asignar_tarea(void) {
+    listar_solicitudes(1); // Solo pendientes
+    // ... entrada de datos
+    sol->id_tecnico_asignado = id_tec;
+    sol->estado = 2; // Cambia a "En Proceso"
+    printf("\nAsignacion exitosa: Solicitud %d -> Tecnico %s.\n",
+           sol->id_solicitud, tec->nombre);
+}
+\end{lstlisting}
+
+\section{MANUAL DE USUARIO}
+
+\subsection{Compilacion y Ejecucion}
+\begin{verbatim}
+$ make          # Compila el proyecto
+$ make clean    # Limpia archivos generados
+$ ./bin/gestor_mantenimiento  # Ejecuta el programa
+\end{verbatim}
+
+\subsection{Flujo de Trabajo}
+\begin{enumerate}[left=0pt]
+\item \textbf{Registro Inicial:} Registrar tecnicos antes de asignar solicitudes
+\item \textbf{Solicitudes:} Cada solicitud se crea con estado "Pendiente"
+\item \textbf{Asignacion:} Solo solicitudes pendientes pueden asignarse
+\item \textbf{Seguimiento:} Cambiar estados segun avance el trabajo
+\item \textbf{Reportes:} Generar reportes por tecnico, ubicacion o estado
+\end{enumerate}
+
+\subsection{Ejemplo de Uso}
+\begin{verbatim}
+==================================================
+  Sistema de Gestion de Mantenimiento (Proyecto 2)
+==================================================
+1. Registrar Nueva Solicitud
+2. Registrar Nuevo Tecnico
+3. Asignar Tarea a Tecnico
+4. Actualizar Estado de Solicitud
+5. Ver Reportes
+0. Guardar y Salir
+--------------------------------------------------
+Seleccione una opcion (0-5): 1
+\end{verbatim}
+
+\section{PRUEBAS REALIZADAS}
+
+\subsection{Casos de Prueba}
+\begin{tabular}{|p{3cm}|p{4cm}|p{4cm}|p{2cm}|}
+\hline
+\textbf{Caso} & \textbf{Entrada} & \textbf{Resultado Esperado} & \textbf{Estado} \\
+\hline
+Registro tecnico & Nombre: "Juan Perez", Especialidad: "Electricidad" & ID asignado automaticamente, tecnico activo & OK \\
+\hline
+Registro solicitud & Ubicacion: "Oficina 101", Prioridad: Alta & Estado: Pendiente, ID tecnico: 0 & OK \\
+\hline
+Asignacion & IDs validos de solicitud pendiente y tecnico activo & Estado cambia a "En Proceso", tecnico asignado & OK \\
+\hline
+Cambio estado & Solicitud en proceso -> Finalizada & Estado actualizado, tecnico desasignado & OK \\
+\hline
+Reporte tecnico & ID tecnico con solicitudes asignadas & Lista todas sus solicitudes & OK \\
+\hline
+Persistencia & Cerrar y reabrir programa & Datos mantienen estado anterior & OK \\
+\hline
+\end{tabular}
+
+\section{CONCLUSIONES Y MEJORAS FUTURAS}
+
+\subsection{Conclusiones}
+\begin{itemize}[left=0pt]
+\item El sistema cumple con todos los requisitos funcionales especificados
+\item La arquitectura modular facilita el mantenimiento y extension
+\item El uso de memoria dinámica permite escalabilidad
+\item La persistencia en archivos binarios garantiza integridad de datos
+\item La interfaz de consola es intuitiva y robusta ante entradas invalidas
+\end{itemize}
+
+\subsection{Mejoras Futuras}
+\begin{enumerate}[left=0pt]
+\item \textbf{Interfaz Grafica:} Implementar version con GTK o Qt
+\item \textbf{Base de Datos:} Migrar de archivos binarios a SQLite
+\item \textbf{Autenticacion:} Sistema de usuarios y roles
+\item \textbf{Notificaciones:} Integracion con correo electronico
+\item \textbf{Metricas:} Estadisticas avanzadas y graficos
+\item \textbf{Backup:} Sistema automatico de respaldo de datos
+\end{enumerate}
+
+\section{BIBLIOGRAFIA}
+
+\begin{enumerate}
+\item Kernighan, B. W. \& Ritchie, D. M. (2019). \textit{El lenguaje de programación C} (2.a ed.). Pearson Educación.
+
+\item García, M., Rodríguez, P. \& López, J. (2021). \textit{Estructuras de datos en C: Implementación y aplicaciones}. McGraw-Hill Interamericana.
+
+\item Silva, A. (2020). \textit{Programación en C: Desde fundamentos hasta aplicaciones avanzadas}. Editorial Tébar.
+
+\item Organización Internacional para la Estandarización. (2018). \textit{ISO/IEC 9899:2018: Lenguajes de programación — C}. ISO.
+
+\item Martínez, C. \& Fernández, R. (2019). \textit{Algoritmos y estructuras de datos en C}. Ediciones Paraninfo.
+
+\item González, L. (2022). \textit{Desarrollo de sistemas en lenguaje C: Buenas prácticas y patrones de diseño}. Ra-Ma Editorial.
+\end{enumerate}
+
+\end{document}
