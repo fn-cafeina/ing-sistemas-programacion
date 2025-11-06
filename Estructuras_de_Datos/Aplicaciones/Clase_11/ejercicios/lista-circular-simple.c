@@ -1,15 +1,3 @@
-/*
-    Ejercicio 1: Crear y mostrar una lista circular simple
-    Enunciado:
-    Escribe un programa en C que:
-    1. Cree una lista circular con 3 números enteros fijos (10, 20 y 30).
-    2. Recorra la lista y muestre los valores una sola vez.
-    Ejemplo de salida:
-    10 -> 20 -> 30 -> (vuelve al inicio)
-    Modificación:
-    El último nodo debe apuntar al primero (ultimo->siguiente = primero;).
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 

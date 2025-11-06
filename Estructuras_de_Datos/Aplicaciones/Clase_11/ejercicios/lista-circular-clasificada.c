@@ -1,21 +1,3 @@
-/*
-    Ejercicio Propuesto 2:
-    Lista circular clasificada para un hotel.
-
-    Cada nodo contiene:
-    - NumHab (número de habitación)
-    - Nombre (nombre del cliente)
-    - FechaArr (fecha de arribo, simplificada como entero o string)
-    - Precio (precio de la habitación)
-
-    Operaciones:
-    a) Registrar huésped
-    b) Borrar huésped
-    c) Buscar huésped
-    d) Mostrar informe tabular
-    e) Facturación (dado nombre y días de estancia)
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

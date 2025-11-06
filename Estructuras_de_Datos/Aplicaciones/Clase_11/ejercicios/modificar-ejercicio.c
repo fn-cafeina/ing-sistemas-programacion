@@ -1,14 +1,3 @@
-/*
-    Ejercicio Propuesto 1:
-    Modifique el ejercicio propuesto #3 de la guía Listas doblemente enlazadas,
-    de tal forma que aplique su funcionalidad por medio de una Lista circular.
-
-    Operaciones básicas:
-    - Insertar nodo
-    - Mostrar lista
-    - Borrar nodo
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 

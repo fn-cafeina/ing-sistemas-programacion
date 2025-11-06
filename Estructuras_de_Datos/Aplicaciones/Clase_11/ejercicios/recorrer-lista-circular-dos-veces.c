@@ -1,16 +1,3 @@
-/*
-    Ejercicio 2: Recorrer la lista circular dos veces
-    Enunciado:
-    Usando la lista del ejercicio anterior (10, 20, 30),
-    haz que el programa muestre los valores dos veces seguidas,
-    para demostrar que la lista es circular.
-    Ejemplo de salida:
-    Recorrido 1: 10 -> 20 -> 30 ->
-    Recorrido 2: 10 -> 20 -> 30 ->
-    Modificación:
-    Puedes usar un contador que indique cuántas vueltas llevas en el recorrido.
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 
