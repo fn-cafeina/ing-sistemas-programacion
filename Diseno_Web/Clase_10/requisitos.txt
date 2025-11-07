@@ -1,0 +1,55 @@
+Guía 7 – Uso de Sentencias de Control en JavaScript
+
+Ejercicio 1:
+Escriba un programa que pida al usuario un número e indique si es mayor que 100.
+
+Ejercicio 2:
+Escriba un programa que determine si un alumno aprueba o reprueba un curso,
+tomando en cuenta que si el promedio de las tres calificaciones introducidas por el usuario
+es mayor o igual a 60 aprobará y reprobará en caso contrario.
+
+Ejercicio 3:
+Hacer un programa que dado un número de camisetas, calcule el total a pagar por la compra.
+Si se compran 12 camisas o más se aplicará un descuento del 20 % sobre el total de la compra,
+y si son menos de 12 camisas un descuento del 10%.
+
+Ejercicio 4:
+Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera:
+Si trabaja 40 horas o menos se le paga 20 por hora.
+Si trabaja más de 40 se le pagará 20 por cada una de las primeras 40 horas
+y 25 por cada hora extra.
+
+Ejercicio 5:
+Realice un programa que permita calcular la suma de los 5 primeros números enteros positivos
+introducidos por el usuario, descartando cualquier número negativo o cero que se introduzca.
+
+Ejercicio 6:
+Hacer un programa que muestre el resultado de sumar los números pares del 1 al 100.
+
+Ejercicio 7:
+Se quiere escribir un programa que muestre por pantalla la tabla de multiplicar
+de un número entero introducido por el usuario.
+Puede usar document.write para imprimir sobre la página HTML.
+
+Ejercicio 8:
+Realice un programa que presente en pantalla la serie de números llamada la conjetura de ULAM,
+en honor del matemático S. Ulam.
+
+Por ejemplo: 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1.
+
+Para presentar los números que corresponden a la conjetura de ULAM, seguimos los siguientes pasos:
+- Comience con cualquier entero positivo.
+- Si es par, se divide entre 2.
+- Si es impar, se multiplica por 3 y se le suma 1.
+Obtenga enteros sucesivamente repitiendo el proceso.
+Al final, obtendrá el número 1, independientemente del entero inicial.
+Deberá solicitar al usuario un valor, el que será el primero de la lista.
+
+Ejercicio 9:
+La función factorial se aplica a enteros positivos.
+El factorial de un entero positivo n (!n) es igual al producto de los enteros positivos del 1 al n.
+Escriba un programa que calcule el factorial de los enteros del 1 al 5.
+
+Ejercicio 10:
+Realice un programa que almacene en un arreglo unidimensional
+los primeros 50 números de la serie Fibonacci e imprima el arreglo correspondiente.
