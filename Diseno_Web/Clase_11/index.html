@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestión de Estudiantes</h1>
+      <div class="form-container">
+        <div class="button-group">
+          <button id="btnNuevo" class="btn btn-primary">Nuevo</button>
+          <button id="btnGuardar" class="btn btn-success">Guardar</button>
+          <button id="btnCancelar" class="btn btn-info">Cancelar</button>
+          <button id="btnEliminar" class="btn btn-danger">Eliminar</button>
+        </div>
+
+        <div class="form-field">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" />
+        </div>
+        <div class="form-field">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" />
+        </div>
+        <div class="form-field">
+          <label for="carrera">Carrera:</label>
+          <select id="carrera">
+            <option value="">Seleccione</option>
+            <option value="Ingeniería Informática">
+              Ingeniería Informática
+            </option>
+            <option value="Licenciatura en Administración">
+              Licenciatura en Administración
+            </option>
+            <option value="Contaduría Pública">Contaduría Pública</option>
+            <option value="Derecho">Derecho</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Sexo:</label>
+          <div class="radio-group">
+            <input type="radio" id="masculino" name="sexo" value="Masculino" />
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="Femenino" />
+            <label for="femenino">Femenino</label>
+          </div>
+        </div>
+        <div class="form-field checkbox-field">
+          <input type="checkbox" id="egresado" />
+          <label for="egresado">¿Egresado?</label>
+        </div>
+
+        <div class="navigation-group">
+          <button id="btnPrimera" class="nav-btn">&lt;&lt;</button>
+          <button id="btnAnterior" class="nav-btn">&lt;</button>
+          <button id="btnSiguiente" class="nav-btn">&gt;</button>
+          <button id="btnUltima" class="nav-btn">&gt;&gt;</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
