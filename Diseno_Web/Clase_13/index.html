@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrousel Web Dinámico</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body class="bg-black text-white font-mono min-h-screen">
+    <header
+      class="bg-neutral-900 border-b border-b-neutral-800 sticky top-0 z-10"
+    >
+      <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center h-16">
+          <div class="flex items-center gap-6">
+            <a
+              href="#inicio"
+              class="nav-link px-1 py-2 text-sm font-medium text-neutral-400 hover:text-white"
+              >Inicio</a
+            >
+            <a
+              href="#agregar"
+              class="nav-link px-1 py-2 text-sm font-medium text-neutral-400 hover:text-white"
+              >Agregar</a
+            >
+            <a
+              href="#ayuda"
+              class="nav-link px-1 py-2 text-sm font-medium text-neutral-400 hover:text-white"
+              >Ayuda</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+      <section id="inicio" class="page-section">
+        <h1
+          class="text-3xl font-bold text-center mb-8 tracking-wider uppercase"
+        >
+          Carrousel de Imágenes
+        </h1>
+
+        <div class="carousel-container relative max-w-4xl mx-auto">
+          <div class="carousel-slides flex overflow-hidden rounded-lg">
+            <div class="carousel-slide flex-shrink-0 w-full">
+              <img
+                src="https://i.pinimg.com/1200x/4e/f4/d5/4ef4d599c75b0210950c6e4601b270b8.jpg"
+                class="w-full h-96 object-cover"
+                alt="Espacio de Trabajo"
+              />
+              <div class="p-4 bg-neutral-950">
+                <h3 class="font-semibold text-lg">Espacio de Trabajo</h3>
+              </div>
+            </div>
+            <div class="carousel-slide flex-shrink-0 w-full">
+              <img
+                src="https://i.pinimg.com/736x/8d/b7/0d/8db70db39c2541beee1b750ec8cf7ec1.jpg"
+                class="w-full h-96 object-cover"
+                alt="Gaming Setup"
+              />
+              <div class="p-4 bg-neutral-950">
+                <h3 class="font-semibold text-lg">Gaming Setup</h3>
+              </div>
+            </div>
+            <div class="carousel-slide flex-shrink-0 w-full">
+              <img
+                src="https://i.pinimg.com/1200x/22/45/46/2245467762b8f0b1a8249eeaa38bd778.jpg"
+                class="w-full h-96 object-cover"
+                alt="Tecnología"
+              />
+              <div class="p-4 bg-neutral-950">
+                <h3 class="font-semibold text-lg">Tecnología Avanzada</h3>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
+          >
+            ‹
+          </button>
+          <button
+            class="carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
+          >
+            ›
+          </button>
+
+          <div class="carousel-indicators flex justify-center mt-4 space-x-2">
+            <button
+              class="carousel-indicator w-3 h-3 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-colors carousel-indicator-active"
+            ></button>
+            <button
+              class="carousel-indicator w-3 h-3 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-colors"
+            ></button>
+            <button
+              class="carousel-indicator w-3 h-3 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-colors"
+            ></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="agregar" class="page-section hidden">
+        <h1 class="text-3xl font-bold mb-6">Gestión de Estudiantes</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div
+            class="lg:col-span-1 border border-neutral-800 rounded-lg p-6 h-fit"
+          >
+            <h2 class="text-xl font-semibold mb-4">Nuevo Estudiante</h2>
+            <form id="student-form" class="space-y-4">
+              <div>
+                <label class="block text-sm mb-1">Nombre:</label>
+                <input
+                  id="nombre"
+                  type="text"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 p-2 text-sm"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm mb-1">Apellido:</label>
+                <input
+                  id="apellido"
+                  type="text"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 p-2 text-sm"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm mb-1">Carrera:</label>
+                <select
+                  id="carrera"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 p-2 text-sm"
+                  required
+                >
+                  <option value="">Seleccione una...</option>
+                  <option value="Sistema">Sistema</option>
+                  <option value="Telematica">Telemática</option>
+                  <option value="Industrial">Industrial</option>
+                </select>
+              </div>
+
+              <div>
+                <span class="block text-sm mb-2">Sexo:</span>
+                <div class="flex items-center gap-6">
+                  <label class="flex items-center gap-2 text-sm">
+                    <input type="radio" name="sexo" value="M" required />
+                    Masculino
+                  </label>
+                  <label class="flex items-center gap-2 text-sm">
+                    <input type="radio" name="sexo" value="F" /> Femenino
+                  </label>
+                </div>
+              </div>
+
+              <div class="flex gap-3 pt-4">
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm"
+                >
+                  Agregar
+                </button>
+                <button
+                  type="reset"
+                  class="w-full bg-neutral-700 hover:bg-neutral-600 text-white px-4 py-2 rounded-md text-sm"
+                >
+                  Limpiar
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h2 class="text-xl font-semibold mb-4">Listado de Estudiantes</h2>
+            <div class="border border-neutral-800 rounded-lg overflow-hidden">
+              <table class="min-w-full" id="student-table">
+                <thead class="bg-neutral-800">
+                  <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium">
+                      Nombre
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium">
+                      Apellido
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium">
+                      Carrera
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium">
+                      Sexo
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium">
+                      Opciones
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="student-table-body"
+                  class="bg-neutral-950 divide-y divide-neutral-800"
+                >
+                  <tr>
+                    <td class="px-6 py-4 text-sm">Denis</td>
+                    <td class="px-6 py-4 text-sm">Espinoza</td>
+                    <td class="px-6 py-4 text-sm">Sistema</td>
+                    <td class="px-6 py-4 text-sm">M</td>
+                    <td class="px-6 py-4 text-sm">
+                      <button
+                        class="delete-btn bg-red-600 hover:bg-red-700 text-white text-xs px-3 py-1 rounded-md"
+                      >
+                        Eliminar
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 text-sm">Maria</td>
+                    <td class="px-6 py-4 text-sm">Vargas</td>
+                    <td class="px-6 py-4 text-sm">Telematica</td>
+                    <td class="px-6 py-4 text-sm">F</td>
+                    <td class="px-6 py-4 text-sm">
+                      <button
+                        class="delete-btn bg-red-600 hover:bg-red-700 text-white text-xs px-3 py-1 rounded-md"
+                      >
+                        Eliminar
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ayuda" class="page-section hidden">
+        <h1 class="text-3xl font-bold mb-6">Centro de Ayuda</h1>
+        <div
+          class="bg-neutral-900 border border-neutral-800 p-6 rounded-lg max-w-3xl mx-auto"
+        >
+          <h2 class="text-2xl font-semibold mb-6">Preguntas Frecuentes</h2>
+          <div class="space-y-4">
+            <details
+              class="bg-neutral-800 p-4 rounded-lg border border-neutral-700"
+            >
+              <summary
+                class="font-medium cursor-pointer flex justify-between items-center list-none"
+              >
+                ¿Cómo funciona la navegación?<span>+</span>
+              </summary>
+              <p class="text-neutral-300 mt-3 text-sm">
+                Esta es una aplicación SPA. No recarga la página; solo oculta y
+                muestra secciones.
+              </p>
+            </details>
+
+            <details
+              class="bg-neutral-800 p-4 rounded-lg border border-neutral-700"
+            >
+              <summary
+                class="font-medium cursor-pointer flex justify-between items-center list-none"
+              >
+                ¿Cómo agrego un estudiante?<span>+</span>
+              </summary>
+              <p class="text-neutral-300 mt-3 text-sm">
+                Rellena el formulario y haz clic en "Agregar". Se añadirá a la
+                tabla.
+              </p>
+            </details>
+
+            <details
+              class="bg-neutral-800 p-4 rounded-lg border border-neutral-700"
+            >
+              <summary
+                class="font-medium cursor-pointer flex justify-between items-center list-none"
+              >
+                ¿Se guardan los datos?<span>+</span>
+              </summary>
+              <p class="text-neutral-300 mt-3 text-sm">
+                No. Necesitarías localStorage o una base de datos.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

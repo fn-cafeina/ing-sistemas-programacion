@@ -1,0 +1,31 @@
+.nav-link-active {
+  color: white;
+  border-bottom-width: 2px;
+  border-color: #ef4444;
+}
+
+.carousel-slides {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide-active {
+  display: block;
+}
+
+.carousel-indicator-active {
+  background-color: #ef4444;
+}
+
+.page-section {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.page-section.hidden {
+  display: none;
+  opacity: 0;
+}
