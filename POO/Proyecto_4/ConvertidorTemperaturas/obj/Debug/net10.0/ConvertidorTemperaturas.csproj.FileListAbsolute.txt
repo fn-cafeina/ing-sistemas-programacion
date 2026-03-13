@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/bin/Debug/net10.0/ConvertidorTemperaturas
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/bin/Debug/net10.0/ConvertidorTemperaturas.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/bin/Debug/net10.0/ConvertidorTemperaturas.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/bin/Debug/net10.0/ConvertidorTemperaturas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/bin/Debug/net10.0/ConvertidorTemperaturas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/refint/ConvertidorTemperaturas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ConvertidorTemperaturas.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/ConvertidorTemperaturas/obj/Debug/net10.0/ref/ConvertidorTemperaturas.dll

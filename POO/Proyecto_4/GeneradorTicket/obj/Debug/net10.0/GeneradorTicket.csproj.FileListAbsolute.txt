@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/bin/Debug/net10.0/GeneradorTicket
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/bin/Debug/net10.0/GeneradorTicket.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/bin/Debug/net10.0/GeneradorTicket.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/bin/Debug/net10.0/GeneradorTicket.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/bin/Debug/net10.0/GeneradorTicket.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/refint/GeneradorTicket.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/GeneradorTicket.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/GeneradorTicket/obj/Debug/net10.0/ref/GeneradorTicket.dll

@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/bin/Debug/net10.0/CalculadorPerimetroArea
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/bin/Debug/net10.0/CalculadorPerimetroArea.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/bin/Debug/net10.0/CalculadorPerimetroArea.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/bin/Debug/net10.0/CalculadorPerimetroArea.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/bin/Debug/net10.0/CalculadorPerimetroArea.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/refint/CalculadorPerimetroArea.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/CalculadorPerimetroArea.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_4/CalculadorPerimetroArea/obj/Debug/net10.0/ref/CalculadorPerimetroArea.dll
