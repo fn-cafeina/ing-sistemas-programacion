@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/bin/Debug/net10.0/Proyecto_3
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/bin/Debug/net10.0/Proyecto_3.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/bin/Debug/net10.0/Proyecto_3.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/bin/Debug/net10.0/Proyecto_3.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/bin/Debug/net10.0/Proyecto_3.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/refint/Proyecto_3.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/Proyecto_3.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_3/obj/Debug/net10.0/ref/Proyecto_3.dll
