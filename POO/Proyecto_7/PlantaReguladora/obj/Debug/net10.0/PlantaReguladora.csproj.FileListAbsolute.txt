@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/bin/Debug/net10.0/PlantaReguladora
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/bin/Debug/net10.0/PlantaReguladora.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/bin/Debug/net10.0/PlantaReguladora.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/bin/Debug/net10.0/PlantaReguladora.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/bin/Debug/net10.0/PlantaReguladora.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/refint/PlantaReguladora.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/PlantaReguladora.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/PlantaReguladora/obj/Debug/net10.0/ref/PlantaReguladora.dll

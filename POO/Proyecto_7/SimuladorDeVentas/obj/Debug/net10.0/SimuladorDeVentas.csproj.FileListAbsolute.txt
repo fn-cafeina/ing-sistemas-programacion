@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/bin/Debug/net10.0/SimuladorDeVentas
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/bin/Debug/net10.0/SimuladorDeVentas.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/bin/Debug/net10.0/SimuladorDeVentas.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/bin/Debug/net10.0/SimuladorDeVentas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/bin/Debug/net10.0/SimuladorDeVentas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/refint/SimuladorDeVentas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/SimuladorDeVentas.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_7/SimuladorDeVentas/obj/Debug/net10.0/ref/SimuladorDeVentas.dll
