@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/bin/Debug/net10.0/IMC
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/bin/Debug/net10.0/IMC.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/bin/Debug/net10.0/IMC.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/bin/Debug/net10.0/IMC.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/bin/Debug/net10.0/IMC.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/refint/IMC.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/IMC.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_8/IMC/obj/Debug/net10.0/ref/IMC.dll
