@@ -28,10 +28,10 @@ do
     switch (opcion)
     {
         case "1":
-            Console.WriteLine($"Fecha actual: {DateTime.Now.ToShortDateString()}");
+            Console.WriteLine($"Fecha actual: {DateTime.Now:d}");
             break;
         case "2":
-            Console.WriteLine($"Hora actual: {DateTime.Now.ToShortTimeString()}");
+            Console.WriteLine($"Hora actual: {DateTime.Now:t}");
             break;
         case "3":
             Console.WriteLine("Saliendo del programa...");

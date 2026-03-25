@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/bin/Debug/net10.0/MenuOpciones
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/bin/Debug/net10.0/MenuOpciones.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/bin/Debug/net10.0/MenuOpciones.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/bin/Debug/net10.0/MenuOpciones.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/bin/Debug/net10.0/MenuOpciones.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/refint/MenuOpciones.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/MenuOpciones.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_10/MenuOpciones/obj/Debug/net10.0/ref/MenuOpciones.dll
