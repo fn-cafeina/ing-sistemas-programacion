@@ -1,4 +1,4 @@
-﻿/*
+/*
     Registro de Producción de Operarios.
 
     Problema: Una fabrica paga 100C$ por cada unidad producida.
@@ -23,25 +23,38 @@ if (!int.TryParse(Console.ReadLine(), out int cantidadDeOperarios))
 }
 
 int precioUnidad = 100;
-double nomina = 0;
+double nominaBrutaTotal = 0;
+
+Console.WriteLine("\n--- Registro de Operarios ---");
 
 for (int i = 0; i < cantidadDeOperarios; i++)
 {
-    Console.Write($"Ingrese la cantidad de unidades producidas para el operario {i + 1}: ");
-    if (!int.TryParse(Console.ReadLine(), out int unidadesProducidas))
+    int unidadesProducidas;
+    while (true)
     {
-        Console.WriteLine("Error: dato no válido.");
-        return;
+        Console.Write($"\nIngrese la cantidad de unidades producidas para el operario {i + 1}: ");
+        if (int.TryParse(Console.ReadLine(), out unidadesProducidas) && unidadesProducidas >= 0)
+        {
+            break;
+        }
+        Console.WriteLine("Error: Ingrese un número entero no negativo.");
     }
 
-    nomina += precioUnidad * unidadesProducidas;
+    int pagoBase = precioUnidad * unidadesProducidas;
+    int bono = unidadesProducidas > 50 ? 200 : 0;
+    int pagoBrutoIndividual = pagoBase + bono;
+    double impuestoIndividual = pagoBrutoIndividual * 0.02;
 
-    if (unidadesProducidas > 50)
-    {
-        nomina += 200;
-    }
+    Console.WriteLine($"Operario {i + 1}:");
+    Console.WriteLine($"  Unidades: {unidadesProducidas}");
+    Console.WriteLine($"  Pago Bruto: C${pagoBrutoIndividual} (Base: C${pagoBase}, Bono: C${bono})");
+    Console.WriteLine($"  Impuesto (2%): C${impuestoIndividual:F2}");
+    Console.WriteLine($"  Pago Neto: C${pagoBrutoIndividual - impuestoIndividual:F2}");
+
+    nominaBrutaTotal += pagoBrutoIndividual;
 }
 
-nomina *= 0.98;
+double nominaNetaTotal = nominaBrutaTotal * 0.98;
 
-Console.WriteLine($"Nomina: C${(int)nomina}");
+Console.WriteLine("\n------------------------------");
+Console.WriteLine($"Total Nomina: C${(int)nominaNetaTotal}");
