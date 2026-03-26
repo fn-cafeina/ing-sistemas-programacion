@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "GestionInventario/1.0.0": {
+        "runtime": {
+          "GestionInventario.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GestionInventario/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
