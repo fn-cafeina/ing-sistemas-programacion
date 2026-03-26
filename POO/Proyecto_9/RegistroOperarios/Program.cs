@@ -24,6 +24,7 @@ if (!int.TryParse(Console.ReadLine(), out int cantidadDeOperarios))
 
 int precioUnidad = 100;
 double nominaBrutaTotal = 0;
+double impuestoTotal = 0;
 
 Console.WriteLine("\n--- Registro de Operarios ---");
 
@@ -52,9 +53,11 @@ for (int i = 0; i < cantidadDeOperarios; i++)
     Console.WriteLine($"  Pago Neto: C${pagoBrutoIndividual - impuestoIndividual:F2}");
 
     nominaBrutaTotal += pagoBrutoIndividual;
+    impuestoTotal += impuestoIndividual;
 }
 
 double nominaNetaTotal = nominaBrutaTotal * 0.98;
 
 Console.WriteLine("\n------------------------------");
+Console.WriteLine($"Impuesto total: C${(int)impuestoTotal}");
 Console.WriteLine($"Total Nomina: C${(int)nominaNetaTotal}");

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RegistroOperarios")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6df72cc46f0bdcb453c904a85ed6e3f2eddbe2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+761b02878ba5ebc680757ffa704babbcdc4dac82")]
 [assembly: System.Reflection.AssemblyProductAttribute("RegistroOperarios")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RegistroOperarios")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
