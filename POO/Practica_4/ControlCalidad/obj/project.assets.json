@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_11/ControlCalidad/ControlCalidad.csproj",
+      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_4/ControlCalidad/ControlCalidad.csproj",
       "projectName": "ControlCalidad",
-      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_11/ControlCalidad/ControlCalidad.csproj",
+      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_4/ControlCalidad/ControlCalidad.csproj",
       "packagesPath": "/home/cafeina/.nuget/packages/",
-      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_11/ControlCalidad/obj/",
+      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_4/ControlCalidad/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cafeina/.nuget/NuGet/NuGet.Config"

@@ -22,26 +22,27 @@ int[] stock = { 10, 25, 15, 8, 12 };
 
 for (int i = 0; i < productos.Length; i++)
 {
-    Console.Write($"Ingrese la cantidad de unidades vendidas de {productos[i]} (Stock actual: {stock[i]}): ");
+    int unidadesVendidas;
+    while (true)
+    {
+        Console.Write($"Ingrese la cantidad de unidades vendidas de {productos[i]} (Stock actual: {stock[i]}): ");
 
-    if (!int.TryParse(Console.ReadLine(), out int unidadesVendidas))
-    {
-        Console.WriteLine("Error: Ingrese un número válido. Se saltará este producto.");
-        continue;
-    }
+        if (int.TryParse(Console.ReadLine(), out unidadesVendidas) && unidadesVendidas >= 0)
+        {
+            if (unidadesVendidas > stock[i])
+            {
+                Console.WriteLine($"Error: Stock insuficiente para {productos[i]}. Solo hay {stock[i]} unidades disponibles.");
+                break; 
+            }
 
-    if (unidadesVendidas < 0)
-    {
-        Console.WriteLine("Error: La cantidad no puede ser negativa. No se realizó la venta.");
-    }
-    else if (unidadesVendidas > stock[i])
-    {
-        Console.WriteLine($"Error: Stock insuficiente para {productos[i]}. Solo hay {stock[i]} unidades disponibles.");
-    }
-    else
-    {
-        stock[i] -= unidadesVendidas;
-        Console.WriteLine($"Venta realizada. Nuevo stock de {productos[i]}: {stock[i]}");
+            stock[i] -= unidadesVendidas;
+            Console.WriteLine($"Venta realizada. Nuevo stock de {productos[i]}: {stock[i]}");
+            break;
+        }
+        
+        Console.Clear();
+        Console.WriteLine("--- Gestión de Inventario - Tienda Tecnológica ---\n");
+        Console.WriteLine("Error: Ingrese un número entero no negativo.");
     }
 }
 

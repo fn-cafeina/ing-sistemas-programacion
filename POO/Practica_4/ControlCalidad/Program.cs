@@ -1,4 +1,4 @@
-﻿/*
+/*
     Control de Calidad en una Línea de Producción
 
     Una fábrica de piezas mecánicas produce lotes de 8 piezas por turno.
@@ -15,16 +15,25 @@
 
 int[] piezas = new int[8];
 
+Console.Clear();
+Console.WriteLine("--- Control de Calidad - Línea de Producción ---\n");
 Console.WriteLine("A continuación ingrese el peso de cada pieza del primer lote.");
 
 for (int i = 0; i < piezas.Length; i++)
 {
-    Console.Write($"Ingrese al peso de la pieza {i + 1}: ");
-
-    if (!int.TryParse(Console.ReadLine(), out int pieza))
+    int pieza;
+    while (true)
     {
-        Console.WriteLine("Error: Dato no válido.");
-        return;
+        Console.Write($"Ingrese al peso de la pieza {i + 1}: ");
+        if (int.TryParse(Console.ReadLine(), out pieza) && pieza >= 0)
+        {
+            break;
+        }
+
+        Console.Clear();
+        Console.WriteLine("--- Control de Calidad - Línea de Producción ---\n");
+        Console.WriteLine("A continuación ingrese el peso de cada pieza del primer lote.");
+        Console.WriteLine("Error: Ingrese un peso válido (número entero no negativo).");
     }
 
     piezas[i] = pieza;

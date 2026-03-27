@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_11/GestionInventario/GestionInventario.csproj",
+      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_4/GestionInventario/GestionInventario.csproj",
       "projectName": "GestionInventario",
-      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_11/GestionInventario/GestionInventario.csproj",
+      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_4/GestionInventario/GestionInventario.csproj",
       "packagesPath": "/home/cafeina/.nuget/packages/",
-      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_11/GestionInventario/obj/",
+      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_4/GestionInventario/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cafeina/.nuget/NuGet/NuGet.Config"
