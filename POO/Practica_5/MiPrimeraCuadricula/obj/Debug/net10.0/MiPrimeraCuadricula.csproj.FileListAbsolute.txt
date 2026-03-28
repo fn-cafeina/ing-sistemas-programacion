@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/bin/Debug/net10.0/MiPrimeraCuadricula
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/bin/Debug/net10.0/MiPrimeraCuadricula.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/bin/Debug/net10.0/MiPrimeraCuadricula.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/bin/Debug/net10.0/MiPrimeraCuadricula.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/bin/Debug/net10.0/MiPrimeraCuadricula.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/refint/MiPrimeraCuadricula.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/MiPrimeraCuadricula.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MiPrimeraCuadricula/obj/Debug/net10.0/ref/MiPrimeraCuadricula.dll

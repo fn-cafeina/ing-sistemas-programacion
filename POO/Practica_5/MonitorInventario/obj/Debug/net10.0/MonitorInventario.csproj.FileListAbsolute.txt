@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/bin/Debug/net10.0/MonitorInventario
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/bin/Debug/net10.0/MonitorInventario.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/bin/Debug/net10.0/MonitorInventario.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/bin/Debug/net10.0/MonitorInventario.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/bin/Debug/net10.0/MonitorInventario.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/refint/MonitorInventario.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/MonitorInventario.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/MonitorInventario/obj/Debug/net10.0/ref/MonitorInventario.dll

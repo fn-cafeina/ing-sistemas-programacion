@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/bin/Debug/net10.0/AnalisisVentas
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/bin/Debug/net10.0/AnalisisVentas.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/bin/Debug/net10.0/AnalisisVentas.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/bin/Debug/net10.0/AnalisisVentas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/bin/Debug/net10.0/AnalisisVentas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/refint/AnalisisVentas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/AnalisisVentas.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_5/AnalisisVentas/obj/Debug/net10.0/ref/AnalisisVentas.dll
