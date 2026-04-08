@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/bin/Debug/net10.0/TermostatoInteligente
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/bin/Debug/net10.0/TermostatoInteligente.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/bin/Debug/net10.0/TermostatoInteligente.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/bin/Debug/net10.0/TermostatoInteligente.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/bin/Debug/net10.0/TermostatoInteligente.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/refint/TermostatoInteligente.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/TermostatoInteligente.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_11/TermostatoInteligente/obj/Debug/net10.0/ref/TermostatoInteligente.dll
