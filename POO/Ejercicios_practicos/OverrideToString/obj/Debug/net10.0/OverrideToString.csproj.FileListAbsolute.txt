@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/bin/Debug/net10.0/OverrideToString
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/bin/Debug/net10.0/OverrideToString.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/bin/Debug/net10.0/OverrideToString.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/bin/Debug/net10.0/OverrideToString.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/bin/Debug/net10.0/OverrideToString.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/refint/OverrideToString.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/OverrideToString.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/OverrideToString/obj/Debug/net10.0/ref/OverrideToString.dll
