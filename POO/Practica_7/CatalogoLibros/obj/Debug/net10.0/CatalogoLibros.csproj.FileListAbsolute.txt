@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/bin/Debug/net10.0/CatalogoLibros
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/bin/Debug/net10.0/CatalogoLibros.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/bin/Debug/net10.0/CatalogoLibros.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/bin/Debug/net10.0/CatalogoLibros.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/bin/Debug/net10.0/CatalogoLibros.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/refint/CatalogoLibros.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/CatalogoLibros.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/CatalogoLibros/obj/Debug/net10.0/ref/CatalogoLibros.dll

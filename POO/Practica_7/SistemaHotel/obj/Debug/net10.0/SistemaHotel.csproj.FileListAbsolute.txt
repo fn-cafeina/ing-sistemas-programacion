@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/bin/Debug/net10.0/SistemaHotel
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/bin/Debug/net10.0/SistemaHotel.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/bin/Debug/net10.0/SistemaHotel.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/bin/Debug/net10.0/SistemaHotel.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/bin/Debug/net10.0/SistemaHotel.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/refint/SistemaHotel.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/SistemaHotel.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/SistemaHotel/obj/Debug/net10.0/ref/SistemaHotel.dll
