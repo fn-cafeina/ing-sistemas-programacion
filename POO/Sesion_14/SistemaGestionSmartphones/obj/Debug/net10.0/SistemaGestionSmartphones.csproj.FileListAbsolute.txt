@@ -1,0 +1,15 @@
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\bin\Debug\net10.0\SistemaGestionSmartphones.exe
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\bin\Debug\net10.0\SistemaGestionSmartphones.deps.json
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\bin\Debug\net10.0\SistemaGestionSmartphones.runtimeconfig.json
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\bin\Debug\net10.0\SistemaGestionSmartphones.dll
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\bin\Debug\net10.0\SistemaGestionSmartphones.pdb
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.AssemblyInfoInputs.cache
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.AssemblyInfo.cs
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.csproj.CoreCompileInputs.cache
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.sourcelink.json
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.dll
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\refint\SistemaGestionSmartphones.dll
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.pdb
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\SistemaGestionSmartphones.genruntimeconfig.cache
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaGestionSmartphones\obj\Debug\net10.0\ref\SistemaGestionSmartphones.dll

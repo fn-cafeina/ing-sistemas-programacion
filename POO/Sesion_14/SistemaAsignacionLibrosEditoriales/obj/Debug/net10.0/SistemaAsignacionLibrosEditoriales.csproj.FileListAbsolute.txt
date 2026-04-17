@@ -1,0 +1,15 @@
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\bin\Debug\net10.0\SistemaAsignacionLibrosEditoriales.exe
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\bin\Debug\net10.0\SistemaAsignacionLibrosEditoriales.deps.json
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\bin\Debug\net10.0\SistemaAsignacionLibrosEditoriales.runtimeconfig.json
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\bin\Debug\net10.0\SistemaAsignacionLibrosEditoriales.dll
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\bin\Debug\net10.0\SistemaAsignacionLibrosEditoriales.pdb
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.AssemblyInfoInputs.cache
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.AssemblyInfo.cs
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.csproj.CoreCompileInputs.cache
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.sourcelink.json
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.dll
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\refint\SistemaAsignacionLibrosEditoriales.dll
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.pdb
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\SistemaAsignacionLibrosEditoriales.genruntimeconfig.cache
+C:\Users\Jasmir Medina\Desktop\Dev\ing-sistemas-programacion\POO\Sesion_14\SistemaAsignacionLibrosEditoriales\obj\Debug\net10.0\ref\SistemaAsignacionLibrosEditoriales.dll
