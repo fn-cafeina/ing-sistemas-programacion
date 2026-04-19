@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/bin/Debug/net10.0/SistemaNomina
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/bin/Debug/net10.0/SistemaNomina.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/bin/Debug/net10.0/SistemaNomina.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/bin/Debug/net10.0/SistemaNomina.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/bin/Debug/net10.0/SistemaNomina.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/refint/SistemaNomina.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/SistemaNomina.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_15/SistemaNomina/obj/Debug/net10.0/ref/SistemaNomina.dll
