@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/bin/Debug/net10.0/ControlInventarioAutomotriz
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/bin/Debug/net10.0/ControlInventarioAutomotriz.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/bin/Debug/net10.0/ControlInventarioAutomotriz.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/bin/Debug/net10.0/ControlInventarioAutomotriz.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/bin/Debug/net10.0/ControlInventarioAutomotriz.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/refint/ControlInventarioAutomotriz.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ControlInventarioAutomotriz.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_7/ControlInventarioAutomotriz/obj/Debug/net10.0/ref/ControlInventarioAutomotriz.dll
