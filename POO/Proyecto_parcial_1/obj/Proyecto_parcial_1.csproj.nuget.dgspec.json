@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/ProyectoParcial_1/ProyectoParcial_1.csproj": {}
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/Proyecto_parcial_1.csproj": {}
   },
   "projects": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/ProyectoParcial_1/ProyectoParcial_1.csproj": {
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/Proyecto_parcial_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/ProyectoParcial_1/ProyectoParcial_1.csproj",
-        "projectName": "ProyectoParcial_1",
-        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/ProyectoParcial_1/ProyectoParcial_1.csproj",
+        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/Proyecto_parcial_1.csproj",
+        "projectName": "Proyecto_parcial_1",
+        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/Proyecto_parcial_1.csproj",
         "packagesPath": "/home/cafeina/.nuget/packages/",
-        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/ProyectoParcial_1/obj/",
+        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/cafeina/.nuget/NuGet/NuGet.Config"

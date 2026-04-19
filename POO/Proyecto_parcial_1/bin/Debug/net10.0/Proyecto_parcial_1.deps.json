@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "ProyectoParcial_1/1.0.0": {
+      "Proyecto_parcial_1/1.0.0": {
         "runtime": {
-          "ProyectoParcial_1.dll": {}
+          "Proyecto_parcial_1.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ProyectoParcial_1/1.0.0": {
+    "Proyecto_parcial_1/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

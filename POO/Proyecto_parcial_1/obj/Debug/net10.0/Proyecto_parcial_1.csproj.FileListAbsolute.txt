@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/bin/Debug/net10.0/Proyecto_parcial_1
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/bin/Debug/net10.0/Proyecto_parcial_1.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/bin/Debug/net10.0/Proyecto_parcial_1.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/bin/Debug/net10.0/Proyecto_parcial_1.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/bin/Debug/net10.0/Proyecto_parcial_1.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/refint/Proyecto_parcial_1.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/Proyecto_parcial_1.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_parcial_1/obj/Debug/net10.0/ref/Proyecto_parcial_1.dll
