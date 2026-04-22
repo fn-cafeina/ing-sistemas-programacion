@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/1/1.csproj": {}
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/SumaSimple/SumaSimple.csproj": {}
   },
   "projects": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/1/1.csproj": {
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/SumaSimple/SumaSimple.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/1/1.csproj",
-        "projectName": "1",
-        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/1/1.csproj",
+        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/SumaSimple/SumaSimple.csproj",
+        "projectName": "SumaSimple",
+        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/SumaSimple/SumaSimple.csproj",
         "packagesPath": "/home/cafeina/.nuget/packages/",
-        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/1/obj/",
+        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/SumaSimple/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/cafeina/.nuget/NuGet/NuGet.Config"
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.106/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
