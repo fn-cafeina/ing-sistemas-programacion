@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/5/5.csproj": {}
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ListaEstudiantes/ListaEstudiantes.csproj": {}
   },
   "projects": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/5/5.csproj": {
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ListaEstudiantes/ListaEstudiantes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/5/5.csproj",
-        "projectName": "5",
-        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/5/5.csproj",
+        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ListaEstudiantes/ListaEstudiantes.csproj",
+        "projectName": "ListaEstudiantes",
+        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ListaEstudiantes/ListaEstudiantes.csproj",
         "packagesPath": "/home/cafeina/.nuget/packages/",
-        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/5/obj/",
+        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ListaEstudiantes/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/cafeina/.nuget/NuGet/NuGet.Config"
