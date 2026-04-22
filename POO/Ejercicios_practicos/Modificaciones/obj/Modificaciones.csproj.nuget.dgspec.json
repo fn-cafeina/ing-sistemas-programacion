@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/3/3.csproj": {}
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/Modificaciones/Modificaciones.csproj": {}
   },
   "projects": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/3/3.csproj": {
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/Modificaciones/Modificaciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/3/3.csproj",
-        "projectName": "3",
-        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/3/3.csproj",
+        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/Modificaciones/Modificaciones.csproj",
+        "projectName": "Modificaciones",
+        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/Modificaciones/Modificaciones.csproj",
         "packagesPath": "/home/cafeina/.nuget/packages/",
-        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/3/obj/",
+        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/Modificaciones/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/cafeina/.nuget/NuGet/NuGet.Config"
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.106/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
