@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/2/2.csproj",
-      "projectName": "2",
-      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/2/2.csproj",
+      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/BucleSencillo/BucleSencillo.csproj",
+      "projectName": "BucleSencillo",
+      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/BucleSencillo/BucleSencillo.csproj",
       "packagesPath": "/home/cafeina/.nuget/packages/",
-      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/2/obj/",
+      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/BucleSencillo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cafeina/.nuget/NuGet/NuGet.Config"
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.106/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
