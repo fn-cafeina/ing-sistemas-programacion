@@ -64,13 +64,37 @@ class Program
 
     static void RegistrarEstudiantes()
     {
-        Estudiante est1 = new Estudiante("2024-0001", "Ana García", "Sistemas");
-        Estudiante est2 = new Estudiante("2024-0500", "Luis Pérez", "Medicina", 4);
-        Estudiante est3 = new Estudiante("2022-0123", "María López", "Derecho", 6, 9.7);
+        Console.Write("Matrícula: ");
+        string matricula = Console.ReadLine() ?? "";
 
-        MostrarEstudiante(est1);
-        MostrarEstudiante(est2);
-        MostrarEstudiante(est3);
+        Console.Write("Nombre: ");
+        string nombre = Console.ReadLine() ?? "";
+
+        Console.Write("Carrera: ");
+        string carrera = Console.ReadLine() ?? "";
+
+        Console.Write("Semestre (1 si es primer ingreso): ");
+        int semestre = int.Parse(Console.ReadLine() ?? "1");
+
+        Console.Write("Promedio (0 si no aplica): ");
+        double promedio = double.Parse(Console.ReadLine() ?? "0");
+
+        Estudiante estudiante;
+
+        if (promedio > 0)
+        {
+            estudiante = new Estudiante(matricula, nombre, carrera, semestre, promedio);
+        }
+        else if (semestre > 1)
+        {
+            estudiante = new Estudiante(matricula, nombre, carrera, semestre);
+        }
+        else
+        {
+            estudiante = new Estudiante(matricula, nombre, carrera);
+        }
+
+        MostrarEstudiante(estudiante);
 
         Console.WriteLine("\nSaliendo del ámbito de los objetos...");
     }
