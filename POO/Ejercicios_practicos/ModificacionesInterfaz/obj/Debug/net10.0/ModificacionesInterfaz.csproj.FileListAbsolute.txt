@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/bin/Debug/net10.0/ModificacionesInterfaz
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/bin/Debug/net10.0/ModificacionesInterfaz.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/bin/Debug/net10.0/ModificacionesInterfaz.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/bin/Debug/net10.0/ModificacionesInterfaz.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/bin/Debug/net10.0/ModificacionesInterfaz.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/refint/ModificacionesInterfaz.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ModificacionesInterfaz.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ModificacionesInterfaz/obj/Debug/net10.0/ref/ModificacionesInterfaz.dll
