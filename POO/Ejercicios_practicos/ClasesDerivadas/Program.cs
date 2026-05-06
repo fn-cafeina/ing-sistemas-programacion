@@ -1,4 +1,4 @@
-﻿public class Persona
+﻿public abstract class Persona
 {
     protected string nombre;
 
@@ -7,10 +7,12 @@
         this.nombre = nom;
     }
 
-    public virtual void Imprimir()
-    {
-        Console.WriteLine("Nombre: " + nombre);
-    }
+    // public virtual void Imprimir()
+    // {
+    //     Console.WriteLine("Nombre: " + nombre);
+    // }
+
+    public abstract void Imprimir();
 }
 
 public class Estudiante : Persona
@@ -50,9 +52,10 @@ class Program
 {
     public static void Main()
     {
-        Persona p3 = new Persona("Jasmir");
+        // Persona p3 = new Persona("Jasmir");
         Persona p1 = new Estudiante("Ernesto", "00-28052-0");
         Persona p2 = new Becado("Jennifer", "00-14060-9", 1300);
+
 
         p1.Imprimir();
         Console.WriteLine("-----------------------------");
@@ -60,9 +63,9 @@ class Program
         p2.Imprimir();
         Console.WriteLine("-----------------------------");
 
-        p3.Imprimir();
+        // p3.Imprimir();
 
         Console.WriteLine("Press any key to continue . . .");
-        Console.ReadKey(true);
+        Console.ReadKey();
     }
 }
