@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/bin/Debug/net10.0/ClasesDerivadas
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/bin/Debug/net10.0/ClasesDerivadas.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/bin/Debug/net10.0/ClasesDerivadas.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/bin/Debug/net10.0/ClasesDerivadas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/bin/Debug/net10.0/ClasesDerivadas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/refint/ClasesDerivadas.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ClasesDerivadas.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesDerivadas/obj/Debug/net10.0/ref/ClasesDerivadas.dll

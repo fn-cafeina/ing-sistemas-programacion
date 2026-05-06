@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaAsignacionLibrosEditoriales\\SistemaAsignacionLibrosEditoriales.csproj": {}
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaAsignacionLibrosEditoriales/SistemaAsignacionLibrosEditoriales.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaAsignacionLibrosEditoriales\\SistemaAsignacionLibrosEditoriales.csproj": {
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaAsignacionLibrosEditoriales/SistemaAsignacionLibrosEditoriales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaAsignacionLibrosEditoriales\\SistemaAsignacionLibrosEditoriales.csproj",
+        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaAsignacionLibrosEditoriales/SistemaAsignacionLibrosEditoriales.csproj",
         "projectName": "SistemaAsignacionLibrosEditoriales",
-        "projectPath": "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaAsignacionLibrosEditoriales\\SistemaAsignacionLibrosEditoriales.csproj",
-        "packagesPath": "C:\\Users\\Jasmir Medina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaAsignacionLibrosEditoriales\\obj\\",
+        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaAsignacionLibrosEditoriales/SistemaAsignacionLibrosEditoriales.csproj",
+        "packagesPath": "/home/cafeina/.nuget/packages/",
+        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaAsignacionLibrosEditoriales/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jasmir Medina\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/cafeina/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -59,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.107/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

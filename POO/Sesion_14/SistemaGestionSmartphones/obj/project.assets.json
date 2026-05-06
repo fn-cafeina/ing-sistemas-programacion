@@ -8,24 +8,25 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jasmir Medina\\.nuget\\packages\\": {}
+    "/home/cafeina/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaGestionSmartphones\\SistemaGestionSmartphones.csproj",
+      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaGestionSmartphones/SistemaGestionSmartphones.csproj",
       "projectName": "SistemaGestionSmartphones",
-      "projectPath": "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaGestionSmartphones\\SistemaGestionSmartphones.csproj",
-      "packagesPath": "C:\\Users\\Jasmir Medina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jasmir Medina\\Desktop\\Dev\\ing-sistemas-programacion\\POO\\Sesion_14\\SistemaGestionSmartphones\\obj\\",
+      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaGestionSmartphones/SistemaGestionSmartphones.csproj",
+      "packagesPath": "/home/cafeina/.nuget/packages/",
+      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Sesion_14/SistemaGestionSmartphones/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jasmir Medina\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/cafeina/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -44,7 +45,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -65,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.107/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

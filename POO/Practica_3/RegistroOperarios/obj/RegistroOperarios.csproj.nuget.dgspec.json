@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_9/RegistroOperarios/RegistroOperarios.csproj": {}
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_3/RegistroOperarios/RegistroOperarios.csproj": {}
   },
   "projects": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_9/RegistroOperarios/RegistroOperarios.csproj": {
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_3/RegistroOperarios/RegistroOperarios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_9/RegistroOperarios/RegistroOperarios.csproj",
+        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_3/RegistroOperarios/RegistroOperarios.csproj",
         "projectName": "RegistroOperarios",
-        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_9/RegistroOperarios/RegistroOperarios.csproj",
+        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_3/RegistroOperarios/RegistroOperarios.csproj",
         "packagesPath": "/home/cafeina/.nuget/packages/",
-        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Proyecto_9/RegistroOperarios/obj/",
+        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_3/RegistroOperarios/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/cafeina/.nuget/NuGet/NuGet.Config"
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.107/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
