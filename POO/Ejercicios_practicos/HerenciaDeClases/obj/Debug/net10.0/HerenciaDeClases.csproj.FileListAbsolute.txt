@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/bin/Debug/net10.0/HerenciaDeClases
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/bin/Debug/net10.0/HerenciaDeClases.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/bin/Debug/net10.0/HerenciaDeClases.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/bin/Debug/net10.0/HerenciaDeClases.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/bin/Debug/net10.0/HerenciaDeClases.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/refint/HerenciaDeClases.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/HerenciaDeClases.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/HerenciaDeClases/obj/Debug/net10.0/ref/HerenciaDeClases.dll

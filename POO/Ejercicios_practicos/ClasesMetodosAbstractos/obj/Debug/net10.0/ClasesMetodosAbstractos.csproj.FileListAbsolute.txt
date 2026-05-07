@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/bin/Debug/net10.0/ClasesMetodosAbstractos
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/bin/Debug/net10.0/ClasesMetodosAbstractos.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/bin/Debug/net10.0/ClasesMetodosAbstractos.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/bin/Debug/net10.0/ClasesMetodosAbstractos.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/bin/Debug/net10.0/ClasesMetodosAbstractos.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/refint/ClasesMetodosAbstractos.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ClasesMetodosAbstractos.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/ClasesMetodosAbstractos/obj/Debug/net10.0/ref/ClasesMetodosAbstractos.dll
