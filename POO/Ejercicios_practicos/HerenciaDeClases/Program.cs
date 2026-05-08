@@ -9,6 +9,10 @@
     * Usa una clase base llamada Empleado
     * Usa virtual y override para permitir que el método de calculo del
     salario se comporte de forma distinta en las clases hijas
+
+    Modificación: Agregar una clase derivada de la clase base llamada Empleado que registre
+    los datos de los empleados del departamento de ventas quienes
+    reciben un bono adicional del 10% de su salario base. (Redefinir el salario).
 */
 
 public class Empleado
@@ -58,6 +62,18 @@ public class Gerente : Empleado
     }
 }
 
+public class Ventas : Empleado
+{
+    public Ventas(string nombre, double salarioBase) : base(nombre, salarioBase)
+    {
+    }
+
+    public override double CalcularTotal()
+    {
+        return SalarioBase + (SalarioBase * 0.10);
+    }
+}
+
 class Program
 {
     static void Main()
@@ -75,5 +91,11 @@ class Program
         Console.WriteLine("---------------------------");
         Console.WriteLine($"Empleado: {jefe.Nombre}");
         Console.WriteLine($"Sueldo total del Gerente:  ${jefe.CalcularTotal()}");
+
+        Console.WriteLine("\n\nResultado de la modificación:\n");
+        Ventas vendedor = new Ventas("Carlos Pérez", 1800);
+        Console.WriteLine("---------------------------");
+        Console.WriteLine($"Empleado: {vendedor.Nombre}");
+        Console.WriteLine($"Sueldo total de Ventas: ${vendedor.CalcularTotal()}");
     }
 }

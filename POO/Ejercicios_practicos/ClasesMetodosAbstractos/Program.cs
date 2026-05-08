@@ -6,7 +6,12 @@
     * Define el método abstracto ProcesarTransaccion(double monto).
     * PagoTarjeta aplica un recargo del 2%.
     * PagoCripto confirma la transacción mediante un mensaje de hash.
+
+    Modificación: Implementar una clase que derive de la clase abstracta
+    que permita registrar el pago con efectivo que permita aplicar
+    un descuento del 5% del monto total de la transacción.
 */
+
 public abstract class ProcesadorPago
 {
     // Método abstracto: no tiene cuerpo, obliga a las hijas a implementarlo
@@ -30,6 +35,15 @@ public class PagoCripto : ProcesadorPago
     }
 }
 
+public class PagoEfectivo : ProcesadorPago
+{
+    public override void ProcesarTransaccion(double monto)
+    {
+        double total = monto * 0.95;
+        Console.WriteLine($"Procesando Pago en Efectivo. Total con descuento: ${total}");
+    }
+}
+
 class Program
 {
     static void Main()
@@ -47,9 +61,13 @@ class Program
         miPago = new PagoCripto();
         miPago.ProcesarTransaccion(100.00); // Salida: Transacción verificada en Blockchain
 
-        Console.WriteLine("\nIntento de instanciar clase abstracta:");
+        // Console.WriteLine("\nIntento de instanciar clase abstracta:");
         // Si descomentas la siguiente línea, el compilador dará error.
         // Es un excelente punto para mostrar a los alumnos.
         // miPago = new ProcesadorPago();
+
+        Console.WriteLine("\n\nResultado de la modificación:\n");
+        miPago = new PagoEfectivo();
+        miPago.ProcesarTransaccion(100.00);
     }
 }
