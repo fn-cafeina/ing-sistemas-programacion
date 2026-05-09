@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TermostatoInteligente")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4120aa2461cae6301466fc40552002db51e7d489")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8d0f204ef11eed7ffc51d7db938a8f70d7dd3df")]
 [assembly: System.Reflection.AssemblyProductAttribute("TermostatoInteligente")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TermostatoInteligente")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

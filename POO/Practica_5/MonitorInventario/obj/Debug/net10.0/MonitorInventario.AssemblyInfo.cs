@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonitorInventario")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7eb82dd9e7d19e3958e183aff27cd5b0d0d3b0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8d0f204ef11eed7ffc51d7db938a8f70d7dd3df")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonitorInventario")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonitorInventario")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
