@@ -41,7 +41,7 @@ public class Antibiotico : IMedicamentoEspecializado
     {
         double precioFinal = costo * 1.20;
 
-        Console.WriteLine($"{nombreGenerico} | Precio final: ${precioFinal}");
+        Console.WriteLine($"{nombreGenerico} | Precio final: ${precioFinal:N2}");
     }
 
     public void VerificarLote(string codigo)

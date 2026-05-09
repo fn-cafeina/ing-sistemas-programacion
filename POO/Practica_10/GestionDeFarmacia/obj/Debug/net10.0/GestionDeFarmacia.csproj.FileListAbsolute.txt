@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/bin/Debug/net10.0/GestionDeFarmacia
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/bin/Debug/net10.0/GestionDeFarmacia.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/bin/Debug/net10.0/GestionDeFarmacia.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/bin/Debug/net10.0/GestionDeFarmacia.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/bin/Debug/net10.0/GestionDeFarmacia.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/refint/GestionDeFarmacia.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/GestionDeFarmacia.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/GestionDeFarmacia/obj/Debug/net10.0/ref/GestionDeFarmacia.dll
