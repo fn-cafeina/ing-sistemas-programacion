@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/bin/Debug/net10.0/Empleado
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/bin/Debug/net10.0/Empleado.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/bin/Debug/net10.0/Empleado.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/bin/Debug/net10.0/Empleado.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/bin/Debug/net10.0/Empleado.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/refint/Empleado.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/Empleado.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_10/Empleado/obj/Debug/net10.0/ref/Empleado.dll
