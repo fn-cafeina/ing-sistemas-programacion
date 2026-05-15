@@ -73,17 +73,56 @@ public class Vigilante : Empleado
 
     public void SolicitarDatos()
     {
-        Console.Write("Ingrese el nombre: ");
-        Nombre = Console.ReadLine() ?? string.Empty;
+        string nombre;
+        do
+        {
+            Console.Write("Ingrese el nombre: ");
+            nombre = Console.ReadLine()?.Trim() ?? string.Empty;
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                Console.WriteLine("El nombre no puede quedar vacío.");
+            }
+        } while (string.IsNullOrWhiteSpace(nombre));
+        Nombre = nombre;
 
-        Console.Write("Ingrese el salario: ");
-        Salario = Convert.ToDouble(Console.ReadLine());
+        double salario;
+        while (true)
+        {
+            Console.Write("Ingrese el salario: ");
+            string entradaSalario = Console.ReadLine() ?? string.Empty;
+            if (double.TryParse(entradaSalario, out salario) && salario >= 0)
+            {
+                break;
+            }
+            Console.WriteLine("Salario inválido. Ingrese un número mayor o igual a 0.");
+        }
+        Salario = salario;
 
-        Console.Write("Ingrese la hora de entrada (HH:MM): ");
-        HoraEntrada = Console.ReadLine() ?? string.Empty;
+        string horaEntrada;
+        while (true)
+        {
+            Console.Write("Ingrese la hora de entrada (HH:MM): ");
+            horaEntrada = Console.ReadLine()?.Trim() ?? string.Empty;
+            if (System.Text.RegularExpressions.Regex.IsMatch(horaEntrada, "^([01]\\d|2[0-3]):[0-5]\\d$"))
+            {
+                break;
+            }
+            Console.WriteLine("Hora de entrada inválida. Use el formato HH:MM.");
+        }
+        HoraEntrada = horaEntrada;
 
-        Console.Write("Ingrese la hora de salida (HH:MM): ");
-        HoraSalida = Console.ReadLine() ?? string.Empty;
+        string horaSalida;
+        while (true)
+        {
+            Console.Write("Ingrese la hora de salida (HH:MM): ");
+            horaSalida = Console.ReadLine()?.Trim() ?? string.Empty;
+            if (System.Text.RegularExpressions.Regex.IsMatch(horaSalida, "^([01]\\d|2[0-3]):[0-5]\\d$"))
+            {
+                break;
+            }
+            Console.WriteLine("Hora de salida inválida. Use el formato HH:MM.");
+        }
+        HoraSalida = horaSalida;
     }
 
     public void ImprimirDatos()
