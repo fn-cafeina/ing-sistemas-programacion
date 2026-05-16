@@ -27,7 +27,11 @@ public class Laptop : Dispositivo
 
     public override void Iniciar()
     {
-        Console.WriteLine($"Iniciando laptop {marca}");
+        Console.WriteLine($"[INFO] Iniciando {marca}...");
+        Console.WriteLine("  > Verificando hardware... OK");
+        Console.WriteLine("  > Cargando sistema operativo... OK");
+        Console.WriteLine("  > Configurando red... OK");
+        Console.WriteLine($"[OK] {marca} está listo para usar.\n");
     }
 }
 
@@ -35,7 +39,20 @@ class Program
 {
     static void Main()
     {
-        Laptop lenovo = new Laptop("Lenovo");
-        lenovo.Iniciar();
+        Console.WriteLine("=== SISTEMA DE ARRANQUE DE DISPOSITIVOS ===\n");
+
+        List<Dispositivo> dispositivos = new List<Dispositivo>
+        {
+            new Laptop("Lenovo ThinkPad"),
+            new Laptop("Dell XPS"),
+            new Laptop("HP Spectre")
+        };
+
+        foreach (Dispositivo disp in dispositivos)
+        {
+            disp.Iniciar();
+        }
+
+        Console.WriteLine("=== TODOS LOS DISPOSITIVOS HAN INICIADO ===");
     }
 }
