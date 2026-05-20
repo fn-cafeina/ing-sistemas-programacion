@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/bin/Debug/net10.0/MetodosGenericos
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/bin/Debug/net10.0/MetodosGenericos.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/bin/Debug/net10.0/MetodosGenericos.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/bin/Debug/net10.0/MetodosGenericos.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/bin/Debug/net10.0/MetodosGenericos.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/refint/MetodosGenericos.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/MetodosGenericos.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Ejercicios_practicos/MetodosGenericos/obj/Debug/net10.0/ref/MetodosGenericos.dll
