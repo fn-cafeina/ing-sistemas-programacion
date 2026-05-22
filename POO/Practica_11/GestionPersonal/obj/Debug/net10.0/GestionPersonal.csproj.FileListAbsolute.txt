@@ -1,0 +1,15 @@
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/bin/Debug/net10.0/GestionPersonal
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/bin/Debug/net10.0/GestionPersonal.deps.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/bin/Debug/net10.0/GestionPersonal.runtimeconfig.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/bin/Debug/net10.0/GestionPersonal.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/bin/Debug/net10.0/GestionPersonal.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.GeneratedMSBuildEditorConfig.editorconfig
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.AssemblyInfoInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.AssemblyInfo.cs
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.csproj.CoreCompileInputs.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.sourcelink.json
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/refint/GestionPersonal.dll
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.pdb
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/GestionPersonal.genruntimeconfig.cache
+/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_11/GestionPersonal/obj/Debug/net10.0/ref/GestionPersonal.dll
