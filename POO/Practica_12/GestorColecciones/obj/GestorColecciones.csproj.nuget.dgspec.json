@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/MotorComparacion.csproj": {}
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/GestorColecciones.csproj": {}
   },
   "projects": {
-    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/MotorComparacion.csproj": {
+    "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/GestorColecciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/MotorComparacion.csproj",
-        "projectName": "MotorComparacion",
-        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/MotorComparacion.csproj",
+        "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/GestorColecciones.csproj",
+        "projectName": "GestorColecciones",
+        "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/GestorColecciones.csproj",
         "packagesPath": "/home/cafeina/.nuget/packages/",
-        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/obj/",
+        "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/cafeina/.nuget/NuGet/NuGet.Config"

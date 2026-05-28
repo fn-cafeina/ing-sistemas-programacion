@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/GestorColecciones/GestorColecciones.csproj",
+      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/GestorColecciones.csproj",
       "projectName": "GestorColecciones",
-      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/GestorColecciones/GestorColecciones.csproj",
+      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/GestorColecciones.csproj",
       "packagesPath": "/home/cafeina/.nuget/packages/",
-      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/GestorColecciones/obj/",
+      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/GestorColecciones/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cafeina/.nuget/NuGet/NuGet.Config"

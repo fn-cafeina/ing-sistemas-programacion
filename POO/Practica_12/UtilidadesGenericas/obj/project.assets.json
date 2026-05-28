@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/MotorComparacion.csproj",
-      "projectName": "MotorComparacion",
-      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/MotorComparacion.csproj",
+      "projectUniqueName": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/UtilidadesGenericas/UtilidadesGenericas.csproj",
+      "projectName": "UtilidadesGenericas",
+      "projectPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/UtilidadesGenericas/UtilidadesGenericas.csproj",
       "packagesPath": "/home/cafeina/.nuget/packages/",
-      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Semana_11/MotorComparacion/obj/",
+      "outputPath": "/home/cafeina/Dev/ing-sistemas-programacion/POO/Practica_12/UtilidadesGenericas/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cafeina/.nuget/NuGet/NuGet.Config"
