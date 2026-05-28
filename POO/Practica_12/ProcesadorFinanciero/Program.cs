@@ -38,89 +38,133 @@ class Program
         return -1;
     }
 
+    static int? LeerInt(string mensaje, int min, int max, int maxIntentos = 3)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write(mensaje);
+            if (int.TryParse(Console.ReadLine(), out int valor) && valor >= min && valor <= max)
+                return valor;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return null;
+    }
+
+    static decimal? LeerDecimal(string mensaje, decimal min, int maxIntentos = 3)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write(mensaje);
+            if (decimal.TryParse(Console.ReadLine(), out decimal valor) && valor >= min)
+                return valor;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return null;
+    }
+
+    static double? LeerDouble(string mensaje, double min, double max, int maxIntentos = 3)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write(mensaje);
+            if (double.TryParse(Console.ReadLine(), out double valor) && valor >= min && valor <= max)
+                return valor;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return null;
+    }
+
     static int MostrarMenu()
     {
         Console.Clear();
         Console.WriteLine("=== PROCESADOR DE TRANSACCIONES FINANCIERAS ===\n");
         Console.WriteLine("Seleccione el tipo de moneda:");
-        Console.WriteLine("1. Dolares (int)");
-        Console.WriteLine("2. Moneda exacta (decimal)");
-        Console.WriteLine("3. Criptomonedas (double)");
+        Console.WriteLine("1. Dolares (int)    — montos exactos sin decimales");
+        Console.WriteLine("2. Moneda exacta (decimal) — ej: 1500.50");
+        Console.WriteLine("3. Criptomonedas (double)  — ej: 0.045");
         Console.WriteLine("4. Salir");
         return LeerOpcion(1, 4, 3);
     }
 
     static void ProcesarInt()
     {
-        Console.Write("Ingrese el monto en dolares: ");
-        if (!int.TryParse(Console.ReadLine(), out int monto) || monto < 0)
+        int? monto = LeerInt("Ingrese el monto en dolares (max 2,000,000): ", 0, 2_000_000);
+        if (monto == null) return;
+
+        double? tasa = LeerDouble("Ingrese la tasa de impuesto (0-100, ej: 15): ", 0, 100);
+        if (tasa == null) return;
+
+        int impuesto = ProcesadorFinanciero.CalcularImpuesto(monto.Value, tasa.Value);
+        int total;
+
+        try
         {
-            Console.WriteLine("Error: Ingrese un monto valido mayor o igual a 0.");
+            checked { total = monto.Value + impuesto; }
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Error: El total excede el limite maximo de int.");
             return;
         }
 
-        Console.Write("Ingrese la tasa de impuesto (porcentaje): ");
-        if (!double.TryParse(Console.ReadLine(), out double tasa) || tasa < 0 || tasa > 100)
-        {
-            Console.WriteLine("Error: Ingrese una tasa entre 0 y 100.");
-            return;
-        }
-
-        int impuesto = ProcesadorFinanciero.CalcularImpuesto(monto, tasa);
-        int total = monto + impuesto;
-
-        Console.WriteLine($"\nMonto original: ${monto}");
-        Console.WriteLine($"Tasa de impuesto: {tasa}%");
-        Console.WriteLine($"Impuesto: ${impuesto}");
+        Console.WriteLine($"\nMonto original: ${monto.Value}");
+        Console.WriteLine($"Tasa de impuesto: {tasa.Value}%");
+        Console.WriteLine($"Impuesto: ${impuesto}  (Math.Round aplica redondeo bancario)");
         Console.WriteLine($"Total a pagar: ${total}");
     }
 
     static void ProcesarDecimal()
     {
-        Console.Write("Ingrese el monto en moneda exacta: ");
-        if (!decimal.TryParse(Console.ReadLine(), out decimal monto) || monto < 0)
+        decimal? monto = LeerDecimal("Ingrese el monto en moneda exacta (ej: 1500.50): ", 0);
+        if (monto == null) return;
+
+        if (monto.Value != Math.Round(monto.Value, 2))
         {
-            Console.WriteLine("Error: Ingrese un monto valido mayor o igual a 0.");
+            Console.WriteLine("Error: La moneda permite hasta 2 decimales (ej: 1500.50).");
             return;
         }
 
-        Console.Write("Ingrese la tasa de impuesto (porcentaje): ");
-        if (!double.TryParse(Console.ReadLine(), out double tasa) || tasa < 0 || tasa > 100)
-        {
-            Console.WriteLine("Error: Ingrese una tasa entre 0 y 100.");
-            return;
-        }
+        double? tasa = LeerDouble("Ingrese la tasa de impuesto (0-100, ej: 10): ", 0, 100);
+        if (tasa == null) return;
 
-        decimal impuesto = ProcesadorFinanciero.CalcularImpuesto(monto, tasa);
-        decimal total = monto + impuesto;
+        decimal impuesto = ProcesadorFinanciero.CalcularImpuesto(monto.Value, tasa.Value);
+        decimal total = monto.Value + impuesto;
 
-        Console.WriteLine($"\nMonto original: ${monto:F2}");
-        Console.WriteLine($"Tasa de impuesto: {tasa}%");
+        Console.WriteLine($"\nMonto original: ${monto.Value:F2}");
+        Console.WriteLine($"Tasa de impuesto: {tasa.Value}%");
         Console.WriteLine($"Impuesto: ${impuesto:F2}");
         Console.WriteLine($"Total a pagar: ${total:F2}");
     }
 
     static void ProcesarDouble()
     {
-        Console.Write("Ingrese el monto en criptomonedas: ");
-        if (!double.TryParse(Console.ReadLine(), out double monto) || monto < 0)
+        double? monto = LeerDouble("Ingrese el monto en criptomonedas (ej: 0.045): ", 0, double.MaxValue);
+        if (monto == null) return;
+
+        double? tasa = LeerDouble("Ingrese la tasa de impuesto (0-100, ej: 5): ", 0, 100);
+        if (tasa == null) return;
+
+        double impuesto = ProcesadorFinanciero.CalcularImpuesto(monto.Value, tasa.Value);
+
+        if (double.IsInfinity(impuesto))
         {
-            Console.WriteLine("Error: Ingrese un monto valido mayor o igual a 0.");
+            Console.WriteLine("Error: El impuesto calculado excede el rango permitido.");
             return;
         }
 
-        Console.Write("Ingrese la tasa de impuesto (porcentaje): ");
-        if (!double.TryParse(Console.ReadLine(), out double tasa) || tasa < 0 || tasa > 100)
+        double total = monto.Value + impuesto;
+
+        if (double.IsInfinity(total))
         {
-            Console.WriteLine("Error: Ingrese una tasa entre 0 y 100.");
+            Console.WriteLine("Error: El total excede el rango permitido.");
             return;
         }
 
-        double impuesto = ProcesadorFinanciero.CalcularImpuesto(monto, tasa);
-        double total = monto + impuesto;
-
-        Console.WriteLine($"\nMonto original: ${monto:F4}");
-        Console.WriteLine($"Tasa de impuesto: {tasa}%");
+        Console.WriteLine($"\nMonto original: ${monto.Value:F4}");
+        Console.WriteLine($"Tasa de impuesto: {tasa.Value}%");
         Console.WriteLine($"Impuesto: ${impuesto:F4}");
         Console.WriteLine($"Total a pagar: ${total:F4}");
     }

@@ -39,6 +39,46 @@ class Program
         return -1;
     }
 
+    static string? LeerString(string mensaje, int maxIntentos = 3)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write(mensaje);
+            string valor = Console.ReadLine() ?? "";
+            if (!string.IsNullOrWhiteSpace(valor))
+                return valor;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return null;
+    }
+
+    static decimal? LeerDecimal(string mensaje, decimal min, int maxIntentos = 3)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write(mensaje);
+            if (decimal.TryParse(Console.ReadLine(), out decimal valor) && valor >= min)
+                return valor;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return null;
+    }
+
+    static int? LeerInt(string mensaje, int min, int max, int maxIntentos = 3)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write(mensaje);
+            if (int.TryParse(Console.ReadLine(), out int valor) && valor >= min && valor <= max)
+                return valor;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return null;
+    }
+
     static int MenuTipo()
     {
         Console.Clear();
@@ -56,7 +96,7 @@ class Program
         do
         {
             Console.Clear();
-            Console.WriteLine($"=== GESTION DE {nombreTipo.ToUpper()} ===\n");
+            Console.WriteLine($"=== GESTION DE {nombreTipo.ToUpper()} ===  |  Inventario: {dispensador.Contar()} productos\n");
             Console.WriteLine("1. Agregar producto");
             Console.WriteLine("2. Despachar producto");
             Console.WriteLine("3. Mostrar inventario");
@@ -99,61 +139,56 @@ class Program
         } while (opcion != 5);
     }
 
+    static bool ValidarNombre(string nombre)
+    {
+        if (nombre.Length > 50)
+        {
+            Console.WriteLine("Error: El nombre no puede exceder 50 caracteres.");
+            return false;
+        }
+        if (!nombre.All(c => char.IsLetter(c) || c == ' '))
+        {
+            Console.WriteLine("Error: El nombre solo puede contener letras y espacios.");
+            return false;
+        }
+        return true;
+    }
+
     static void AgregarProducto<T>(Dispensador<T> dispensador, string nombreTipo) where T : Producto
     {
         if (typeof(T) == typeof(Medicamento))
         {
-            Console.Write("Nombre del medicamento: ");
-            string nombre = Console.ReadLine() ?? "";
-            if (string.IsNullOrWhiteSpace(nombre))
-            {
-                Console.WriteLine("Error: El nombre no puede estar vacio.");
-                return;
-            }
+            string? nombre = LeerString("Nombre del medicamento: ");
+            if (nombre == null) return;
+            if (!ValidarNombre(nombre)) return;
 
-            Console.Write("Precio del medicamento: ");
-            if (!decimal.TryParse(Console.ReadLine(), out decimal precio) || precio < 0)
-            {
-                Console.WriteLine("Error: Ingrese un precio valido mayor o igual a 0.");
-                return;
-            }
+            decimal? precio = LeerDecimal("Precio del medicamento (ej: 25.50): ", 0);
+            if (precio == null) return;
 
-            Console.Write("Dosis en mg: ");
-            if (!int.TryParse(Console.ReadLine(), out int dosis) || dosis <= 0)
-            {
-                Console.WriteLine("Error: Ingrese una dosis valida mayor a 0.");
-                return;
-            }
+            int? dosis = LeerInt("Dosis en mg (ej: 500): ", 1, int.MaxValue);
+            if (dosis == null) return;
 
-            (dispensador as Dispensador<Medicamento>)?.Agregar(new Medicamento(nombre, precio, dosis));
+            (dispensador as Dispensador<Medicamento>)?.Agregar(new Medicamento(nombre, precio.Value, dosis.Value));
             Console.WriteLine("Medicamento agregado correctamente.");
         }
         else if (typeof(T) == typeof(Alimento))
         {
-            Console.Write("Nombre del alimento: ");
-            string nombre = Console.ReadLine() ?? "";
-            if (string.IsNullOrWhiteSpace(nombre))
+            string? nombre = LeerString("Nombre del alimento: ");
+            if (nombre == null) return;
+            if (!ValidarNombre(nombre)) return;
+
+            decimal? precio = LeerDecimal("Precio del alimento (ej: 12.00): ", 0);
+            if (precio == null) return;
+
+            string? fecha = LeerString("Fecha de vencimiento (DD/MM/AAAA): ");
+            if (fecha == null) return;
+            if (!DateTime.TryParseExact(fecha, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out _))
             {
-                Console.WriteLine("Error: El nombre no puede estar vacio.");
+                Console.WriteLine("Error: Fecha invalida. Use DD/MM/AAAA (ej: 15/06/2026).");
                 return;
             }
 
-            Console.Write("Precio del alimento: ");
-            if (!decimal.TryParse(Console.ReadLine(), out decimal precio) || precio < 0)
-            {
-                Console.WriteLine("Error: Ingrese un precio valido mayor o igual a 0.");
-                return;
-            }
-
-            Console.Write("Fecha de vencimiento (DD/MM/AAAA): ");
-            string fecha = Console.ReadLine() ?? "";
-            if (string.IsNullOrWhiteSpace(fecha))
-            {
-                Console.WriteLine("Error: La fecha no puede estar vacia.");
-                return;
-            }
-
-            (dispensador as Dispensador<Alimento>)?.Agregar(new Alimento(nombre, precio, fecha));
+            (dispensador as Dispensador<Alimento>)?.Agregar(new Alimento(nombre, precio.Value, fecha));
             Console.WriteLine("Alimento agregado correctamente.");
         }
     }
@@ -166,49 +201,47 @@ class Program
         if (dispensador.Contar() == 0)
             return;
 
-        Console.Write("\nSeleccione el numero del producto a despachar: ");
-        if (!int.TryParse(Console.ReadLine(), out int indice) || indice < 1 || indice > dispensador.Contar())
-        {
-            Console.WriteLine("Error: Seleccion invalida.");
-            return;
-        }
+        int? indice = LeerInt("\nSeleccione el numero del producto a despachar: ", 1, dispensador.Contar());
+        if (indice == null) return;
 
-        T item = dispensador.ObtenerPorIndice(indice - 1);
-        if (item != null)
-        {
-            if (dispensador.Despachar(item))
-                Console.WriteLine("Producto retirado del inventario.");
-        }
+        T item = dispensador.ObtenerPorIndice(indice.Value - 1);
+        if (dispensador.Despachar(item))
+            Console.WriteLine("Producto retirado del inventario.");
     }
 
     static void BuscarProductos<T>(Dispensador<T> dispensador, string nombreTipo) where T : Producto
     {
+        if (dispensador.Contar() == 0)
+        {
+            Console.WriteLine("No hay productos registrados para buscar.");
+            return;
+        }
+
         if (typeof(T) == typeof(Medicamento))
         {
-            Console.Write("Buscar medicamentos con dosis minima: ");
-            if (!int.TryParse(Console.ReadLine(), out int dosisMin) || dosisMin < 0)
-            {
-                Console.WriteLine("Error: Dosis invalida.");
-                return;
-            }
+            string? nombre = LeerString("Buscar por nombre (ej: Paracetamol): ");
+            if (nombre == null) return;
 
-            var resultados = (dispensador as Dispensador<Medicamento>)?.Buscar(m => m.Dosis >= dosisMin) ?? new List<Medicamento>();
-            Console.WriteLine(resultados.Count > 0 ? "Resultados:" : "No se encontraron medicamentos.");
+            int? dosisMin = LeerInt("Dosis minima en mg (ej: 500): ", 0, int.MaxValue);
+            if (dosisMin == null) return;
+
+            var resultados = (dispensador as Dispensador<Medicamento>)?.Buscar(m =>
+                m.Nombre.Contains(nombre, StringComparison.OrdinalIgnoreCase) &&
+                m.Dosis >= dosisMin.Value) ?? new List<Medicamento>();
+
+            Console.WriteLine(resultados.Count > 0 ? "Resultados:" : "No se encontraron medicamentos con ese criterio.");
             foreach (var r in resultados)
                 Console.WriteLine(r);
         }
         else if (typeof(T) == typeof(Alimento))
         {
-            Console.Write("Buscar alimentos con fecha que contenga: ");
-            string patron = Console.ReadLine() ?? "";
-            if (string.IsNullOrWhiteSpace(patron))
-            {
-                Console.WriteLine("Error: El patron de busqueda no puede estar vacio.");
-                return;
-            }
+            string? nombre = LeerString("Buscar por nombre (ej: Manzana): ");
+            if (nombre == null) return;
 
-            var resultados = (dispensador as Dispensador<Alimento>)?.Buscar(a => a.FechaVencimiento.Contains(patron)) ?? new List<Alimento>();
-            Console.WriteLine(resultados.Count > 0 ? "Resultados:" : "No se encontraron alimentos.");
+            var resultados = (dispensador as Dispensador<Alimento>)?.Buscar(a =>
+                a.Nombre.Contains(nombre, StringComparison.OrdinalIgnoreCase)) ?? new List<Alimento>();
+
+            Console.WriteLine(resultados.Count > 0 ? "Resultados:" : "No se encontraron alimentos con ese nombre.");
             foreach (var r in resultados)
                 Console.WriteLine(r);
         }
