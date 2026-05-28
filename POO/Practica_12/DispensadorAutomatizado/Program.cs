@@ -26,6 +26,19 @@
 
 class Program
 {
+    static int LeerOpcion(int min, int max, int maxIntentos)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write("\nOpcion: ");
+            if (int.TryParse(Console.ReadLine(), out int opcion) && opcion >= min && opcion <= max)
+                return opcion;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return -1;
+    }
+
     static int MenuTipo()
     {
         Console.Clear();
@@ -34,10 +47,7 @@ class Program
         Console.WriteLine("1. Medicamento");
         Console.WriteLine("2. Alimento");
         Console.WriteLine("3. Salir");
-        Console.Write("\nOpcion: ");
-        if (int.TryParse(Console.ReadLine(), out int opcion) && opcion >= 1 && opcion <= 3)
-            return opcion;
-        return 0;
+        return LeerOpcion(1, 3, 3);
     }
 
     static void MenuOperaciones<T>(Dispensador<T> dispensador, string nombreTipo) where T : Producto
@@ -52,13 +62,14 @@ class Program
             Console.WriteLine("3. Mostrar inventario");
             Console.WriteLine("4. Buscar productos");
             Console.WriteLine("5. Volver al menu principal");
-            Console.Write("\nOpcion: ");
-            if (!int.TryParse(Console.ReadLine(), out opcion) || opcion < 1 || opcion > 5)
+            opcion = LeerOpcion(1, 5, 3);
+
+            if (opcion == -1)
             {
-                Console.WriteLine("Opcion no valida.");
+                Console.WriteLine("Demasiados intentos fallidos. Volviendo...");
                 Console.Write("Presione cualquier tecla para continuar...");
                 Console.ReadKey();
-                continue;
+                break;
             }
 
             Console.Clear();
@@ -210,12 +221,10 @@ class Program
         {
             opcion = MenuTipo();
 
-            if (opcion == 0)
+            if (opcion == -1)
             {
-                Console.WriteLine("Opcion no valida.");
-                Console.Write("Presione cualquier tecla para continuar...");
-                Console.ReadKey();
-                continue;
+                Console.WriteLine("Demasiados intentos fallidos. Saliendo...");
+                break;
             }
 
             switch (opcion)

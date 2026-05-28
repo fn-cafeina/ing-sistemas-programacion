@@ -25,6 +25,19 @@
 
 class Program
 {
+    static int LeerOpcion(int min, int max, int maxIntentos)
+    {
+        for (int i = 0; i < maxIntentos; i++)
+        {
+            Console.Write("\nOpcion: ");
+            if (int.TryParse(Console.ReadLine(), out int opcion) && opcion >= min && opcion <= max)
+                return opcion;
+            if (i < maxIntentos - 1)
+                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+        }
+        return -1;
+    }
+
     static int MostrarMenu()
     {
         Console.Clear();
@@ -34,10 +47,7 @@ class Program
         Console.WriteLine("2. Moneda exacta (decimal)");
         Console.WriteLine("3. Criptomonedas (double)");
         Console.WriteLine("4. Salir");
-        Console.Write("\nOpcion: ");
-        if (int.TryParse(Console.ReadLine(), out int opcion) && opcion >= 1 && opcion <= 4)
-            return opcion;
-        return 0;
+        return LeerOpcion(1, 4, 3);
     }
 
     static void ProcesarInt()
@@ -122,12 +132,10 @@ class Program
         {
             opcion = MostrarMenu();
 
-            if (opcion == 0)
+            if (opcion == -1)
             {
-                Console.WriteLine("Opcion no valida.");
-                Console.Write("Presione cualquier tecla para continuar...");
-                Console.ReadKey();
-                continue;
+                Console.WriteLine("Demasiados intentos fallidos. Saliendo...");
+                break;
             }
 
             Console.Clear();
