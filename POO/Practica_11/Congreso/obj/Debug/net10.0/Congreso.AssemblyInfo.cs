@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Congreso")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b78e4729861a199c8485c4e112e07df6c725d6a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2eb678b010699926b4c8efd815240c6c4ad31d2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Congreso")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Congreso")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
