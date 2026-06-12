@@ -1,4 +1,4 @@
-﻿/*
+/*
     Ejercicio 1: Sistema de Biblioteca (Gestión de Préstamos de Libros)
 
     Contexto: El sistema de la biblioteca universitaria permite a los estudiantes prestar libros,
@@ -25,39 +25,56 @@ class Program
 {
     static void Main()
     {
-        try
+        bool continuar = true;
+
+        while (continuar)
         {
-            bool continuar = true;
+            Console.Clear();
+            Console.WriteLine("=== SISTEMA DE BIBLIOTECA ===");
+            Console.WriteLine();
 
-            while (continuar)
+            try
             {
-                Console.Clear();
-                Console.WriteLine("=== SISTEMA DE BIBLIOTECA ===");
-
-                Prestamo.HacerPrestamo();
-
-                Console.WriteLine();
-                Console.Write("Desea realizar otro prestamo? (s/n): ");
-                string? respuesta = Console.ReadLine()?.Trim().ToLower();
-                if (respuesta != "s")
+                if (!Prestamo.HacerPrestamo())
                     continuar = false;
             }
+            catch (InvalidOperationException ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Error: {ex.Message}");
+                Console.ResetColor();
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Error: {ex.Message}");
+                Console.ResetColor();
+            }
+            catch (FormatException ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Error: {ex.Message}");
+                Console.ResetColor();
+            }
+            finally
+            {
+                Console.WriteLine();
+                Console.WriteLine("Intento de prestamo finalizado.");
+                Console.Write("Presione cualquier tecla para continuar...");
+                Console.ReadKey();
+            }
+
+            if (!continuar) continue;
+
+            Console.WriteLine();
+            Console.Write("Desea realizar otro prestamo? (s/n): ");
+            string? respuesta = Console.ReadLine()?.Trim().ToLower();
+            if (respuesta != "s" && respuesta != "si" && respuesta != "y" && respuesta != "yes")
+                continuar = false;
         }
-        catch (InvalidOperationException ex)
-        {
-            Console.WriteLine($"Error: {ex.Message}");
-        }
-        catch (ArgumentOutOfRangeException ex)
-        {
-            Console.WriteLine($"Error: {ex.Message}");
-        }
-        catch (FormatException ex)
-        {
-            Console.WriteLine($"Error: {ex.Message}");
-        }
-        finally
-        {
-            Console.WriteLine("La sesion de prestamo ha concluido.");
-        }
+
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"\nSesion de prestamo concluida. Total de prestamos: {Prestamo.TotalPrestamos}.");
+        Console.ResetColor();
     }
 }
