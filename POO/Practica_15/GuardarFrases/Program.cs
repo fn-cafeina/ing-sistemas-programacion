@@ -1,6 +1,4 @@
 /*
-    Practica de Ficheros
-
     Ejercicio 1: Crea un programa que vaya leyendo las frases que el usuario
     teclea y las guarde en un fichero de texto llamado "frases.txt". Terminara
     cuando la frase introducida sea "fin" (esa frase no debera guardarse en el

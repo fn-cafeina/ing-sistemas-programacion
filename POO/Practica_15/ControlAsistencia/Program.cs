@@ -1,6 +1,4 @@
 /*
-    Trabajo Independiente
-
     Ejercicio 2: Sistema de Control de Asistencia
 
     Disena una aplicacion de consola en C# que permita gestionar el acceso

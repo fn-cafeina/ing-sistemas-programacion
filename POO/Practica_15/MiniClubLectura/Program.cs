@@ -1,6 +1,4 @@
 /*
-    Trabajo Independiente
-
     Ejercicio 1: El miniclub de lectura
 
     Disenar un programa de consola que muestre un menu simple con dos opciones:

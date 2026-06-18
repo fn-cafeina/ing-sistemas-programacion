@@ -1,6 +1,4 @@
 /*
-    Practica de Ficheros
-
     Ejercicio 2: Crea un programa que pida al usuario el nombre de un fichero
     de texto y una frase a buscar, y que muestre en pantalla todas las lineas
     de ese fichero que contengan esa frase. Cada frase se debe preceder del
