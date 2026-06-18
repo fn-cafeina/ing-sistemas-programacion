@@ -1,4 +1,6 @@
 /*
+    Trabajo Independiente
+
     Ejercicio 1: El miniclub de lectura
 
     Disenar un programa de consola que muestre un menu simple con dos opciones:
@@ -10,49 +12,116 @@
 
 class Program
 {
-    static int LeerOpcion(int min, int max, int maxIntentos)
+    const int MAX_INTENTOS = 3;
+    const int MAX_LONGITUD_TITULO = 100;
+
+    static int LeerOpcion(int min, int max)
     {
-        for (int i = 0; i < maxIntentos; i++)
+        for (int i = 0; i < MAX_INTENTOS; i++)
         {
-            Console.Write("\nOpcion: ");
-            if (int.TryParse(Console.ReadLine(), out int opcion) && opcion >= min && opcion <= max)
+            Console.Write("\n>>> Opcion: ");
+            string? entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out int opcion) && opcion >= min && opcion <= max)
                 return opcion;
-            if (i < maxIntentos - 1)
-                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+
+            if (i < MAX_INTENTOS - 1)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"Opcion invalida. Ingrese un numero entre {min} y {max}.");
+                Console.WriteLine($"Intentos restantes: {MAX_INTENTOS - i - 1}");
+                Console.ResetColor();
+            }
         }
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Demasiados intentos fallidos. Regresando...");
+        Console.ResetColor();
         return -1;
     }
 
-    static string? LeerString(string mensaje, int maxIntentos = 3)
+    static string? LeerString(string mensaje)
     {
-        for (int i = 0; i < maxIntentos; i++)
+        for (int i = 0; i < MAX_INTENTOS; i++)
         {
             Console.Write(mensaje);
             string? valor = Console.ReadLine();
+
             if (!string.IsNullOrWhiteSpace(valor))
-                return valor;
-            if (i < maxIntentos - 1)
-                Console.WriteLine($"Valor invalido. Intentos restantes: {maxIntentos - i - 1}");
+                return valor.Trim();
+
+            if (i < MAX_INTENTOS - 1)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("El valor no puede estar vacio.");
+                Console.WriteLine($"Intentos restantes: {MAX_INTENTOS - i - 1}");
+                Console.ResetColor();
+            }
         }
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Demasiados intentos fallidos. Regresando...");
+        Console.ResetColor();
         return null;
+    }
+
+    static bool ValidarTitulo(string titulo)
+    {
+        if (titulo.Length > MAX_LONGITUD_TITULO)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Error: El titulo no puede exceder {MAX_LONGITUD_TITULO} caracteres.");
+            Console.ResetColor();
+            return false;
+        }
+
+        if (titulo.Any(c => c < 32 || (c > 126 && c < 160) || c > 255))
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Error: El titulo contiene caracteres no permitidos.");
+            Console.ResetColor();
+            return false;
+        }
+
+        return true;
     }
 
     static int MostrarMenu()
     {
         Console.Clear();
-        Console.WriteLine("=== MINICLUB DE LECTURA ===\n");
-        Console.WriteLine("1. Registrar libro");
-        Console.WriteLine("2. Mostrar libros");
-        Console.WriteLine("3. Salir");
-        return LeerOpcion(1, 3, 3);
+        Console.WriteLine("========================================");
+        Console.WriteLine("       MINICLUB DE LECTURA");
+        Console.WriteLine("========================================\n");
+        Console.WriteLine("  1. Registrar libro");
+        Console.WriteLine("     -> Agrega un nuevo libro a la lista");
+        Console.WriteLine("  2. Mostrar libros");
+        Console.WriteLine("     -> Consulta todos los libros guardados");
+        Console.WriteLine("  3. Salir");
+        Console.WriteLine("     -> Cierra el programa");
+        Console.WriteLine("\n========================================");
+        return LeerOpcion(1, 3);
     }
 
     static void RegistrarLibro()
     {
+        Console.Clear();
+        Console.WriteLine("--- REGISTRAR LIBRO ---\n");
+
         string? titulo = LeerString("Ingrese el titulo del libro: ");
-        if (titulo == null)
+        if (titulo == null) return;
+
+        if (!ValidarTitulo(titulo))
         {
-            Console.WriteLine("Operacion cancelada. No se pudo leer el titulo.");
+            Console.Write("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
+            return;
+        }
+
+        Console.Write($"\nConfirma registrar '{titulo}'? (s/n): ");
+        string? conf = Console.ReadLine()?.Trim().ToLower();
+        if (conf != "s" && conf != "si" && conf != "y" && conf != "yes")
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Registro cancelado.");
+            Console.ResetColor();
             return;
         }
 
@@ -61,20 +130,27 @@ class Program
         {
             writer = File.AppendText("libros.txt");
             writer.WriteLine(titulo);
+
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Libro '{titulo}' registrado exitosamente.");
+            Console.WriteLine($"\nLibro '{titulo}' registrado exitosamente en libros.txt.");
+            Console.ResetColor();
+        }
+        catch (DirectoryNotFoundException ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Error: La ruta del archivo no es valida. {ex.Message}");
             Console.ResetColor();
         }
         catch (IOException ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Error de E/S: {ex.Message}");
+            Console.WriteLine($"Error de E/S al escribir: {ex.Message}");
             Console.ResetColor();
         }
-        catch (UnauthorizedAccessException ex)
+        catch (UnauthorizedAccessException)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Sin permisos para escribir: {ex.Message}");
+            Console.WriteLine("Error: No hay permisos para escribir en el archivo.");
             Console.ResetColor();
         }
         finally
@@ -85,43 +161,45 @@ class Program
 
     static void MostrarLibros()
     {
+        Console.Clear();
+        Console.WriteLine("--- LISTA DE LIBROS ---\n");
+
+        if (!File.Exists("libros.txt"))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Aun no hay libros registrados. Use la opcion 1 para agregar.");
+            Console.ResetColor();
+            return;
+        }
+
         StreamReader? reader = null;
         try
         {
-            if (!File.Exists("libros.txt"))
-            {
-                Console.WriteLine("No hay libros registrados. El archivo libros.txt no existe.");
-                return;
-            }
-
             reader = File.OpenText("libros.txt");
             string? linea;
             int contador = 0;
 
-            Console.WriteLine("=== LISTA DE LIBROS ===\n");
             while ((linea = reader.ReadLine()) != null)
             {
                 contador++;
-                Console.WriteLine($"{contador}. {linea}");
+                Console.WriteLine($"  {contador,2}. {linea}");
             }
 
-            if (contador == 0)
-                Console.WriteLine("No hay libros registrados.");
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"\nTotal de libros: {contador}");
-                Console.ResetColor();
-            }
-        }
-        catch (FileNotFoundException)
-        {
-            Console.WriteLine("No hay libros registrados. El archivo libros.txt no existe.");
+            Console.WriteLine($"\n{new string('-', 30)}");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine($"  Total de libros: {contador}");
+            Console.ResetColor();
         }
         catch (IOException ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Error de E/S: {ex.Message}");
+            Console.WriteLine($"Error de E/S al leer: {ex.Message}");
+            Console.ResetColor();
+        }
+        catch (UnauthorizedAccessException)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Error: No hay permisos para leer el archivo.");
             Console.ResetColor();
         }
         finally
@@ -137,24 +215,18 @@ class Program
         {
             opcion = MostrarMenu();
 
-            if (opcion == -1)
-            {
-                Console.WriteLine("Demasiados intentos fallidos. Saliendo...");
-                break;
-            }
+            if (opcion == -1) continue;
 
             Console.Clear();
 
             switch (opcion)
             {
-                case 1:
-                    RegistrarLibro();
-                    break;
-                case 2:
-                    MostrarLibros();
-                    break;
+                case 1: RegistrarLibro(); break;
+                case 2: MostrarLibros(); break;
                 case 3:
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Saliendo del programa...");
+                    Console.ResetColor();
                     break;
             }
 
