@@ -1,0 +1,484 @@
+﻿#nullable disable
+namespace MenusBarras
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            components = new System.ComponentModel.Container();
+            menuContextual = new ContextMenuStrip(components);
+            ctxCortar = new ToolStripMenuItem();
+            ctxCopiar = new ToolStripMenuItem();
+            ctxPegar = new ToolStripMenuItem();
+            ctxLimpiar = new ToolStripMenuItem();
+            menuStrip1 = new MenuStrip();
+            menuArchivo = new ToolStripMenuItem();
+            ArchivoSalir = new ToolStripMenuItem();
+            menuLibros = new ToolStripMenuItem();
+            LibrosNuevo = new ToolStripMenuItem();
+            LibrosGuardar = new ToolStripMenuItem();
+            LibrosModificar = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            LibrosEliminar = new ToolStripMenuItem();
+            LibrosConsultar = new ToolStripMenuItem();
+            menuVer = new ToolStripMenuItem();
+            VerBarraHerramientas = new ToolStripMenuItem();
+            VerBarraEstado = new ToolStripMenuItem();
+            menuAyuda = new ToolStripMenuItem();
+            AyudaAcercaDe = new ToolStripMenuItem();
+            statusStrip1 = new StatusStrip();
+            etbarestUsuario = new ToolStripStatusLabel();
+            etbarestRegistros = new ToolStripStatusLabel();
+            etbarestPpal = new ToolStripStatusLabel();
+            grpRegistro = new GroupBox();
+            lblCodigo = new Label();
+            txtCodigo = new TextBox();
+            lblTitulo = new Label();
+            txtTitulo = new TextBox();
+            lblAutor = new Label();
+            txtAutor = new TextBox();
+            lblCategoria = new Label();
+            cmbCategoria = new ComboBox();
+            lblAnio = new Label();
+            txtAnio = new TextBox();
+            lblISBN = new Label();
+            txtISBN = new TextBox();
+            chkDisponible = new CheckBox();
+            btnGuardar = new Button();
+            btnLimpiar = new Button();
+            menuContextual.SuspendLayout();
+            menuStrip1.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            grpRegistro.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuContextual
+            // 
+            menuContextual.Items.AddRange(new ToolStripItem[] { ctxCortar, ctxCopiar, ctxPegar, ctxLimpiar });
+            menuContextual.Name = "menuContextual";
+            menuContextual.Size = new Size(115, 92);
+            // 
+            // ctxCortar
+            // 
+            ctxCortar.Name = "ctxCortar";
+            ctxCortar.Size = new Size(114, 22);
+            ctxCortar.Text = "Cortar";
+            ctxCortar.Click += CtxCortar_Click;
+            // 
+            // ctxCopiar
+            // 
+            ctxCopiar.Name = "ctxCopiar";
+            ctxCopiar.Size = new Size(114, 22);
+            ctxCopiar.Text = "Copiar";
+            ctxCopiar.Click += CtxCopiar_Click;
+            // 
+            // ctxPegar
+            // 
+            ctxPegar.Name = "ctxPegar";
+            ctxPegar.Size = new Size(114, 22);
+            ctxPegar.Text = "Pegar";
+            ctxPegar.Click += CtxPegar_Click;
+            // 
+            // ctxLimpiar
+            // 
+            ctxLimpiar.Name = "ctxLimpiar";
+            ctxLimpiar.Size = new Size(114, 22);
+            ctxLimpiar.Text = "Limpiar";
+            ctxLimpiar.Click += CtxLimpiar_Click;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuArchivo, menuLibros, menuVer, menuAyuda });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // menuArchivo
+            // 
+            menuArchivo.DropDownItems.AddRange(new ToolStripItem[] { ArchivoSalir });
+            menuArchivo.Name = "menuArchivo";
+            menuArchivo.Size = new Size(60, 20);
+            menuArchivo.Text = "&Archivo";
+            // 
+            // ArchivoSalir
+            // 
+            ArchivoSalir.Name = "ArchivoSalir";
+            ArchivoSalir.ShortcutKeyDisplayString = "Alt+F4";
+            ArchivoSalir.Size = new Size(180, 22);
+            ArchivoSalir.Text = "&Salir";
+            ArchivoSalir.Click += ArchivoSalir_Click;
+            ArchivoSalir.MouseEnter += ArchivoSalir_MouseEnter;
+            ArchivoSalir.MouseLeave += ArchivoSalir_MouseLeave;
+            // 
+            // menuLibros
+            // 
+            menuLibros.DropDownItems.AddRange(new ToolStripItem[] { LibrosNuevo, LibrosGuardar, LibrosModificar, toolStripSeparator1, LibrosEliminar, LibrosConsultar });
+            menuLibros.Name = "menuLibros";
+            menuLibros.Size = new Size(51, 20);
+            menuLibros.Text = "&Libros";
+            // 
+            // LibrosNuevo
+            // 
+            LibrosNuevo.Name = "LibrosNuevo";
+            LibrosNuevo.ShortcutKeys = Keys.Control | Keys.N;
+            LibrosNuevo.Size = new Size(180, 22);
+            LibrosNuevo.Text = "&Nuevo";
+            LibrosNuevo.Click += LibrosNuevo_Click;
+            // 
+            // LibrosGuardar
+            // 
+            LibrosGuardar.Enabled = false;
+            LibrosGuardar.Name = "LibrosGuardar";
+            LibrosGuardar.ShortcutKeys = Keys.Control | Keys.S;
+            LibrosGuardar.Size = new Size(180, 22);
+            LibrosGuardar.Text = "&Guardar";
+            LibrosGuardar.Click += LibrosGuardar_Click;
+            // 
+            // LibrosModificar
+            // 
+            LibrosModificar.Enabled = false;
+            LibrosModificar.Name = "LibrosModificar";
+            LibrosModificar.ShortcutKeys = Keys.Control | Keys.M;
+            LibrosModificar.Size = new Size(180, 22);
+            LibrosModificar.Text = "&Modificar";
+            LibrosModificar.Click += LibrosModificar_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(177, 6);
+            // 
+            // LibrosEliminar
+            // 
+            LibrosEliminar.Enabled = false;
+            LibrosEliminar.Name = "LibrosEliminar";
+            LibrosEliminar.Size = new Size(180, 22);
+            LibrosEliminar.Text = "&Eliminar";
+            LibrosEliminar.Click += LibrosEliminar_Click;
+            // 
+            // LibrosConsultar
+            // 
+            LibrosConsultar.Name = "LibrosConsultar";
+            LibrosConsultar.ShortcutKeys = Keys.Control | Keys.F;
+            LibrosConsultar.Size = new Size(180, 22);
+            LibrosConsultar.Text = "&Consultar";
+            LibrosConsultar.Click += LibrosConsultar_Click;
+            // 
+            // menuVer
+            // 
+            menuVer.DropDownItems.AddRange(new ToolStripItem[] { VerBarraHerramientas, VerBarraEstado });
+            menuVer.Name = "menuVer";
+            menuVer.Size = new Size(35, 20);
+            menuVer.Text = "&Ver";
+            // 
+            // VerBarraHerramientas
+            // 
+            VerBarraHerramientas.Checked = true;
+            VerBarraHerramientas.CheckOnClick = true;
+            VerBarraHerramientas.CheckState = CheckState.Checked;
+            VerBarraHerramientas.Name = "VerBarraHerramientas";
+            VerBarraHerramientas.Size = new Size(189, 22);
+            VerBarraHerramientas.Text = "&Barra de herramientas";
+            VerBarraHerramientas.CheckedChanged += VerBarraHerramientas_CheckedChanged;
+            // 
+            // VerBarraEstado
+            // 
+            VerBarraEstado.Checked = true;
+            VerBarraEstado.CheckOnClick = true;
+            VerBarraEstado.CheckState = CheckState.Checked;
+            VerBarraEstado.Name = "VerBarraEstado";
+            VerBarraEstado.Size = new Size(189, 22);
+            VerBarraEstado.Text = "&Barra de estado";
+            VerBarraEstado.CheckedChanged += VerBarraEstado_CheckedChanged;
+            // 
+            // menuAyuda
+            // 
+            menuAyuda.DropDownItems.AddRange(new ToolStripItem[] { AyudaAcercaDe });
+            menuAyuda.Name = "menuAyuda";
+            menuAyuda.Size = new Size(53, 20);
+            menuAyuda.Text = "&Ayuda";
+            // 
+            // AyudaAcercaDe
+            // 
+            AyudaAcercaDe.Name = "AyudaAcercaDe";
+            AyudaAcercaDe.Size = new Size(180, 22);
+            AyudaAcercaDe.Text = "&Acerca de...";
+            AyudaAcercaDe.Click += AyudaAcercaDe_Click;
+            // 
+            // statusStrip1
+            // 
+            statusStrip1.Items.AddRange(new ToolStripItem[] { etbarestUsuario, etbarestRegistros, etbarestPpal });
+            statusStrip1.Location = new Point(0, 428);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(800, 22);
+            statusStrip1.TabIndex = 2;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // etbarestUsuario
+            // 
+            etbarestUsuario.Name = "etbarestUsuario";
+            etbarestUsuario.Size = new Size(129, 17);
+            etbarestUsuario.Text = "Usuario: Administrador";
+            // 
+            // etbarestRegistros
+            // 
+            etbarestRegistros.Name = "etbarestRegistros";
+            etbarestRegistros.Size = new Size(67, 17);
+            etbarestRegistros.Text = "Registros: 0";
+            // 
+            // etbarestPpal
+            // 
+            etbarestPpal.Name = "etbarestPpal";
+            etbarestPpal.Size = new Size(589, 17);
+            etbarestPpal.Spring = true;
+            etbarestPpal.Text = "Estado: Listo";
+            etbarestPpal.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // grpRegistro
+            // 
+            grpRegistro.Controls.Add(lblCodigo);
+            grpRegistro.Controls.Add(txtCodigo);
+            grpRegistro.Controls.Add(lblTitulo);
+            grpRegistro.Controls.Add(txtTitulo);
+            grpRegistro.Controls.Add(lblAutor);
+            grpRegistro.Controls.Add(txtAutor);
+            grpRegistro.Controls.Add(lblCategoria);
+            grpRegistro.Controls.Add(cmbCategoria);
+            grpRegistro.Controls.Add(lblAnio);
+            grpRegistro.Controls.Add(txtAnio);
+            grpRegistro.Controls.Add(lblISBN);
+            grpRegistro.Controls.Add(txtISBN);
+            grpRegistro.Controls.Add(chkDisponible);
+            grpRegistro.Controls.Add(btnGuardar);
+            grpRegistro.Controls.Add(btnLimpiar);
+            grpRegistro.Location = new Point(12, 27);
+            grpRegistro.Name = "grpRegistro";
+            grpRegistro.Size = new Size(470, 340);
+            grpRegistro.TabIndex = 3;
+            grpRegistro.TabStop = false;
+            grpRegistro.Text = "Registro de Libro";
+            // 
+            // lblCodigo
+            // 
+            lblCodigo.AutoSize = true;
+            lblCodigo.Location = new Point(15, 32);
+            lblCodigo.Name = "lblCodigo";
+            lblCodigo.Size = new Size(49, 15);
+            lblCodigo.TabIndex = 0;
+            lblCodigo.Text = "Código:";
+            // 
+            // txtCodigo
+            // 
+            txtCodigo.Location = new Point(110, 29);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(220, 23);
+            txtCodigo.TabIndex = 1;
+            // 
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new Point(15, 67);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(40, 15);
+            lblTitulo.TabIndex = 2;
+            lblTitulo.Text = "Título:";
+            // 
+            // txtTitulo
+            // 
+            txtTitulo.ContextMenuStrip = menuContextual;
+            txtTitulo.Location = new Point(110, 64);
+            txtTitulo.Name = "txtTitulo";
+            txtTitulo.Size = new Size(320, 23);
+            txtTitulo.TabIndex = 3;
+            // 
+            // lblAutor
+            // 
+            lblAutor.AutoSize = true;
+            lblAutor.Location = new Point(15, 102);
+            lblAutor.Name = "lblAutor";
+            lblAutor.Size = new Size(40, 15);
+            lblAutor.TabIndex = 4;
+            lblAutor.Text = "Autor:";
+            // 
+            // txtAutor
+            // 
+            txtAutor.Location = new Point(110, 99);
+            txtAutor.Name = "txtAutor";
+            txtAutor.Size = new Size(320, 23);
+            txtAutor.TabIndex = 5;
+            // 
+            // lblCategoria
+            // 
+            lblCategoria.AutoSize = true;
+            lblCategoria.Location = new Point(15, 137);
+            lblCategoria.Name = "lblCategoria";
+            lblCategoria.Size = new Size(61, 15);
+            lblCategoria.TabIndex = 6;
+            lblCategoria.Text = "Categoría:";
+            // 
+            // cmbCategoria
+            // 
+            cmbCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbCategoria.Items.AddRange(new object[] { "Programación", "Bases de Datos", "Redes", "Ingeniería de Software", "Matemáticas", "Electrónica" });
+            cmbCategoria.Location = new Point(110, 134);
+            cmbCategoria.Name = "cmbCategoria";
+            cmbCategoria.Size = new Size(220, 23);
+            cmbCategoria.TabIndex = 7;
+            // 
+            // lblAnio
+            // 
+            lblAnio.AutoSize = true;
+            lblAnio.Location = new Point(15, 172);
+            lblAnio.Name = "lblAnio";
+            lblAnio.Size = new Size(32, 15);
+            lblAnio.TabIndex = 8;
+            lblAnio.Text = "Año:";
+            // 
+            // txtAnio
+            // 
+            txtAnio.Location = new Point(110, 169);
+            txtAnio.Name = "txtAnio";
+            txtAnio.Size = new Size(100, 23);
+            txtAnio.TabIndex = 9;
+            // 
+            // lblISBN
+            // 
+            lblISBN.AutoSize = true;
+            lblISBN.Location = new Point(15, 207);
+            lblISBN.Name = "lblISBN";
+            lblISBN.Size = new Size(35, 15);
+            lblISBN.TabIndex = 10;
+            lblISBN.Text = "ISBN:";
+            // 
+            // txtISBN
+            // 
+            txtISBN.Location = new Point(110, 204);
+            txtISBN.Name = "txtISBN";
+            txtISBN.Size = new Size(220, 23);
+            txtISBN.TabIndex = 11;
+            // 
+            // chkDisponible
+            // 
+            chkDisponible.AutoSize = true;
+            chkDisponible.Checked = true;
+            chkDisponible.CheckState = CheckState.Checked;
+            chkDisponible.Location = new Point(110, 242);
+            chkDisponible.Name = "chkDisponible";
+            chkDisponible.Size = new Size(82, 19);
+            chkDisponible.TabIndex = 12;
+            chkDisponible.Text = "Disponible";
+            chkDisponible.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.Location = new Point(110, 285);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(100, 32);
+            btnGuardar.TabIndex = 13;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += LibrosGuardar_Click;
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.Location = new Point(225, 285);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(100, 32);
+            btnLimpiar.TabIndex = 14;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += LibrosNuevo_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(grpRegistro);
+            Controls.Add(statusStrip1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Sistema de Gestión de Biblioteca";
+            menuContextual.ResumeLayout(false);
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            grpRegistro.ResumeLayout(false);
+            grpRegistro.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuArchivo;
+        private System.Windows.Forms.ToolStripMenuItem ArchivoSalir;
+        private System.Windows.Forms.ToolStripMenuItem menuLibros;
+        private System.Windows.Forms.ToolStripMenuItem LibrosNuevo;
+        private System.Windows.Forms.ToolStripMenuItem LibrosGuardar;
+        private System.Windows.Forms.ToolStripMenuItem LibrosModificar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem LibrosEliminar;
+        private System.Windows.Forms.ToolStripMenuItem LibrosConsultar;
+        private System.Windows.Forms.ToolStripMenuItem menuVer;
+        private System.Windows.Forms.ToolStripMenuItem VerBarraHerramientas;
+        private System.Windows.Forms.ToolStripMenuItem VerBarraEstado;
+        private System.Windows.Forms.ToolStripMenuItem menuAyuda;
+        private System.Windows.Forms.ToolStripMenuItem AyudaAcercaDe;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel etbarestUsuario;
+        private System.Windows.Forms.ToolStripStatusLabel etbarestRegistros;
+        private System.Windows.Forms.ToolStripStatusLabel etbarestPpal;
+        private System.Windows.Forms.GroupBox grpRegistro;
+        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.TextBox txtTitulo;
+        private System.Windows.Forms.Label lblAutor;
+        private System.Windows.Forms.TextBox txtAutor;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.Label lblAnio;
+        private System.Windows.Forms.TextBox txtAnio;
+        private System.Windows.Forms.Label lblISBN;
+        private System.Windows.Forms.TextBox txtISBN;
+        private System.Windows.Forms.CheckBox chkDisponible;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.ContextMenuStrip menuContextual;
+        private System.Windows.Forms.ToolStripMenuItem ctxCortar;
+        private System.Windows.Forms.ToolStripMenuItem ctxCopiar;
+        private System.Windows.Forms.ToolStripMenuItem ctxPegar;
+        private System.Windows.Forms.ToolStripMenuItem ctxLimpiar;
+    }
+}
