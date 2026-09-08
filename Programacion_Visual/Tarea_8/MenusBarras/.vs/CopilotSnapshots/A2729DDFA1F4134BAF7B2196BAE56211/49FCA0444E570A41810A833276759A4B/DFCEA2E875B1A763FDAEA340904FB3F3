@@ -1,4 +1,4 @@
-#nullable disable
+﻿#nullable disable
 namespace MenusBarras
 {
     partial class Form1
@@ -435,7 +435,6 @@ namespace MenusBarras
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(grpRegistro);
-            Controls.Add(dgvLibros);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -491,7 +490,6 @@ namespace MenusBarras
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.ContextMenuStrip menuContextual;
-        private System.Windows.Forms.DataGridView dgvLibros;
         private System.Windows.Forms.ToolStripMenuItem ctxCortar;
         private System.Windows.Forms.ToolStripMenuItem ctxCopiar;
         private System.Windows.Forms.ToolStripMenuItem ctxPegar;
