@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|c:\\users\\jasmir medina\\documents\\github\\ing-sistemas-programacion\\programacion_visual\\tarea_8\\menusbarras\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|c:\\users\\jasmir medina\\documents\\github\\ing-sistemas-programacion\\programacion_visual\\tarea_8\\menusbarras\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|c:\\users\\jasmir medina\\documents\\github\\ing-sistemas-programacion\\programacion_visual\\tarea_8\\menusbarras\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|c:\\users\\jasmir medina\\documents\\github\\ing-sistemas-programacion\\programacion_visual\\tarea_8\\menusbarras\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51736CCF-DAE0-2E62-8D56-DF22BD0A6865}|MenusBarras.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAO0BAAAAAAAAAABOwAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T21:33:41.632Z",
+              "WhenOpened": "2026-09-09T20:34:31.995Z",
               "EditorCaption": ""
             },
             {
@@ -45,9 +49,9 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAABBwHQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwAUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T21:30:04.101Z",
+              "WhenOpened": "2026-09-09T20:25:05.388Z",
               "EditorCaption": ""
             },
             {
@@ -59,8 +63,21 @@
               "ToolTip": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T20:35:40.2Z",
+              "WhenOpened": "2026-09-09T20:18:05.897Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Jasmir Medina\\Documents\\GitHub\\ing-sistemas-programacion\\Programacion_Visual\\Tarea_8\\MenusBarras\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T20:17:48.601Z",
+              "EditorCaption": ""
             }
           ]
         }

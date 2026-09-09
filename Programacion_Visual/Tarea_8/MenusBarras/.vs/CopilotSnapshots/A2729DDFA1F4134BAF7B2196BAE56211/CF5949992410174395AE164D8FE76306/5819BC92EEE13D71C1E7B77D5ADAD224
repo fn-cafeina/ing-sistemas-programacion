@@ -1,4 +1,4 @@
-namespace MenusBarras
+﻿namespace MenusBarras
 {
     public partial class Form1 : Form
     {
@@ -56,7 +56,16 @@ namespace MenusBarras
             dgvLibros.DataSource = null;
             dgvLibros.DataSource = list;
 
-            // Column configuration will run after binding completes (see DataBindingComplete handler)
+            if (dgvLibros.Columns.Count > 0)
+            {
+                ConfigurarColumna("Codigo", "Código", 60, 55);
+                ConfigurarColumna("Titulo", "Título", 170, 120);
+                ConfigurarColumna("Autor", "Autor", 130, 90);
+                ConfigurarColumna("Categoria", "Categoría", 110, 80);
+                ConfigurarColumna("Anio", "Año", 55, 45);
+                ConfigurarColumna("ISBN", "ISBN", 105, 85);
+                ConfigurarColumna("Disponible", "Disp.", 70, 55);
+            }
 
             // Update record counter in status strip
             etbarestRegistros.Text = $"Registros: {libros.Count}";
@@ -70,25 +79,6 @@ namespace MenusBarras
             col.FillWeight = peso;
             col.MinimumWidth = minimo;
             col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-        }
-
-        private void DgvLibros_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        {
-            try
-            {
-                if (dgvLibros.Columns.Count == 0) return;
-                ConfigurarColumna("Codigo", "Código", 60, 55);
-                ConfigurarColumna("Titulo", "Título", 170, 120);
-                ConfigurarColumna("Autor", "Autor", 130, 90);
-                ConfigurarColumna("Categoria", "Categoría", 110, 80);
-                ConfigurarColumna("Anio", "Año", 55, 45);
-                ConfigurarColumna("ISBN", "ISBN", 105, 85);
-                ConfigurarColumna("Disponible", "Disp.", 70, 55);
-            }
-            catch
-            {
-                // ignore configuration errors to avoid crashing on weird grid states
-            }
         }
 
         // Load selected book into form when user double-clicks a row

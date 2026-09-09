@@ -1,4 +1,4 @@
-#nullable disable
+﻿#nullable disable
 namespace MenusBarras
 {
     partial class Form1
@@ -450,7 +450,6 @@ namespace MenusBarras
             dgvLibros.Size = new Size(608, 444);
             dgvLibros.TabIndex = 0;
             dgvLibros.CellDoubleClick += DgvLibros_CellDoubleClick;
-            dgvLibros.DataBindingComplete += DgvLibros_DataBindingComplete;
             //
             // Form1
             //
