@@ -17,205 +17,275 @@
 
         private void InitializeComponent()
         {
-            gbBuscar = new GroupBox();
-            cbRuta = new ComboBox();
-            lbArchivos = new ListBox();
-            gbElegir = new GroupBox();
-            lbImagenes = new ListBox();
+            components = new System.ComponentModel.Container();
+            imgListCarpetas = new ImageList(components);
+            imgListImagenes = new ImageList(components);
+            gbUnidad = new GroupBox();
+            cbUnidad = new ComboBox();
+            gbCarpetas = new GroupBox();
+            tvCarpetas = new TreeView();
             pbPreview = new PictureBox();
-            gbEditar = new GroupBox();
-            btnPortapapeles = new Button();
-            btnAjustar = new Button();
-            btnFlip = new Button();
-            btnGuardar = new Button();
+            lblInfo = new Label();
+            gbImagenes = new GroupBox();
+            lvImagenes = new ListView();
+            colNombre = new ColumnHeader();
+            colTamano = new ColumnHeader();
+            gbAcciones = new GroupBox();
             btnAcercaDe = new Button();
+            btnPortapapeles = new Button();
+            btnFlip = new Button();
+            btnAjustar = new Button();
+            btnGuardar = new Button();
             btnSalir = new Button();
-            gbBuscar.SuspendLayout();
-            gbElegir.SuspendLayout();
+            gbUnidad.SuspendLayout();
+            gbCarpetas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbPreview).BeginInit();
-            gbEditar.SuspendLayout();
+            gbImagenes.SuspendLayout();
+            gbAcciones.SuspendLayout();
             SuspendLayout();
             // 
-            // gbBuscar
+            // gbUnidad
             // 
-            gbBuscar.Controls.Add(cbRuta);
-            gbBuscar.Controls.Add(lbArchivos);
-            gbBuscar.Location = new Point(16, 16);
-            gbBuscar.Name = "gbBuscar";
-            gbBuscar.Padding = new Padding(12, 8, 12, 12);
-            gbBuscar.Size = new Size(260, 190);
-            gbBuscar.TabIndex = 0;
-            gbBuscar.TabStop = false;
-            gbBuscar.Text = "Buscar imágenes";
+            gbUnidad.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            gbUnidad.Controls.Add(cbUnidad);
+            gbUnidad.Location = new Point(16, 16);
+            gbUnidad.Name = "gbUnidad";
+            gbUnidad.Padding = new Padding(12, 8, 12, 12);
+            gbUnidad.Size = new Size(246, 66);
+            gbUnidad.TabIndex = 0;
+            gbUnidad.TabStop = false;
+            gbUnidad.Text = "Unidad lógica";
             // 
-            // cbRuta
+            // cbUnidad
             // 
-            cbRuta.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            cbRuta.FormattingEnabled = true;
-            cbRuta.Location = new Point(14, 32);
-            cbRuta.Name = "cbRuta";
-            cbRuta.Size = new Size(232, 28);
-            cbRuta.TabIndex = 0;
-            cbRuta.KeyDown += CbRuta_KeyDown;
-            cbRuta.SelectedIndexChanged += CbRuta_SelectedIndexChanged;
+            cbUnidad.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            cbUnidad.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbUnidad.FormattingEnabled = true;
+            cbUnidad.Location = new Point(14, 28);
+            cbUnidad.Name = "cbUnidad";
+            cbUnidad.Size = new Size(218, 28);
+            cbUnidad.TabIndex = 0;
+            cbUnidad.SelectedIndexChanged += CbUnidad_SelectedIndexChanged;
             // 
-            // lbArchivos
+            // gbCarpetas
             // 
-            lbArchivos.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
-            lbArchivos.FormattingEnabled = true;
-            lbArchivos.ItemHeight = 20;
-            lbArchivos.Location = new Point(14, 68);
-            lbArchivos.Name = "lbArchivos";
-            lbArchivos.Size = new Size(232, 104);
-            lbArchivos.TabIndex = 1;
-            lbArchivos.DoubleClick += LbArchivos_DoubleClick;
+            gbCarpetas.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom;
+            gbCarpetas.Controls.Add(tvCarpetas);
+            gbCarpetas.Location = new Point(16, 92);
+            gbCarpetas.Name = "gbCarpetas";
+            gbCarpetas.Padding = new Padding(12, 8, 12, 12);
+            gbCarpetas.Size = new Size(246, 454);
+            gbCarpetas.TabIndex = 1;
+            gbCarpetas.TabStop = false;
+            gbCarpetas.Text = "Carpetas";
             // 
-            // gbElegir
+            // tvCarpetas
             // 
-            gbElegir.Controls.Add(lbImagenes);
-            gbElegir.Location = new Point(16, 216);
-            gbElegir.Name = "gbElegir";
-            gbElegir.Padding = new Padding(12, 8, 12, 12);
-            gbElegir.Size = new Size(260, 208);
-            gbElegir.TabIndex = 1;
-            gbElegir.TabStop = false;
-            gbElegir.Text = "Elegir una imagen";
-            // 
-            // lbImagenes
-            // 
-            lbImagenes.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
-            lbImagenes.FormattingEnabled = true;
-            lbImagenes.ItemHeight = 20;
-            lbImagenes.Location = new Point(14, 32);
-            lbImagenes.Name = "lbImagenes";
-            lbImagenes.Size = new Size(232, 164);
-            lbImagenes.TabIndex = 0;
-            lbImagenes.SelectedIndexChanged += LbImagenes_SelectedIndexChanged;
+            tvCarpetas.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
+            tvCarpetas.HideSelection = false;
+            tvCarpetas.Location = new Point(14, 28);
+            tvCarpetas.Name = "tvCarpetas";
+            tvCarpetas.Size = new Size(218, 412);
+            tvCarpetas.TabIndex = 0;
+            tvCarpetas.AfterSelect += TvCarpetas_AfterSelect;
+            tvCarpetas.BeforeExpand += TvCarpetas_BeforeExpand;
             // 
             // pbPreview
             // 
-            pbPreview.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
+            pbPreview.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pbPreview.BorderStyle = BorderStyle.FixedSingle;
-            pbPreview.Location = new Point(292, 16);
+            pbPreview.Location = new Point(278, 16);
             pbPreview.Name = "pbPreview";
-            pbPreview.Size = new Size(532, 310);
+            pbPreview.Size = new Size(626, 300);
             pbPreview.SizeMode = PictureBoxSizeMode.Zoom;
             pbPreview.TabIndex = 2;
             pbPreview.TabStop = false;
             // 
-            // gbEditar
+            // lblInfo
             // 
-            gbEditar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gbEditar.Controls.Add(btnPortapapeles);
-            gbEditar.Controls.Add(btnAjustar);
-            gbEditar.Controls.Add(btnFlip);
-            gbEditar.Controls.Add(btnGuardar);
-            gbEditar.Location = new Point(292, 338);
-            gbEditar.Name = "gbEditar";
-            gbEditar.Padding = new Padding(12, 8, 12, 12);
-            gbEditar.Size = new Size(532, 96);
-            gbEditar.TabIndex = 3;
-            gbEditar.TabStop = false;
-            gbEditar.Text = "Editar imagen";
+            lblInfo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblInfo.Location = new Point(278, 322);
+            lblInfo.Name = "lblInfo";
+            lblInfo.Size = new Size(626, 24);
+            lblInfo.TabIndex = 3;
+            lblInfo.Text = "—";
+            lblInfo.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // gbImagenes
+            // 
+            gbImagenes.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
+            gbImagenes.Controls.Add(lvImagenes);
+            gbImagenes.Location = new Point(278, 354);
+            gbImagenes.Name = "gbImagenes";
+            gbImagenes.Padding = new Padding(12, 8, 12, 12);
+            gbImagenes.Size = new Size(626, 192);
+            gbImagenes.TabIndex = 4;
+            gbImagenes.TabStop = false;
+            gbImagenes.Text = "Imágenes del directorio";
+            // 
+            // lvImagenes
+            // 
+            lvImagenes.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
+            lvImagenes.Columns.AddRange(new ColumnHeader[] { colNombre, colTamano });
+            lvImagenes.FullRowSelect = true;
+            lvImagenes.HideSelection = false;
+            lvImagenes.Location = new Point(14, 28);
+            lvImagenes.MultiSelect = false;
+            lvImagenes.Name = "lvImagenes";
+            lvImagenes.Size = new Size(598, 150);
+            lvImagenes.TabIndex = 0;
+            lvImagenes.UseCompatibleStateImageBehavior = false;
+            lvImagenes.View = View.Details;
+            lvImagenes.SelectedIndexChanged += LvImagenes_SelectedIndexChanged;
+            // 
+            // colNombre
+            // 
+            colNombre.Text = "Nombre";
+            colNombre.Width = 420;
+            // 
+            // colTamano
+            // 
+            colTamano.Text = "Tamaño (KB)";
+            colTamano.TextAlign = HorizontalAlignment.Right;
+            colTamano.Width = 140;
+            // 
+            // gbAcciones
+            // 
+            gbAcciones.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gbAcciones.Controls.Add(btnAcercaDe);
+            gbAcciones.Controls.Add(btnPortapapeles);
+            gbAcciones.Controls.Add(btnFlip);
+            gbAcciones.Controls.Add(btnAjustar);
+            gbAcciones.Controls.Add(btnGuardar);
+            gbAcciones.Controls.Add(btnSalir);
+            gbAcciones.Location = new Point(16, 558);
+            gbAcciones.Name = "gbAcciones";
+            gbAcciones.Padding = new Padding(12, 8, 12, 12);
+            gbAcciones.Size = new Size(888, 66);
+            gbAcciones.TabIndex = 5;
+            gbAcciones.TabStop = false;
+            gbAcciones.Text = "Acciones";
+            // 
+            // btnAcercaDe
+            // 
+            btnAcercaDe.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            btnAcercaDe.Location = new Point(14, 28);
+            btnAcercaDe.Name = "btnAcercaDe";
+            btnAcercaDe.Size = new Size(135, 28);
+            btnAcercaDe.TabIndex = 0;
+            btnAcercaDe.Text = "Acerca de ...";
+            btnAcercaDe.UseVisualStyleBackColor = true;
+            btnAcercaDe.Click += BtnAcercaDe_Click;
             // 
             // btnPortapapeles
             // 
-            btnPortapapeles.Location = new Point(20, 30);
+            btnPortapapeles.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            btnPortapapeles.Location = new Point(159, 28);
             btnPortapapeles.Name = "btnPortapapeles";
-            btnPortapapeles.Size = new Size(120, 28);
-            btnPortapapeles.TabIndex = 0;
+            btnPortapapeles.Size = new Size(135, 28);
+            btnPortapapeles.TabIndex = 1;
             btnPortapapeles.Text = "Portapapeles";
             btnPortapapeles.UseVisualStyleBackColor = true;
             btnPortapapeles.Click += BtnPortapapeles_Click;
             // 
-            // btnAjustar
-            // 
-            btnAjustar.Location = new Point(152, 30);
-            btnAjustar.Name = "btnAjustar";
-            btnAjustar.Size = new Size(120, 28);
-            btnAjustar.TabIndex = 1;
-            btnAjustar.Text = "Ajustar/Real";
-            btnAjustar.UseVisualStyleBackColor = true;
-            btnAjustar.Click += BtnAjustar_Click;
-            // 
             // btnFlip
             // 
-            btnFlip.Location = new Point(20, 62);
+            btnFlip.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            btnFlip.Location = new Point(304, 28);
             btnFlip.Name = "btnFlip";
-            btnFlip.Size = new Size(120, 28);
+            btnFlip.Size = new Size(135, 28);
             btnFlip.TabIndex = 2;
             btnFlip.Text = "Flip horizontal";
             btnFlip.UseVisualStyleBackColor = true;
             btnFlip.Click += BtnFlip_Click;
             // 
+            // btnAjustar
+            // 
+            btnAjustar.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            btnAjustar.Location = new Point(449, 28);
+            btnAjustar.Name = "btnAjustar";
+            btnAjustar.Size = new Size(135, 28);
+            btnAjustar.TabIndex = 3;
+            btnAjustar.Text = "Ajustar / Real";
+            btnAjustar.UseVisualStyleBackColor = true;
+            btnAjustar.Click += BtnAjustar_Click;
+            // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(152, 62);
+            btnGuardar.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            btnGuardar.Location = new Point(594, 28);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(120, 28);
-            btnGuardar.TabIndex = 3;
-            btnGuardar.Text = "Guardar como...";
+            btnGuardar.Size = new Size(135, 28);
+            btnGuardar.TabIndex = 4;
+            btnGuardar.Text = "Guarda como ...";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += BtnGuardar_Click;
             // 
-            // btnAcercaDe
-            // 
-            btnAcercaDe.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnAcercaDe.Location = new Point(16, 452);
-            btnAcercaDe.Name = "btnAcercaDe";
-            btnAcercaDe.Size = new Size(130, 36);
-            btnAcercaDe.TabIndex = 4;
-            btnAcercaDe.Text = "Acerca de...";
-            btnAcercaDe.UseVisualStyleBackColor = true;
-            btnAcercaDe.Click += BtnAcercaDe_Click;
-            // 
             // btnSalir
             // 
-            btnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnSalir.Location = new Point(704, 452);
+            btnSalir.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnSalir.Location = new Point(739, 28);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(120, 36);
+            btnSalir.Size = new Size(135, 28);
             btnSalir.TabIndex = 5;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += BtnSalir_Click;
             // 
+            // imgListCarpetas
+            // 
+            imgListCarpetas.ColorDepth = ColorDepth.Depth32Bit;
+            imgListCarpetas.ImageSize = new Size(16, 16);
+            // 
+            // imgListImagenes
+            // 
+            imgListImagenes.ColorDepth = ColorDepth.Depth32Bit;
+            imgListImagenes.ImageSize = new Size(48, 48);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(840, 500);
-            Controls.Add(gbBuscar);
-            Controls.Add(gbElegir);
+            ClientSize = new Size(920, 640);
+            Controls.Add(gbUnidad);
+            Controls.Add(gbCarpetas);
             Controls.Add(pbPreview);
-            Controls.Add(gbEditar);
-            Controls.Add(btnAcercaDe);
-            Controls.Add(btnSalir);
-            MinimumSize = new Size(760, 480);
+            Controls.Add(lblInfo);
+            Controls.Add(gbImagenes);
+            Controls.Add(gbAcciones);
+            MinimumSize = new Size(820, 600);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Explorador de Imágenes";
-            gbBuscar.ResumeLayout(false);
-            gbElegir.ResumeLayout(false);
+            Load += Form1_Load;
+            gbUnidad.ResumeLayout(false);
+            gbCarpetas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbPreview).EndInit();
-            gbEditar.ResumeLayout(false);
+            gbImagenes.ResumeLayout(false);
+            gbAcciones.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox gbBuscar;
-        private ComboBox cbRuta;
-        private ListBox lbArchivos;
-        private GroupBox gbElegir;
-        private ListBox lbImagenes;
+        private GroupBox gbUnidad;
+        private ComboBox cbUnidad;
+        private GroupBox gbCarpetas;
+        private TreeView tvCarpetas;
         private PictureBox pbPreview;
-        private GroupBox gbEditar;
-        private Button btnPortapapeles;
-        private Button btnAjustar;
-        private Button btnFlip;
-        private Button btnGuardar;
+        private Label lblInfo;
+        private GroupBox gbImagenes;
+        private ListView lvImagenes;
+        private ColumnHeader colNombre;
+        private ColumnHeader colTamano;
+        private GroupBox gbAcciones;
         private Button btnAcercaDe;
+        private Button btnPortapapeles;
+        private Button btnFlip;
+        private Button btnAjustar;
+        private Button btnGuardar;
         private Button btnSalir;
+        private ImageList imgListCarpetas;
+        private ImageList imgListImagenes;
     }
 }
