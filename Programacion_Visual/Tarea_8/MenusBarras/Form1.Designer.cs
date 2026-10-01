@@ -34,6 +34,7 @@ namespace MenusBarras
             ctxCortar = new ToolStripMenuItem();
             ctxCopiar = new ToolStripMenuItem();
             ctxPegar = new ToolStripMenuItem();
+            ctxSep = new ToolStripSeparator();
             ctxLimpiar = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             menuArchivo = new ToolStripMenuItem();
@@ -50,6 +51,15 @@ namespace MenusBarras
             VerBarraEstado = new ToolStripMenuItem();
             menuAyuda = new ToolStripMenuItem();
             AyudaAcercaDe = new ToolStripMenuItem();
+            toolStrip1 = new ToolStrip();
+            tsbNuevo = new ToolStripButton();
+            tsbGuardar = new ToolStripButton();
+            tsbModificar = new ToolStripButton();
+            toolStripSep1 = new ToolStripSeparator();
+            tsbEliminar = new ToolStripButton();
+            tsbConsultar = new ToolStripButton();
+            toolStripSep2 = new ToolStripSeparator();
+            tsbSalir = new ToolStripButton();
             statusStrip1 = new StatusStrip();
             etbarestUsuario = new ToolStripStatusLabel();
             etbarestRegistros = new ToolStripStatusLabel();
@@ -74,6 +84,7 @@ namespace MenusBarras
             dgvLibros = new System.Windows.Forms.DataGridView();
             menuContextual.SuspendLayout();
             menuStrip1.SuspendLayout();
+            toolStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             grpRegistro.SuspendLayout();
             grpLibros.SuspendLayout();
@@ -82,9 +93,9 @@ namespace MenusBarras
             //
             // menuContextual
             //
-            menuContextual.Items.AddRange(new ToolStripItem[] { ctxCortar, ctxCopiar, ctxPegar, ctxLimpiar });
+            menuContextual.Items.AddRange(new ToolStripItem[] { ctxCortar, ctxCopiar, ctxPegar, ctxSep, ctxLimpiar });
             menuContextual.Name = "menuContextual";
-            menuContextual.Size = new Size(115, 92);
+            menuContextual.Size = new Size(115, 98);
             //
             // ctxCortar
             //
@@ -106,6 +117,11 @@ namespace MenusBarras
             ctxPegar.Size = new Size(114, 22);
             ctxPegar.Text = "Pegar";
             ctxPegar.Click += CtxPegar_Click;
+            //
+            // ctxSep
+            //
+            ctxSep.Name = "ctxSep";
+            ctxSep.Size = new Size(114, 6);
             //
             // ctxLimpiar
             //
@@ -134,11 +150,10 @@ namespace MenusBarras
             //
             ArchivoSalir.Name = "ArchivoSalir";
             ArchivoSalir.ShortcutKeyDisplayString = "Alt+F4";
+            ArchivoSalir.ShortcutKeys = Keys.Alt | Keys.F4;
             ArchivoSalir.Size = new Size(138, 22);
             ArchivoSalir.Text = "&Salir";
             ArchivoSalir.Click += ArchivoSalir_Click;
-            ArchivoSalir.MouseEnter += ArchivoSalir_MouseEnter;
-            ArchivoSalir.MouseLeave += ArchivoSalir_MouseLeave;
             //
             // menuLibros
             //
@@ -235,10 +250,92 @@ namespace MenusBarras
             AyudaAcercaDe.Text = "&Acerca de...";
             AyudaAcercaDe.Click += AyudaAcercaDe_Click;
             //
+            // toolStrip1
+            //
+            toolStrip1.Items.AddRange(new ToolStripItem[] { tsbNuevo, tsbGuardar, tsbModificar, toolStripSep1, tsbEliminar, tsbConsultar, toolStripSep2, tsbSalir });
+            toolStrip1.Location = new Point(0, 24);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(1024, 25);
+            toolStrip1.TabIndex = 1;
+            toolStrip1.Text = "toolStrip1";
+            //
+            // tsbNuevo
+            //
+            tsbNuevo.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+            tsbNuevo.ImageTransparentColor = Color.Magenta;
+            tsbNuevo.Name = "tsbNuevo";
+            tsbNuevo.Size = new Size(69, 22);
+            tsbNuevo.Text = "Nuevo";
+            tsbNuevo.ToolTipText = "Nuevo (Ctrl+N)";
+            tsbNuevo.Click += LibrosNuevo_Click;
+            //
+            // tsbGuardar
+            //
+            tsbGuardar.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+            tsbGuardar.Enabled = false;
+            tsbGuardar.ImageTransparentColor = Color.Magenta;
+            tsbGuardar.Name = "tsbGuardar";
+            tsbGuardar.Size = new Size(79, 22);
+            tsbGuardar.Text = "Guardar";
+            tsbGuardar.ToolTipText = "Guardar (Ctrl+S)";
+            tsbGuardar.Click += LibrosGuardar_Click;
+            //
+            // tsbModificar
+            //
+            tsbModificar.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+            tsbModificar.Enabled = false;
+            tsbModificar.ImageTransparentColor = Color.Magenta;
+            tsbModificar.Name = "tsbModificar";
+            tsbModificar.Size = new Size(86, 22);
+            tsbModificar.Text = "Modificar";
+            tsbModificar.ToolTipText = "Modificar (Ctrl+M)";
+            tsbModificar.Click += LibrosModificar_Click;
+            //
+            // toolStripSep1
+            //
+            toolStripSep1.Name = "toolStripSep1";
+            toolStripSep1.Size = new Size(6, 25);
+            //
+            // tsbEliminar
+            //
+            tsbEliminar.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+            tsbEliminar.Enabled = false;
+            tsbEliminar.ImageTransparentColor = Color.Magenta;
+            tsbEliminar.Name = "tsbEliminar";
+            tsbEliminar.Size = new Size(79, 22);
+            tsbEliminar.Text = "Eliminar";
+            tsbEliminar.ToolTipText = "Eliminar registro";
+            tsbEliminar.Click += LibrosEliminar_Click;
+            //
+            // tsbConsultar
+            //
+            tsbConsultar.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+            tsbConsultar.ImageTransparentColor = Color.Magenta;
+            tsbConsultar.Name = "tsbConsultar";
+            tsbConsultar.Size = new Size(86, 22);
+            tsbConsultar.Text = "Consultar";
+            tsbConsultar.ToolTipText = "Consultar (Ctrl+F)";
+            tsbConsultar.Click += LibrosConsultar_Click;
+            //
+            // toolStripSep2
+            //
+            toolStripSep2.Name = "toolStripSep2";
+            toolStripSep2.Size = new Size(6, 25);
+            //
+            // tsbSalir
+            //
+            tsbSalir.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+            tsbSalir.ImageTransparentColor = Color.Magenta;
+            tsbSalir.Name = "tsbSalir";
+            tsbSalir.Size = new Size(61, 22);
+            tsbSalir.Text = "Salir";
+            tsbSalir.ToolTipText = "Salir (Alt+F4)";
+            tsbSalir.Click += ArchivoSalir_Click;
+            //
             // statusStrip1
             //
             statusStrip1.Items.AddRange(new ToolStripItem[] { etbarestUsuario, etbarestRegistros, etbarestPpal });
-            statusStrip1.Location = new Point(0, 526);
+            statusStrip1.Location = new Point(0, 551);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(1024, 22);
             statusStrip1.TabIndex = 2;
@@ -282,7 +379,7 @@ namespace MenusBarras
             grpRegistro.Controls.Add(chkDisponible);
             grpRegistro.Controls.Add(btnGuardar);
             grpRegistro.Controls.Add(btnLimpiar);
-            grpRegistro.Location = new Point(12, 27);
+            grpRegistro.Location = new Point(12, 52);
             grpRegistro.Name = "grpRegistro";
             grpRegistro.Size = new Size(360, 476);
             grpRegistro.TabIndex = 3;
@@ -350,7 +447,7 @@ namespace MenusBarras
             // cmbCategoria
             //
             cmbCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbCategoria.Items.AddRange(new object[] { "Programación", "Bases de Datos", "Redes", "Ingeniería de Software", "Matemáticas", "Electrónica" });
+            cmbCategoria.Items.AddRange(new object[] { "Programación", "Matemáticas", "Electrónica", "Bases de Datos", "Ingeniería de Software", "Redes" });
             cmbCategoria.Location = new Point(110, 134);
             cmbCategoria.Name = "cmbCategoria";
             cmbCategoria.Size = new Size(220, 23);
@@ -425,7 +522,7 @@ namespace MenusBarras
             //
             grpLibros.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             grpLibros.Controls.Add(dgvLibros);
-            grpLibros.Location = new Point(384, 27);
+            grpLibros.Location = new Point(384, 52);
             grpLibros.Name = "grpLibros";
             grpLibros.Size = new Size(628, 476);
             grpLibros.TabIndex = 4;
@@ -456,19 +553,22 @@ namespace MenusBarras
             //
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1024, 548);
+            ClientSize = new Size(1024, 573);
             Controls.Add(grpLibros);
             Controls.Add(grpRegistro);
+            Controls.Add(toolStrip1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            MinimumSize = new Size(1024, 548);
+            MinimumSize = new Size(1024, 573);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sistema de Gestión de Biblioteca";
             menuContextual.ResumeLayout(false);
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
             grpRegistro.ResumeLayout(false);
@@ -496,6 +596,15 @@ namespace MenusBarras
         private System.Windows.Forms.ToolStripMenuItem VerBarraEstado;
         private System.Windows.Forms.ToolStripMenuItem menuAyuda;
         private System.Windows.Forms.ToolStripMenuItem AyudaAcercaDe;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton tsbNuevo;
+        private System.Windows.Forms.ToolStripButton tsbGuardar;
+        private System.Windows.Forms.ToolStripButton tsbModificar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSep1;
+        private System.Windows.Forms.ToolStripButton tsbEliminar;
+        private System.Windows.Forms.ToolStripButton tsbConsultar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSep2;
+        private System.Windows.Forms.ToolStripButton tsbSalir;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel etbarestUsuario;
         private System.Windows.Forms.ToolStripStatusLabel etbarestRegistros;
@@ -522,6 +631,7 @@ namespace MenusBarras
         private System.Windows.Forms.ToolStripMenuItem ctxCortar;
         private System.Windows.Forms.ToolStripMenuItem ctxCopiar;
         private System.Windows.Forms.ToolStripMenuItem ctxPegar;
+        private System.Windows.Forms.ToolStripSeparator ctxSep;
         private System.Windows.Forms.ToolStripMenuItem ctxLimpiar;
     }
 }
