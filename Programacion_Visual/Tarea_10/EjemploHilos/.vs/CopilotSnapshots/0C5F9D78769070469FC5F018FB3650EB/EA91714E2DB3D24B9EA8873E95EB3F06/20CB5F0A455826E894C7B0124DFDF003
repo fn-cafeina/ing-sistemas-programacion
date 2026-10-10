@@ -1,0 +1,59 @@
+﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace EjemploHilos
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            timer1.Start();
+        }
+
+        private void lblHora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = false;
+            progressBar1.Value = 0;
+            var progress = new Progress<int>(v => progressBar1.Value = v);
+
+            await Task.Run(() =>
+            {
+                for (int i = 0; i <= 100; i++)
+                {
+                    Thread.Sleep(30); // simulate work
+                    ((IProgress<int>)progress).Report(i);
+                }
+            });
+
+            button1.Enabled = true;
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
