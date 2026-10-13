@@ -2,28 +2,21 @@ using FormulariosDMI.Helpers;
 
 namespace FormulariosDMI;
 
-/// <summary>
-/// Formulario hijo: encapsula un documento de texto.
-/// El padre (FormMDI) solo usa su API pública, nunca toca rtbText directamente.
-/// </summary>
 public partial class FormDocumento : Form
 {
     public string? RutaArchivo { get; private set; }
     public bool Modificado { get; private set; }
     public bool EsNuevo => string.IsNullOrEmpty(RutaArchivo);
 
-    /// <summary>Acceso de solo lectura al editor (para el helper de formato).</summary>
     public RichTextBox Editor => rtbText;
 
     private string _tituloBase = "Documento";
-    private bool _suprimirModificado; // evita marcar como modificado al cargar/guardar
+    private bool _suprimirModificado;
 
     public FormDocumento()
     {
         InitializeComponent();
     }
-
-    // ---------- Nivel 1: creación ----------
 
     public void CrearNuevo(string titulo)
     {
@@ -32,8 +25,6 @@ public partial class FormDocumento : Form
         rtbText.Clear();
         MarcarLimpio();
     }
-
-    // ---------- Nivel 2: archivos ----------
 
     public bool Abrir(string ruta)
     {
@@ -76,7 +67,7 @@ public partial class FormDocumento : Form
         };
 
         if (dlg.ShowDialog(this) != DialogResult.OK)
-            return false; // usuario canceló
+            return false;
 
         return GuardarEn(dlg.FileName);
     }
@@ -103,8 +94,6 @@ public partial class FormDocumento : Form
         }
     }
 
-    // ---------- Nivel 3: edición ----------
-
     public void Deshacer() => rtbText.Undo();
     public void Rehacer() => rtbText.Redo();
     public void Cortar() => rtbText.Cut();
@@ -114,16 +103,12 @@ public partial class FormDocumento : Form
     public bool PuedeDeshacer => rtbText.CanUndo;
     public bool PuedeRehacer => rtbText.CanRedo;
 
-    // ---------- Reto adicional: formato (delega al Helper) ----------
-
     public void AlternarNegrita() => FormatoHelper.AlternarNegrita(rtbText);
     public void AlternarCursiva() => FormatoHelper.AlternarCursiva(rtbText);
     public void AlternarSubrayado() => FormatoHelper.AlternarSubrayado(rtbText);
     public void AlinearIzquierda() => FormatoHelper.Alinear(rtbText, HorizontalAlignment.Left);
     public void Centrar() => FormatoHelper.Alinear(rtbText, HorizontalAlignment.Center);
     public void AlinearDerecha() => FormatoHelper.Alinear(rtbText, HorizontalAlignment.Right);
-
-    // ---------- Nivel 4: control de modificaciones ----------
 
     private void MarcarLimpio()
     {
@@ -150,7 +135,6 @@ public partial class FormDocumento : Form
     private void rtbText_TextChanged(object? sender, EventArgs e)
     {
         if (_suprimirModificado) return;
-        // Sincroniza el título base si aún es documento nuevo sin guardar
         MarcarModificado();
     }
 
@@ -171,8 +155,7 @@ public partial class FormDocumento : Form
         else if (r == DialogResult.Yes)
         {
             if (!Guardar())
-                e.Cancel = true; // si canceló el Guardar como, no cerrar
+                e.Cancel = true; 
         }
-        // No -> cerrar sin guardar
     }
 }

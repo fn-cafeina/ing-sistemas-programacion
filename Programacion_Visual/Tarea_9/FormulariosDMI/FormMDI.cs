@@ -1,9 +1,5 @@
 namespace FormulariosDMI;
 
-/// <summary>
-/// Formulario padre MDI: contiene y administra los documentos.
-/// No manipula el RichTextBox directamente, delega al hijo activo.
-/// </summary>
 public partial class FormMDI : Form
 {
     private int _contadorDocumentos;
@@ -16,8 +12,6 @@ public partial class FormMDI : Form
 
     private FormDocumento? HijoActivo => ActiveMdiChild as FormDocumento;
 
-    // ---------- Nivel 1: MDI básico ----------
-
     private void NuevoDocumento()
     {
         var hijo = new FormDocumento();
@@ -26,8 +20,6 @@ public partial class FormMDI : Form
         hijo.MdiParent = this;
         hijo.Show();
     }
-
-    // ---------- Nivel 2: archivos ----------
 
     private void AbrirDocumento()
     {
@@ -42,7 +34,7 @@ public partial class FormMDI : Form
 
         var hijo = new FormDocumento();
         if (!hijo.Abrir(dlg.FileName))
-            return; // error ya mostrado por el hijo
+            return;
 
         _contadorDocumentos++;
         hijo.MdiParent = this;
@@ -73,16 +65,12 @@ public partial class FormMDI : Form
         hijo.GuardarComo();
     }
 
-    // ---------- Nivel 4: administración ----------
-
     private void CerrarActual() => HijoActivo?.Close();
 
     private void Salir() => Close();
 
     private void FormMDI_FormClosing(object? sender, FormClosingEventArgs e)
     {
-        // Cada hijo pregunta por sus cambios en su propio FormClosing.
-        // Si alguno cancela, se cancela el cierre de la aplicación.
         foreach (Form hijo in MdiChildren)
         {
             hijo.Close();
@@ -94,8 +82,6 @@ public partial class FormMDI : Form
         }
     }
 
-    // ---------- Handlers Archivo ----------
-
     private void NuevoItem_Click(object? sender, EventArgs e) => NuevoDocumento();
     private void AbrirItem_Click(object? sender, EventArgs e) => AbrirDocumento();
     private void GuardarItem_Click(object? sender, EventArgs e) => GuardarActual();
@@ -103,19 +89,14 @@ public partial class FormMDI : Form
     private void CerrarItem_Click(object? sender, EventArgs e) => CerrarActual();
     private void SalirItem_Click(object? sender, EventArgs e) => Salir();
 
-    // ---------- Nivel 3: edición ----------
-
     private void DeshacerItem_Click(object? sender, EventArgs e) => HijoActivo?.Deshacer();
     private void RehacerItem_Click(object? sender, EventArgs e) => HijoActivo?.Rehacer();
     private void CortarItem_Click(object? sender, EventArgs e) => HijoActivo?.Cortar();
     private void CopiarItem_Click(object? sender, EventArgs e) => HijoActivo?.Copiar();
     private void PegarItem_Click(object? sender, EventArgs e) => HijoActivo?.Pegar();
 
-    // ---------- Nivel 5: organización (literal al documento) ----------
-
     private void NormalizarHijos()
     {
-        // Si un hijo está maximizado/minimizado, LayoutMdi no se aprecia.
         foreach (Form f in MdiChildren)
             f.WindowState = FormWindowState.Normal;
     }
@@ -144,11 +125,8 @@ public partial class FormMDI : Form
     private void OrganizarIconosItem_Click(object? sender, EventArgs e)
     {
         if (MdiChildren.Length == 0) return;
-        // ArrangeIcons solo ordena hijos minimizados. Sin minimizados no hace nada (correcto).
         LayoutMdi(MdiLayout.ArrangeIcons);
     }
-
-    // ---------- Ayuda ----------
 
     private void AcercaDeItem_Click(object? sender, EventArgs e)
     {
@@ -159,16 +137,12 @@ public partial class FormMDI : Form
             MessageBoxIcon.Information);
     }
 
-    // ---------- Reto adicional: formato ----------
-
     private void Negrita_Click(object? sender, EventArgs e) => HijoActivo?.AlternarNegrita();
     private void Cursiva_Click(object? sender, EventArgs e) => HijoActivo?.AlternarCursiva();
     private void Subrayado_Click(object? sender, EventArgs e) => HijoActivo?.AlternarSubrayado();
     private void AlinearIzq_Click(object? sender, EventArgs e) => HijoActivo?.AlinearIzquierda();
     private void Centrar_Click(object? sender, EventArgs e) => HijoActivo?.Centrar();
     private void AlinearDer_Click(object? sender, EventArgs e) => HijoActivo?.AlinearDerecha();
-
-    // ---------- Estado de menús / barra ----------
 
     private void FormMDI_MdiChildActivate(object? sender, EventArgs e) => ActualizarEstado();
 
